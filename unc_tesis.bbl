@@ -1,0 +1,1825 @@
+\begin{thebibliography}{240}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Adair and Yeager(2002)]{Adair2002}
+Adair; Brian~D. and Yeager; Mark.
+\newblock {Three-dimensional model of the human platelet integrin
+  $\alpha$11b$\beta$3 based on electron cryomicroscopy and x-ray
+  crystallography}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 99\penalty0 (22):\penalty0 14059--14064, \textbf{2002}.
+
+\bibitem[Adair et~al.(2005)Adair, Xiong, Maddock, Goodman, Arnaout, and
+  Yeager]{Adair2005}
+Adair; Brian~D., Xiong; Jian~Ping, Maddock; Catherine, Goodman; Simon~L.,
+  Arnaout; M.~Amin, and Yeager; Mark.
+\newblock {Three-dimensional EM structure of the ectodomain of integrin
+  $\alpha$V$\beta$3 in a complex with fibronectin}.
+\newblock \emph{Journal of Cell Biology}, 168\penalty0 (7):\penalty0
+  1109--1118, \textbf{2005}.
+
+\bibitem[Adair et~al.(2023)Adair, Xiong, Yeager, and Arnaout]{Adair2023}
+Adair; Brian~D, Xiong; Jian~Ping, Yeager; Mark, and Arnaout; M~Amin.
+\newblock {Cryo-EM structures of full-length integrin $\alpha$IIb$\beta$3 in
+  native lipids}.
+\newblock \emph{Nature Communications}, 14\penalty0 (1):\penalty0 1--7,
+  \textbf{2023}.
+
+\bibitem[Alamdari et~al.(2020)Alamdari, Roeters, Golbek, Schm{\"{u}}ser,
+  Weidner, and Pfaendtner]{Alamdari2020}
+Alamdari; Sarah, Roeters; Steven~J., Golbek; Thaddeus~W., Schm{\"{u}}ser; Lars,
+  Weidner; Tobias, and Pfaendtner; Jim.
+\newblock {Orientation and Conformation of Proteins at the Air-Water Interface
+  Determined from Integrative Molecular Dynamics Simulations and Sum Frequency
+  Generation Spectroscopy}.
+\newblock \emph{Langmuir}, 36\penalty0 (40):\penalty0 11855--11865,
+  \textbf{2020}.
+
+\bibitem[Alavi and Cheresh(2008)]{Avraamides2008}
+Alavi; Alireza~S. and Cheresh; David~A.
+\newblock {Integrins in angiogenesis}.
+\newblock \emph{Angiogenesis: An Integrative Approach From Science to
+  Medicine}, 8\penalty0 (8):\penalty0 63--73, \textbf{2008}.
+
+\bibitem[Ali et~al.(1994)Ali, Smaby, Brockman, and Brown]{Ali1994}
+Ali; Shaukat, Smaby; Janice~M., Brockman; Howard~L., and Brown; Rhoderick~E.
+\newblock {Cholesterol's Interfacial Interactions with Galactosylceramides}.
+\newblock \emph{Biochemistry}, 33\penalty0 (10):\penalty0 2900--2906,
+  \textbf{1994}.
+
+\bibitem[Allouche(2012)]{Jo2011}
+Allouche; Abdul-rahman.
+\newblock {Software News and Updates Gabedit — A Graphical User Interface for
+  Computational Chemistry Softwares}.
+\newblock \emph{Journal of computational chemistry}, 32:\penalty0 174--182,
+  \textbf{2012}.
+
+\bibitem[Alvares et~al.(2021)Alvares, Monti, {Ruggiero Neto}, and
+  Wilke]{Alvares2021}
+Alvares; Dayane~S., Monti; Mariela~R., {Ruggiero Neto}; Jo{\~{a}}o, and Wilke;
+  Natalia.
+\newblock {The antimicrobial peptide Polybia-MP1 differentiates membranes with
+  the hopanoid, diplopterol from those with cholesterol}.
+\newblock \emph{BBA Advances}, 1\penalty0 (January):\penalty0 100002,
+  \textbf{2021}.
+
+\bibitem[Amaro et~al.(2011)Amaro, Swift, Votapka, Li, Walker, and
+  Bush]{Amaro2011}
+Amaro; Rommie~E., Swift; Robert~V., Votapka; Lane, Li; Wilfred~W., Walker;
+  Ross~C., and Bush; Robin~M.
+\newblock {Mechanism of 150-cavity formation in influenza neuraminidase}.
+\newblock \emph{Nature Communications}, 2\penalty0 (1), \textbf{2011}.
+
+\bibitem[Anbazhagan and Schneider(2010)]{Anbazhagan2010}
+Anbazhagan; Veerappan and Schneider; Dirk.
+\newblock {The membrane environment modulates self-association of the human GpA
+  TM domain-Implications for membrane protein folding and transmembrane
+  signaling}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1798\penalty0
+  (10):\penalty0 1899--1907, \textbf{2010}.
+
+\bibitem[Ansell et~al.(2021)Ansell, Curran, Horrell, Pipatpolkai, Letham, Song,
+  Siebold, Stansfeld, Sansom, and Corey]{Ansell2021}
+Ansell; T.~Bertie, Curran; Luke, Horrell; Michael~R., Pipatpolkai; Tanadet,
+  Letham; Suzanne~C., Song; Wanling, Siebold; Christian, Stansfeld; Phillip~J.,
+  Sansom; Mark~S.P., and Corey; Robin~A.
+\newblock {Relative Affinities of Protein-Cholesterol Interactions from
+  Equilibrium Molecular Dynamics Simulations}.
+\newblock \emph{Journal of Chemical Theory and Computation}, 17\penalty0
+  (10):\penalty0 6548--6558, \textbf{2021}.
+
+\bibitem[Arnarez et~al.(2013)Arnarez, Mazat, Elezgaray, Marrink, and
+  Periole]{Arnarez2013}
+Arnarez; Clement, Mazat; Jean~Pierre, Elezgaray; Juan, Marrink; Siewert~J., and
+  Periole; Xavier.
+\newblock {Evidence for cardiolipin binding sites on the membrane-exposed
+  surface of the cytochrome bc1}.
+\newblock \emph{Journal of the American Chemical Society}, 135\penalty0
+  (8):\penalty0 3112--3120, \textbf{2013}.
+
+\bibitem[Askari et~al.(2009)Askari, Buckley, Mould, and Humphries]{Askari2009}
+Askari; Janet~A., Buckley; Patrick~A., Mould; A.~Paul, and Humphries; Martin~J.
+\newblock {Linking integrin conformation to function}.
+\newblock \emph{Journal of Cell Science}, 122\penalty0 (2):\penalty0 165--170,
+  \textbf{2009}.
+
+\bibitem[Baoukina et~al.(2012)Baoukina, Mendez-Villuendas, Bennett, and
+  Tieleman]{Baoukina2012}
+Baoukina; Svetlana, Mendez-Villuendas; Eduardo, Bennett; W.~F.Drew, and
+  Tieleman; D.~Peter.
+\newblock {Computer simulations of the phase separation in model membranes}.
+\newblock \emph{Faraday Discussions}, 161:\penalty0 63--75, \textbf{2012}.
+
+\bibitem[Barczyk et~al.(2010)Barczyk, Carracedo, and Gullberg]{Barczyk2010}
+Barczyk; Malgorzata, Carracedo; Sergio, and Gullberg; Donald.
+\newblock {Integrins}.
+\newblock \emph{Cell and Tissue Research}, 339\penalty0 (1):\penalty0 269--280,
+  \textbf{2010}.
+
+\bibitem[Barlow and Thornton(1988)]{Barlow1988}
+Barlow; D.~J. and Thornton; J.~M.
+\newblock {Helix geometry in proteins}.
+\newblock \emph{Journal of Molecular Biology}, 201\penalty0 (3):\penalty0
+  601--619, \textbf{1988}.
+
+\bibitem[Beer et~al.(2012)Beer, Kessler, Wester, and Schwaiger]{Beer2012}
+Beer; Ambros~J., Kessler; Horst, Wester; Hans-J{\"{u}}rgen, and Schwaiger;
+  Markus.
+\newblock {PET Imaging of Integrin $\alpha$V$\beta$3 Expression}.
+\newblock \emph{Theranostics}, 1:\penalty0 48--57, \textbf{2012}.
+
+\bibitem[Beglova et~al.(2002)Beglova, Blacklow, Takagi, and
+  Springer]{Beglova2002}
+Beglova; Natalia, Blacklow; Stephen~C., Takagi; Junichi, and Springer;
+  Timothy~A.
+\newblock {Cysteine-rich module structure reveals a fulcrum for integrin
+  rearrangement upon activation}.
+\newblock \emph{Nature Structural Biology}, 9\penalty0 (4):\penalty0 282--287,
+  \textbf{2002}.
+
+\bibitem[Beitinger et~al.(1989)Beitinger, Vogel, and Films]{Beitinger1989}
+Beitinger; Heinz, Vogel; Viola, and Films; Thin~Solid.
+\newblock {Headgroup At the Water/Lipid Interface}.
+\newblock \emph{Biochimica et Bphysica Acta}, 984:\penalty0 293--300,
+  \textbf{1989}.
+
+\bibitem[Bennett et~al.(2009)Bennett, Berger, and Billings]{Bennett2009}
+Bennett; Joel~S., Berger; B.~W., and Billings; P.~C.
+\newblock {The structure and function of platelet integrins}.
+\newblock \emph{Journal of Thrombosis and Haemostasis}, 7\penalty0 (SUPPL.
+  1):\penalty0 200--205, \textbf{2009}.
+
+\bibitem[Berendsen et~al.(1984)Berendsen, Postma, {Van Gunsteren}, Dinola, and
+  Haak]{Berendsen1984}
+Berendsen; H.~J.C., Postma; J.~P.M., {Van Gunsteren}; W.~F., Dinola; A., and
+  Haak; J.~R.
+\newblock {Molecular dynamics with coupling to an external bath}.
+\newblock \emph{The Journal of Chemical Physics}, 81\penalty0 (8):\penalty0
+  3684--3690, \textbf{1984}.
+
+\bibitem[Berman et~al.(2000)Berman, Westbrook, Feng, Gilliland, Bhat, Weissig,
+  Shindyalov, and Bourne]{Berman2000}
+Berman; Helen~M., Westbrook; John, Feng; Zukang, Gilliland; Gary, Bhat; T.~N.,
+  Weissig; Helge, Shindyalov; Ilya~N., and Bourne; Philip~E.
+\newblock {The Protein Data Bank}.
+\newblock \emph{Nucleic Acids Research}, 28\penalty0 (1):\penalty0 235--242,
+  \textbf{2000}.
+
+\bibitem[Bidone et~al.(2019)Bidone, Polley, Jin, Driscoll, Iwamoto, Calderwood,
+  Schwartz, and Voth]{Bidone2019}
+Bidone; Tamara~C., Polley; Anirban, Jin; Jaehyeok, Driscoll; Tristan, Iwamoto;
+  Daniel~V., Calderwood; David~A., Schwartz; Martin~A., and Voth; Gregory~A.
+\newblock {Coarse-Grained Simulation of Full-Length Integrin Activation}.
+\newblock \emph{Biophysical Journal}, 116\penalty0 (6):\penalty0 1000--1010,
+  \textbf{2019}.
+
+\bibitem[Bledzka et~al.(2012)Bledzka, Pesho, Ma, and Plow]{Bledzka2012}
+Bledzka; Kamila, Pesho; Michelle~M., Ma; Yan~Qing, and Plow; Edward~F.
+\newblock {Integrin $\alpha$IIb$\beta$3}.
+\newblock \emph{Platelets, Third Edition}, pages 233--248, \textbf{2012}.
+
+\bibitem[Bledzka et~al.(2013)Bledzka, Smyth, and Plow]{Bledzka2013}
+Bledzka; Kamila, Smyth; Susan~S., and Plow; Edward~F.
+\newblock {Integrin $\alpha$iIb$\beta$3: From discovery to efficacious
+  therapeutic target}.
+\newblock \emph{Circulation Research}, 112\penalty0 (8):\penalty0 1189--1200,
+  \textbf{2013}.
+
+\bibitem[Blodgett(1935)]{Blodgett1935}
+Blodgett; Katharine~B.
+\newblock {Films Built by Depositing Successive Monomolecular Layers on a Solid
+  Surface}.
+\newblock \emph{Journal of the American Chemical Society}, 57\penalty0
+  (6):\penalty0 1007--1022, \textbf{1935}.
+
+\bibitem[Blood and Voth(2006)]{Blood2006}
+Blood; Philip~D. and Voth; Gregory~A.
+\newblock {Direct observation of Bin/amphiphysin/Rvs (BAR) domain-induced
+  membrane curvature by means of molecular dynamics simulations}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 103\penalty0 (41):\penalty0 15068--15072, \textbf{2006}.
+
+\bibitem[Bocharov et~al.(2017)Bocharov, Mineev, Pavlov, Akimov, Kuznetsov,
+  Efremov, and Arseniev]{Bocharov2017}
+Bocharov; Eduard~V., Mineev; Konstantin~S., Pavlov; Konstantin~V., Akimov;
+  Sergey~A., Kuznetsov; Andrey~S., Efremov; Roman~G., and Arseniev;
+  Alexander~S.
+\newblock {Helix-helix interactions in membrane domains of bitopic proteins:
+  Specificity and role of lipid environment}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1859\penalty0
+  (4):\penalty0 561--576, \textbf{2017}.
+
+\bibitem[Bourne(1997)]{Bourne1997}
+Bourne; Henry~R.
+\newblock {How receptors talk to trimeric G proteins}.
+\newblock \emph{Current Opinion in Cell Biology}, 9\penalty0 (2):\penalty0
+  134--142, \textbf{1997}.
+
+\bibitem[Braun et~al.(2011)Braun, Brandt, Edholm, Nagle, and Sachs]{Braun2011}
+Braun; Anthony~R., Brandt; Erik~G., Edholm; Olle, Nagle; John~F., and Sachs;
+  Jonathan~N.
+\newblock {Determination of electron density profiles and area from simulations
+  of undulating membranes}.
+\newblock \emph{Biophysical Journal}, 100\penalty0 (9):\penalty0 2112--2120,
+  \textbf{2011}.
+
+\bibitem[Brewer et~al.(2013)Brewer, Yun, Lai, Lemmon, Eck, and Pao]{Brewer2013}
+Brewer; Monica~Red, Yun; Cai~Hong, Lai; Darson, Lemmon; Mark~A., Eck;
+  Michael~J., and Pao; William.
+\newblock {Mechanism for activation of mutated epidermal growth factor
+  receptors in lung cancer}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 110\penalty0 (38), \textbf{2013}.
+
+\bibitem[Britt et~al.(2003)Britt, Goodman, and Selle]{Britt2003}
+Britt; David~W., Goodman; Th, and Selle; C.
+\newblock {The Influence of Lipid Dipole Moment and Interfacial Water Structure
+  on Protein Adsorption to Mixed Lipid Monolayers}.
+\newblock \emph{Materialwissenschaft und Werkstofftechnik}, 34\penalty0
+  (12):\penalty0 1133--1137, \textbf{2003}.
+
+\bibitem[Brockman(1994)]{Brockman1994}
+Brockman; Howard.
+\newblock {Dipole potential of lipid membranes}.
+\newblock \emph{Chemistry and Physics of Lipids}, 73\penalty0 (1-2):\penalty0
+  57--79, \textbf{1994}.
+
+\bibitem[Brown and Brockman(2007)]{Brown2007}
+Brown; Rhoderick~E. and Brockman; Howard~L.
+\newblock {Using monomolecular films to characterize lipid lateral
+  interactions}.
+\newblock \emph{Methods in Molecular Biology}, 398:\penalty0 41--58,
+  \textbf{2007}.
+
+\bibitem[Bruce et~al.(2002)Bruce, Johnson, Lewis, Raff, Keith, and
+  Peter]{Bruce2002}
+Bruce; Alberts, Johnson; Alexander, Lewis; Julian, Raff; Martin, Keith;
+  Roberts, and Peter; Walter.
+\newblock \emph{{Molecular Biology of the Cell}}.
+\newblock \textbf{2002}.
+
+\bibitem[Campbell and Humphries(2011)]{Campbell2011}
+Campbell; Iain~D. and Humphries; Martin~J.
+\newblock {Integrin structure, activation, and interactions}.
+\newblock \emph{Cold Spring Harbor Perspectives in Biology}, 3\penalty0
+  (3):\penalty0 1--14, \textbf{2011}.
+
+\bibitem[Cayrol et~al.(2015)Cayrol, Flaqu{\'{e}}, Fernando, Yang, Sterle,
+  Bolontrade, Amor{\'{o}}s, Isse, Far{\'{i}}as, Ahn, Tian, Tabb{\`{o}}, Singh,
+  Inghirami, Cerchietti, and Cremaschi]{Cayrol2015}
+Cayrol; Florencia, Flaqu{\'{e}}; Mar{\'{i}}a Celeste~D{\'{i}}az, Fernando;
+  Tharu, Yang; Shao~Ning, Sterle; Helena~Andrea, Bolontrade; Marcela,
+  Amor{\'{o}}s; Mariana, Isse; Blanca, Far{\'{i}}as; Ricardo~Norberto, Ahn;
+  Haelee, Tian; Ye~F, Tabb{\`{o}}; Fabrizio, Singh; Ankur, Inghirami; Giorgio,
+  Cerchietti; Leandro, and Cremaschi; Graciela~Alicia.
+\newblock {Integrin $\alpha$v$\beta$3 acting as membrane receptor for thyroid
+  hormones mediates angiogenesis in malignant T cells}.
+\newblock \emph{Blood}, 125\penalty0 (5):\penalty0 841--851, \textbf{2015}.
+
+\bibitem[Chataigner et~al.(2020)Chataigner, Leloup, and
+  Janssen]{Chataigner2020}
+Chataigner; Lucas~M.P., Leloup; Nadia, and Janssen; Bert~J.C.
+\newblock {Structural Perspectives on Extracellular Recognition and
+  Conformational Changes of Several Type-I Transmembrane Receptors}.
+\newblock \emph{Frontiers in Molecular Biosciences}, 7\penalty0
+  (August):\penalty0 1--13, \textbf{2020}.
+
+\bibitem[Chen et~al.(1992)Chen, Djaffar, Pidard, Steiner, Cieutat, Caen, and
+  Rosa]{Chen1992}
+Chen; Y.~I.Ping, Djaffar; Isabelle, Pidard; Dominique, Steiner; Beat, Cieutat;
+  Anne~Marie, Caen; Jacques~P., and Rosa; Jean~Philippe.
+\newblock {Ser-752 → Pro mutation in the cytoplasmic domain of integrin
+  $\beta$3 subunit and defective activation of platelet integrin
+  $\alpha$IIb$\beta$3 (glycoprotein IIb-IIIa) in a variant of Glanzmann
+  thrombasthenia}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 89\penalty0 (21):\penalty0 10169--10173, \textbf{1992}.
+
+\bibitem[Chen et~al.(1997)Chen, Trikha, Gao, Bazaz, Porter, Timar, and
+  Honn]{Chen1997}
+Chen; Yong~Q., Trikha; Mohit, Gao; Xiang, Bazaz; Rajesh, Porter; Arthur~T.,
+  Timar; Jozsef, and Honn; Kenneth~V.
+\newblock {Ectopic expression of platelet integrin $\alpha$IIb$\beta$3 in tumor
+  cells from various species and histological origin}.
+\newblock \emph{International Journal of Cancer}, 72\penalty0 (4):\penalty0
+  642--648, \textbf{1997}.
+
+\bibitem[Chng and Tan(2011)]{Chng2011}
+Chng; Choon~Peng and Tan; Suet~Mien.
+\newblock {Leukocyte integrin $\alpha$L$\beta$2 transmembrane association
+  dynamics revealed by coarse-grained molecular dynamics simulations}.
+\newblock \emph{Proteins: Structure, Function and Bioinformatics}, 79\penalty0
+  (7):\penalty0 2203--2213, \textbf{2011}.
+
+\bibitem[Chopra et~al.(1992)Chopra, Timar, Rong, Grossi, Hatfield, Fligiel,
+  Finch, Taylor, and Honn]{Chopra1992}
+Chopra; Hemi, Timar; Jozsef, Rong; X., Grossi; Irma~M., Hatfield; James~S.,
+  Fligiel; Suzanne~E.G., Finch; Catherine~A., Taylor; John~D., and Honn;
+  Kenneth~V.
+\newblock {Is there a role for the tumor cell integrin $\alpha$IIb$\beta$3 and
+  cytoskeleton in tumor cell-platelet interaction?}
+\newblock \emph{Clinical and Experimental Metastasis}, 10\penalty0
+  (2):\penalty0 125--137, \textbf{1992}.
+
+\bibitem[Chung et~al.(1997)Chung, Gao, and Frazier]{Chung1997}
+Chung; Jun, Gao; Ai~Guo, and Frazier; William~A.
+\newblock {Thrombspondin acts via integrin-associated protein to activate the
+  platelet integrin $\alpha$(IIb)$\beta$3}.
+\newblock \emph{Journal of Biological Chemistry}, 272\penalty0 (23):\penalty0
+  14740--14746, \textbf{1997}.
+
+\bibitem[{Claveras Cabezudo} et~al.(2023){Claveras Cabezudo}, Athanasiou,
+  Tsengenes, and Wade]{Claveras2023}
+{Claveras Cabezudo}; Ainara, Athanasiou; Christina, Tsengenes; Alexandros, and
+  Wade; Rebecca~C.
+\newblock {Scaling Protein-Water Interactions in the Martini 3 Coarse-Grained
+  Force Field to Simulate Transmembrane Helix Dimers in Different Lipid
+  Environments}.
+\newblock \emph{Journal of Chemical Theory and Computation}, 19\penalty0
+  (7):\penalty0 2109--2119, \textbf{2023}.
+
+\bibitem[Coller(1997)]{Coller1997}
+Coller; Barry~S.
+\newblock {Platelet GPIIb/IIIa antagonists: The first anti-integrin receptor
+  therapeutics}.
+\newblock \emph{Journal of Clinical Investigation}, 99\penalty0 (7):\penalty0
+  1467--1471, \textbf{1997}.
+
+\bibitem[Corey et~al.(2019)Corey, Vickery, Sansom, and Stansfeld]{Corey2019}
+Corey; Robin~A., Vickery; Owen~N., Sansom; Mark~S.P., and Stansfeld; Phillip~J.
+\newblock {Insights into Membrane Protein-Lipid Interactions from Free Energy
+  Calculations}.
+\newblock \emph{Journal of Chemical Theory and Computation}, 15\penalty0
+  (10):\penalty0 5727--5736, \textbf{2019}.
+
+\bibitem[Corradi et~al.(2018)Corradi, Mendez-Villuendas, Ing{\'{o}}lfsson, Gu,
+  Siuda, Melo, Moussatova, Degagn{\'{e}}, Sejdiu, Singh, Wassenaar, {Delgado
+  Magnero}, Marrink, and Tieleman]{Corradi2018}
+Corradi; Valentina, Mendez-Villuendas; Eduardo, Ing{\'{o}}lfsson; Helgi~I., Gu;
+  Ruo~Xu, Siuda; Iwona, Melo; Manuel~N., Moussatova; Anastassiia,
+  Degagn{\'{e}}; Lucien~J., Sejdiu; Besian~I., Singh; Gurpreet, Wassenaar;
+  Tsjerk~A., {Delgado Magnero}; Karelia, Marrink; Siewert~J., and Tieleman;
+  D.~Peter.
+\newblock {Lipid-Protein Interactions Are Unique Fingerprints for Membrane
+  Proteins}.
+\newblock \emph{ACS Central Science}, 4\penalty0 (6):\penalty0 709--717,
+  \textbf{2018}.
+
+\bibitem[Coutinho et~al.(2007)Coutinho, Garc{\'{i}}a,
+  Gonz{\'{a}}lez-Rodr{\'{i}}guez, and Lillo]{Coutinho2007}
+Coutinho; Ana, Garc{\'{i}}a; Carolina, Gonz{\'{a}}lez-Rodr{\'{i}}guez;
+  Jos{\'{e}}, and Lillo; M.~Pilar.
+\newblock {Conformational changes in human integrin $\alpha$IIb$\beta$3 after
+  platelet activation, monitored by FRET}.
+\newblock \emph{Biophysical Chemistry}, 130\penalty0 (1-2):\penalty0 76--87,
+  \textbf{2007}.
+
+\bibitem[Cox et~al.(2010)Cox, Brennan, and Moran]{Cox2010}
+Cox; Dermot, Brennan; Marian, and Moran; Niamh.
+\newblock {Integrins as therapeutic targets: Lessons and opportunities}.
+\newblock \emph{Nature Reviews Drug Discovery}, 9\penalty0 (10):\penalty0
+  804--820, \textbf{2010}.
+
+\bibitem[Cseh and Benz(1999)]{Cseh1999}
+Cseh; Richard and Benz; Roland.
+\newblock {Interaction of phloretin with lipid monolayers: Relationship between
+  structural changes and dipole potential change}.
+\newblock \emph{Biophysical Journal}, 77\penalty0 (3):\penalty0 1477--1488,
+  \textbf{1999}.
+
+\bibitem[Cullis and Hope(1991)]{Cullis1991}
+Cullis; Pieter~R. and Hope; Michael~J.
+\newblock {Physical properties and functional roles of lipids in membranes}.
+\newblock In Vance; Dennis E.~Vance and E.; Jean, editors, \emph{New
+  Comprehensive Biochemistry}, volume~20, chapter Chapter 1, pages 1--41.
+  Elsevier Science, \textbf{1991}.
+
+\bibitem[Dana et~al.(1991)Dana, Fathallah, and Arnaout]{Dana1991}
+Dana; Nava, Fathallah; Dehmani~M., and Arnaout; M.~Amin.
+\newblock {Expression of a soluble and functional form of the human $\beta$2
+  integrin CD11b/CD18}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 88\penalty0 (8):\penalty0 3106--3110, \textbf{1991}.
+
+\bibitem[Davies and Rideal(1961)]{Davies1961}
+Davies; J.T. and Rideal; E.K.
+\newblock {The Physics of Surfaces}.
+\newblock In \emph{Interfacial Phenomena}, number Chapter 5, chapter~5, pages
+  1--55. Academic Press, second edition, \textbf{1961}.
+
+\bibitem[{De Jong} et~al.(2013){De Jong}, Singh, Bennett, Arnarez, Wassenaar,
+  Sch{\"{a}}fer, Periole, Tieleman, and Marrink]{DeJong2013}
+{De Jong}; Djurre~H., Singh; Gurpreet, Bennett; W.~F.Drew, Arnarez; Clement,
+  Wassenaar; Tsjerk~A., Sch{\"{a}}fer; Lars~V., Periole; Xavier, Tieleman;
+  D.~Peter, and Marrink; Siewert~J.
+\newblock {Improved parameters for the martini coarse-grained protein force
+  field}.
+\newblock \emph{Journal of Chemical Theory and Computation}, 9\penalty0
+  (1):\penalty0 687--697, \textbf{2013}.
+
+\bibitem[{de Oliveira Pedro} et~al.(2020){de Oliveira Pedro}, {Ribeiro
+  Pereira}, Oliveira, and {Barbeitas Miranda}]{DeOliveiraPedro2020}
+{de Oliveira Pedro}; Rafael, {Ribeiro Pereira}; Andressa, Oliveira; Osvaldo~N.,
+  and {Barbeitas Miranda}; Paulo.
+\newblock {Interaction of chitosan derivatives with cell membrane models in a
+  biologically relevant medium}.
+\newblock \emph{Colloids and Surfaces B: Biointerfaces}, 192\penalty0 (April),
+  \textbf{2020}.
+
+\bibitem[Desgrosellier and Cheresh(2010)]{Desgrosellier2010}
+Desgrosellier; Jay~S. and Cheresh; David~A.
+\newblock {Integrins in cancer: Biological implications and therapeutic
+  opportunities}.
+\newblock \emph{Nature Reviews Cancer}, 10\penalty0 (1):\penalty0 9--22,
+  \textbf{2010}.
+
+\bibitem[Doma{\'{n}}ski et~al.(2017)Doma{\'{n}}ski, Hedger, Best, Stansfeld,
+  and Sansom]{Domanski2017}
+Doma{\'{n}}ski; Jan, Hedger; George, Best; Robert~B., Stansfeld; Phillip~J.,
+  and Sansom; Mark~S.P.
+\newblock {Convergence and Sampling in Determining Free Energy Landscapes for
+  Membrane Protein Association}.
+\newblock \emph{Journal of Physical Chemistry B}, 121\penalty0 (15):\penalty0
+  3364--3375, \textbf{2017}.
+
+\bibitem[Dowhan and Bogdanov(2002)]{Dowhan2002}
+Dowhan; William and Bogdanov; Mikhail.
+\newblock {Chapter 1 Functional roles of lipids in membranes}.
+\newblock \emph{New Comprehensive Biochemistry}, 36:\penalty0 1--35,
+  \textbf{2002}.
+
+\bibitem[Drabik et~al.(2020)Drabik, Chodaczek, Kraszewski, and
+  Langner]{Drabik2020}
+Drabik; Dominik, Chodaczek; Grzegorz, Kraszewski; Sebastian, and Langner;
+  Marek.
+\newblock {Mechanical Properties Determination of DMPC, DPPC, DSPC, and HSPC
+  Solid-Ordered Bilayers}.
+\newblock \emph{Langmuir}, 36\penalty0 (14):\penalty0 3826--3835,
+  \textbf{2020}.
+
+\bibitem[Eisenberg et~al.(1982{\natexlab{a}})Eisenberg, Weiss, and
+  Terwilliger]{Eisenberg1982a}
+Eisenberg; David, Weiss; Robert~M., and Terwilliger; Thomas~C.
+\newblock {The helical hydrophobic moment: A measure of the amphiphilicity of a
+  helix}.
+\newblock \emph{Nature}, 299\penalty0 (5881):\penalty0 371--374,
+  \textbf{1982{\natexlab{a}}}.
+
+\bibitem[Eisenberg et~al.(1982{\natexlab{b}})Eisenberg, Weiss, Terwilliger, and
+  Wilcox]{Eisenberg1982}
+Eisenberg; David, Weiss; Robert~M., Terwilliger; Thomas~C., and Wilcox;
+  William.
+\newblock {Hydrophobic moments and protein structure}.
+\newblock \emph{Faraday Symposia of the Chemical Society}, 17:\penalty0
+  109--120, \textbf{1982{\natexlab{b}}}.
+
+\bibitem[Elderdfi and Sikorski(2018)]{Elderdfi2018}
+Elderdfi; Mohamed and Sikorski; Aleksander~F.
+\newblock {Langmuir-monolayer methodologies for characterizing protein-lipid
+  interactions}.
+\newblock \emph{Chemistry and Physics of Lipids}, 212\penalty0 (October
+  2017):\penalty0 61--72, \textbf{2018}.
+
+\bibitem[Eliceiri and Cheresh(1998)]{Eliceiri1998}
+Eliceiri; Brian~P. and Cheresh; David~A.
+\newblock {The role of $\alpha$v integrins during angiogenesis}.
+\newblock \emph{Molecular Medicine}, 4\penalty0 (12):\penalty0 741--750,
+  \textbf{1998}.
+
+\bibitem[Evans et~al.(1976)Evans, Waugh, and Melnik]{Evans1976}
+Evans; E.~A., Waugh; R., and Melnik; L.
+\newblock {Elastic area compressibility modulus of red cell membrane}.
+\newblock \emph{Biophysical Journal}, 16\penalty0 (6):\penalty0 585--595,
+  \textbf{1976}.
+
+\bibitem[Favier et~al.(2018)Favier, Bordet, Favier, Gkalea, Pillois, Rameau,
+  Debili, Alessi, Nurden, Raslova, and Nurden]{Favier2018}
+Favier; Marie, Bordet; Jean~Claude, Favier; Remi, Gkalea; Vasiliki, Pillois;
+  Xavier, Rameau; Philippe, Debili; Najet, Alessi; Marie~Christine, Nurden;
+  Paquita, Raslova; Hana, and Nurden; Alan.
+\newblock {Mutations of the integrin $\alpha$IIb/$\beta$3 intracytoplasmic salt
+  bridge cause macrothrombocytopenia and enlarged platelet $\alpha$-granules}.
+\newblock \emph{American Journal of Hematology}, 93\penalty0 (2):\penalty0
+  195--204, \textbf{2018}.
+
+\bibitem[Fleming and Engelman(2001)]{Fleming2001}
+Fleming; Karen~G. and Engelman; Donald~M.
+\newblock {Specificity in transmembrane helix-helix interactions can define a
+  hierarchy of stability for sequence variants}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 98\penalty0 (25):\penalty0 14340--14344, \textbf{2001}.
+
+\bibitem[Flinner and Schleiff(2015)]{Flinner2015}
+Flinner; Nadine and Schleiff; Enrico.
+\newblock {Dynamics of the glycophorin a dimer in membranes of native-like
+  composition uncovered by coarse-grained molecular dynamics simulations}.
+\newblock \emph{PLoS ONE}, 10\penalty0 (7):\penalty0 1--16, \textbf{2015}.
+
+\bibitem[Fox(1957)]{Fox1957}
+Fox; H.~W.
+\newblock {Force-area and potential-area relations of monolayers of terminally
+  fluorinated octadecylamine and octadecanoic acid}.
+\newblock \emph{Journal of Physical Chemistry}, 61\penalty0 (8):\penalty0
+  1058--1062, \textbf{1957}.
+
+\bibitem[Gapsys et~al.(2013)Gapsys, {De Groot}, and Briones]{Gapsys2013}
+Gapsys; Vytautas, {De Groot}; Bert~L., and Briones; Rodolfo.
+\newblock {Computational analysis of local membrane properties}.
+\newblock \emph{Journal of Computer-Aided Molecular Design}, 27\penalty0
+  (10):\penalty0 845--858, \textbf{2013}.
+
+\bibitem[Glomm et~al.(2009)Glomm, Volden, Halskau, and Ese]{Glomm2009}
+Glomm; Wilhelm~R., Volden; Sondre, Halskau; {\O}yvind, and Ese; Marit Helen~G.
+\newblock {Same system-different results: The importance of
+  protein-introduction protocols in Langmuir-monolayer studies of lipid-protein
+  interactions}.
+\newblock \emph{Analytical Chemistry}, 81\penalty0 (8):\penalty0 3042--3050,
+  \textbf{2009}.
+
+\bibitem[Gu et~al.(2017)Gu, Ing{\'{o}}lfsson, {De Vries}, Marrink, and
+  Tieleman]{Gu2017}
+Gu; Ruo~Xu, Ing{\'{o}}lfsson; Helgi~I., {De Vries}; Alex~H., Marrink;
+  Siewert~J., and Tieleman; D.~Peter.
+\newblock {Ganglioside-Lipid and Ganglioside-Protein Interactions Revealed by
+  Coarse-Grained and Atomistic Molecular Dynamics Simulations}.
+\newblock \emph{Journal of Physical Chemistry B}, 121\penalty0 (15):\penalty0
+  3262--3275, \textbf{2017}.
+
+\bibitem[Guo and Giancotti(2004)]{Guo2004}
+Guo; Wenjun and Giancotti; Filippo~G.
+\newblock {Integrin signalling during tumour progression}.
+\newblock \emph{Nature Reviews Molecular Cell Biology}, 5\penalty0
+  (10):\penalty0 816--826, \textbf{2004}.
+
+\bibitem[Hadjittofis et~al.(2017)Hadjittofis, Das, Zhang, and
+  Heng]{Davies1961b}
+Hadjittofis; E., Das; S.~C., Zhang; G.~G.Z., and Heng; J.~Y.Y.
+\newblock \emph{{Interfacial phenomena}}.
+\newblock Number Chapter 1. \textbf{2017}.
+
+\bibitem[Harayama and Riezman(2018)]{Harayama2018}
+Harayama; Takeshi and Riezman; Howard.
+\newblock {Understanding the diversity of membrane lipid composition}.
+\newblock \emph{Nature Reviews Molecular Cell Biology}, 19\penalty0
+  (5):\penalty0 281--296, \textbf{2018}.
+
+\bibitem[Harris et~al.(2020)Harris, Millman, van~der Walt, Gommers, Virtanen,
+  Cournapeau, Wieser, Taylor, Berg, Smith, Kern, Picus, Hoyer, van Kerkwijk,
+  Brett, Haldane, del R{\'{i}}o, Wiebe, Peterson, G{\'{e}}rard-Marchant,
+  Sheppard, Reddy, Weckesser, Abbasi, Gohlke, and Oliphant]{Harris2020}
+Harris; Charles~R., Millman; K.~Jarrod, van~der Walt; St{\'{e}}fan~J., Gommers;
+  Ralf, Virtanen; Pauli, Cournapeau; David, Wieser; Eric, Taylor; Julian, Berg;
+  Sebastian, Smith; Nathaniel~J., Kern; Robert, Picus; Matti, Hoyer; Stephan,
+  van Kerkwijk; Marten~H., Brett; Matthew, Haldane; Allan, del R{\'{i}}o;
+  Jaime~Fern{\'{a}}ndez, Wiebe; Mark, Peterson; Pearu, G{\'{e}}rard-Marchant;
+  Pierre, Sheppard; Kevin, Reddy; Tyler, Weckesser; Warren, Abbasi; Hameer,
+  Gohlke; Christoph, and Oliphant; Travis~E.
+\newblock {Array programming with NumPy}.
+\newblock \emph{Nature}, 585\penalty0 (7825):\penalty0 357--362, \textbf{2020}.
+
+\bibitem[Has et~al.(2009)Has, Herz, Zimina, Qu, He, Zhang, Wen, Gache,
+  Aumailley, and Bruckner-Tuderman]{Has2009}
+Has; Cristina, Herz; Corinna, Zimina; Elena, Qu; Hai~Yan, He; Yinghong, Zhang;
+  Zhi~Gang, Wen; Ting~Ting, Gache; Yannick, Aumailley; Monique, and
+  Bruckner-Tuderman; Leena.
+\newblock {Kindlin-1 is required for RhoGTPase-mediated lamellipodia formation
+  in keratinocytes}.
+\newblock \emph{American Journal of Pathology}, 175\penalty0 (4):\penalty0
+  1442--1452, \textbf{2009}.
+
+\bibitem[Haug et~al.(1976)Haug, Arora, and Matsui]{Haug1976}
+Haug; E.~J., Arora; J.~S., and Matsui; K.
+\newblock {A steepest-descent method for optimization of mechanical systems}.
+\newblock \emph{Journal of Optimization Theory and Applications}, 19\penalty0
+  (3):\penalty0 401--424, \textbf{1976}.
+
+\bibitem[Hedger et~al.(2016)Hedger, Shorthouse, Kolds{\o}, and
+  Sansom]{Hedger2016}
+Hedger; George, Shorthouse; David, Kolds{\o}; Heidi, and Sansom; Mark~S.P.
+\newblock {Free Energy Landscape of Lipid Interactions with Regulatory Binding
+  Sites on the Transmembrane Domain of the EGF Receptor}.
+\newblock \emph{Journal of Physical Chemistry B}, 120\penalty0 (33):\penalty0
+  8154--8163, \textbf{2016}.
+
+\bibitem[Hedger et~al.(2019)Hedger, Kolds{\o}, Chavent, Siebold, Rohatgi, and
+  Sansom]{Hedger2019}
+Hedger; George, Kolds{\o}; Heidi, Chavent; Matthieu, Siebold; Christian,
+  Rohatgi; Rajat, and Sansom; Mark~S.P.
+\newblock {Cholesterol Interaction Sites on the Transmembrane Domain of the
+  Hedgehog Signal Transducer and Class F G Protein-Coupled Receptor
+  Smoothened}.
+\newblock \emph{Structure}, 27\penalty0 (3):\penalty0 549--559.e2,
+  \textbf{2019}.
+
+\bibitem[Helmholtz(1902)]{Helmholtz1902}
+Helmholtz; H.
+\newblock \emph{{Abhandlungen Zur Thermodynamik}}.
+\newblock Leipzig, Germany, \textbf{1902}.
+
+\bibitem[Hildebrand et~al.(1975)Hildebrand, Marique, and
+  Vanhouche]{Hildebrand1975}
+Hildebrand; J., Marique; D., and Vanhouche; J.
+\newblock {Lipid composition of plasma membranes from human leukemic
+  lymphocytes}.
+\newblock \emph{Journal of Lipid Research}, 16\penalty0 (3):\penalty0 195--199,
+  \textbf{1975}.
+
+\bibitem[Hong and Bowie(2011)]{Hong2011}
+Hong; Heedeok and Bowie; James~U.
+\newblock {Dramatic destabilization of transmembrane helix interactions by
+  features of natural membrane environments}.
+\newblock \emph{Journal of the American Chemical Society}, 133\penalty0
+  (29):\penalty0 11389--11398, \textbf{2011}.
+
+\bibitem[Hood and Cheresh(2002)]{Hood2002}
+Hood; John~D. and Cheresh; David~A.
+\newblock {Role of integrins in cell invasion and migration}.
+\newblock \emph{Nature Reviews Cancer}, 2\penalty0 (2):\penalty0 91--100,
+  \textbf{2002}.
+
+\bibitem[Hu and Luo(2015)]{Hu2015}
+Hu; Ping and Luo; Bing~Hao.
+\newblock {Integrin $\alpha$ii$\beta$3 transmembrane domain separation mediates
+  Bi-directional signaling}.
+\newblock \emph{PLoS ONE}, 10\penalty0 (1):\penalty0 1--17, \textbf{2015}.
+
+\bibitem[Huang et~al.(2019)Huang, Li, Shi, Zhu, Wang, Huang, Huang, Wang, Li,
+  Deng, Zhou, Mao, Long, Ma, Ye, Pan, Xi, and Jin]{Huang2019}
+Huang; Jiansong, Li; Xia, Shi; Xiaofeng, Zhu; Mark, Wang; Jinghan, Huang;
+  Shujuan, Huang; Xin, Wang; Huafeng, Li; Ling, Deng; Huan, Zhou; Yulan, Mao;
+  Jianhua, Long; Zhangbiao, Ma; Zhixin, Ye; Wenle, Pan; Jiajia, Xi; Xiaodong,
+  and Jin; Jie.
+\newblock {Platelet integrin $\alpha$iIb$\beta$3: Signal transduction,
+  regulation, and its therapeutic targeting}.
+\newblock \emph{Journal of Hematology and Oncology}, 12\penalty0 (1):\penalty0
+  1--22, \textbf{2019}.
+
+\bibitem[Hughes et~al.(1996)Hughes, Diaz-Gonzalez, Leong, Wu, McDonald,
+  Shattil, and Ginsberg]{Hughes1996}
+Hughes; Paul~E., Diaz-Gonzalez; Federico, Leong; Lilley, Wu; Chuanyue,
+  McDonald; John~A., Shattil; Sanford~J., and Ginsberg; Mark~H.
+\newblock {Breaking the integrin hinge: A defined structural constraint
+  regulates integrin signaling}.
+\newblock \emph{Journal of Biological Chemistry}, 271\penalty0 (12):\penalty0
+  6571--6574, \textbf{1996}.
+
+\bibitem[Hunter(2007)]{Hunter2007}
+Hunter; John~D.
+\newblock {Matplotlib: A 2D graphics environment}.
+\newblock \emph{Computing in Science and Engineering}, 9\penalty0 (3):\penalty0
+  90--95, \textbf{2007}.
+
+\bibitem[Hynes(2002)]{Hynes2002}
+Hynes; Richard~O.
+\newblock {Integrins: Bidirectional, allosteric signaling machines}.
+\newblock \emph{Cell}, 110\penalty0 (6):\penalty0 673--687, \textbf{2002}.
+
+\bibitem[Ing{\'{o}}lfsson et~al.(2014)Ing{\'{o}}lfsson, Melo, {Van Eerden},
+  Arnarez, Lopez, Wassenaar, Periole, {De Vries}, Tieleman, and
+  Marrink]{Ingolfsson2014}
+Ing{\'{o}}lfsson; Helgi~I., Melo; Manuel~N., {Van Eerden}; Floris~J., Arnarez;
+  Cl{\'{e}}ment, Lopez; Cesar~A., Wassenaar; Tsjerk~A., Periole; Xavier, {De
+  Vries}; Alex~H., Tieleman; D.~Peter, and Marrink; Siewert~J.
+\newblock {Lipid organization of the plasma membrane}.
+\newblock \emph{Journal of the American Chemical Society}, 136\penalty0
+  (41):\penalty0 14554--14559, \textbf{2014}.
+
+\bibitem[Ionov et~al.(2000)Ionov, El-Abed, Angelova, Goldmann, and
+  Peretti]{Ionov2000}
+Ionov; Radoslav, El-Abed; A., Angelova; A., Goldmann; M., and Peretti; P.
+\newblock {Asymmetrical ion-channel model inferred from two-dimensional
+  crystallization of a peptide antibiotic}.
+\newblock \emph{Biophysical Journal}, 78\penalty0 (6):\penalty0 3026--3035,
+  \textbf{2000}.
+
+\bibitem[Iwamoto and Calderwood(2015)]{Iwamoto2015}
+Iwamoto; Daniel~V. and Calderwood; David~A.
+\newblock {Regulation of integrin-mediated adhesions}.
+\newblock \emph{Current Opinion in Cell Biology}, 36\penalty0 (Figure
+  2):\penalty0 41--47, \textbf{2015}.
+
+\bibitem[Izvekov and Voth(2005)]{Izvekov2005}
+Izvekov; Sergei and Voth; Gregory~A.
+\newblock {A multiscale coarse-graining method for biomolecular systems}.
+\newblock \emph{Journal of Physical Chemistry B}, 109\penalty0 (7):\penalty0
+  2469--2473, \textbf{2005}.
+
+\bibitem[Jeffery(2016)]{Jeffery2016}
+Jeffery; Constance~J.
+\newblock {Expression, solubilization, and purification of bacterial membrane
+  proteins}.
+\newblock \emph{Current Protocols in Protein Science}, 2016\penalty0
+  (February):\penalty0 29.15.1--29.15.15, \textbf{2016}.
+
+\bibitem[Kabsch and Sander(1983)]{Kabsch1983}
+Kabsch; Wolfgang and Sander; Christian.
+\newblock {Dictionary of protein secondary structure: Pattern recognition of
+  hydrogen‐bonded and geometrical features}.
+\newblock \emph{Biopolymers}, 22\penalty0 (12):\penalty0 2577--2637,
+  \textbf{1983}.
+
+\bibitem[Kadry and Calderwood(2020)]{Kadry2020}
+Kadry; Yasmin~A. and Calderwood; David~A.
+\newblock {Chapter 22: Structural and signaling functions of integrins}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1862\penalty0
+  (5):\penalty0 183206, \textbf{2020}.
+
+\bibitem[Kalli et~al.(2011)Kalli, Campbell, and Sansom]{Kalli2011}
+Kalli; Antreas~C., Campbell; Iain~D., and Sansom; Mark~S.P.
+\newblock {Multiscale simulations suggest a mechanism for integrin inside-out
+  activation}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 108\penalty0 (29):\penalty0 11890--11895, \textbf{2011}.
+
+\bibitem[Kalli et~al.(2013)Kalli, Campbell, and Sansom]{Kalli2013}
+Kalli; Antreas~C., Campbell; Iain~D., and Sansom; Mark~S.P.
+\newblock \emph{{Computational Studies of Talin-Mediated Integrin Activation}}.
+\newblock PhD thesis, Oxford University, \textbf{2013}.
+
+\bibitem[Kalli et~al.(2017)Kalli, Rog, Vattulainen, Campbell, and
+  Sansom]{Kalli2017}
+Kalli; Antreas~C., Rog; Tomasz, Vattulainen; Ilpo, Campbell; Iain~D., and
+  Sansom; Mark~S.P.
+\newblock {The Integrin Receptor in Biologically Relevant Bilayers: Insights
+  from Molecular Dynamics Simulations}.
+\newblock \emph{Journal of Membrane Biology}, 250\penalty0 (4):\penalty0
+  337--351, \textbf{2017}.
+
+\bibitem[Kamata et~al.(2005)Kamata, Handa, Sato, Ikeda, and Aiso]{Kamata2005}
+Kamata; Tetsuji, Handa; Makoto, Sato; Yukiko, Ikeda; Yasuo, and Aiso; Sadakazu.
+\newblock {Membrane-proximal $\alpha$/$\beta$ stalk interactions differentially
+  regulate integrin activation}.
+\newblock \emph{Journal of Biological Chemistry}, 280\penalty0 (26):\penalty0
+  24775--24783, \textbf{2005}.
+
+\bibitem[Kaneva et~al.(2019)Kaneva, Martyanov, Morozova, Panteleev, and
+  Sveshnikova]{Kaneva2019}
+Kaneva; V.~N., Martyanov; A.~A., Morozova; D.~S., Panteleev; M.~A., and
+  Sveshnikova; A.~N.
+\newblock {Platelet Integrin $\alpha$IIb$\beta$3: Mechanisms of Activation and
+  Clustering; Involvement into the Formation of the Thrombus Heterogeneous
+  Structure}.
+\newblock \emph{Biochemistry (Moscow) Supplement Series A: Membrane and Cell
+  Biology}, 13\penalty0 (2):\penalty0 97--110, \textbf{2019}.
+
+\bibitem[Kato et~al.(2015)Kato, Sasaki, and Mukai]{Kato2015}
+Kato; Noritaka, Sasaki; Takanori, and Mukai; Yuri.
+\newblock {Partially induced transition from horizontal to vertical orientation
+  of helical peptides at the air-water interface and the structure of their
+  monolayers transferred on the solid substrates}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1848\penalty0
+  (4):\penalty0 967--975, \textbf{2015}.
+
+\bibitem[Kelkar and Chattopadhyay(2007)]{Kelkar2007}
+Kelkar; Devaki~A. and Chattopadhyay; Amitabha.
+\newblock {The gramicidin ion channel: A model membrane protein}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1768\penalty0
+  (9):\penalty0 2011--2025, \textbf{2007}.
+
+\bibitem[Kim et~al.(2012{\natexlab{a}})Kim, Schmidt, Cho, Ye, Ulmer, and
+  Ginsberg]{Kim2012}
+Kim; Chungho, Schmidt; Thomas, Cho; Eun~Gyung, Ye; Feng, Ulmer; Tobias~S., and
+  Ginsberg; Mark~H.
+\newblock {Basic amino-acid side chains regulate transmembrane integrin
+  signalling}.
+\newblock \emph{Nature}, 481\penalty0 (7380):\penalty0 209--214,
+  \textbf{2012{\natexlab{a}}}.
+
+\bibitem[Kim et~al.(2012{\natexlab{b}})Kim, Ye, Hu, and Ginsberg]{Kim2012a}
+Kim; Chungho, Ye; Feng, Hu; Xiaohui, and Ginsberg; Mark~H.
+\newblock {Talin activates integrins by altering the topology of the $\beta$
+  transmembrane domain}.
+\newblock \emph{Journal of Cell Biology}, 197\penalty0 (5):\penalty0 605--611,
+  \textbf{may 2012{\natexlab{b}}}.
+
+\bibitem[Kim et~al.(2003)Kim, Carman, and Springer]{Kim2003}
+Kim; Minsoo, Carman; Christopher~V., and Springer; Timothy~A.
+\newblock {Bidirectional transmembrane signaling by cytoplasmic domain
+  separation in integrins}.
+\newblock \emph{Science}, 301\penalty0 (5640):\penalty0 1720--1725,
+  \textbf{2003}.
+
+\bibitem[Kolds{\o} and Sansom(2015)]{Koldsø2015}
+Kolds{\o}; Heidi and Sansom; Mark~S.P.
+\newblock {Organization and Dynamics of Receptor Proteins in a Plasma
+  Membrane}.
+\newblock \emph{Journal of the American Chemical Society}, 137\penalty0
+  (46):\penalty0 14694--14704, \textbf{2015}.
+
+\bibitem[Krajewska et~al.(2020)Krajewska, Dopiera{\l}a, and
+  Prochaska]{Krajewska2020}
+Krajewska; Martyna, Dopiera{\l}a; Katarzyna, and Prochaska; Krystyna.
+\newblock {Lipid-Protein Interactions in Langmuir Monolayers under Dynamically
+  Varied Conditions}.
+\newblock \emph{Journal of Physical Chemistry B}, 124\penalty0 (1):\penalty0
+  302--311, \textbf{2020}.
+
+\bibitem[Ku{\v{c}}erka et~al.(2011)Ku{\v{c}}erka, Nieh, and
+  Katsaras]{Kucerka2011}
+Ku{\v{c}}erka; Norbert, Nieh; Mu~Ping, and Katsaras; John.
+\newblock {Fluid phase lipid areas and bilayer thicknesses of commonly used
+  phosphatidylcholines as a function of temperature}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1808\penalty0
+  (11):\penalty0 2761--2771, \textbf{2011}.
+
+\bibitem[Lad et~al.(2006)Lad, Birembaut, Matthew, Frazier, and Green]{Lad2006}
+Lad; Mitaben~D., Birembaut; Fabrice, Matthew; Joanna~M., Frazier; Richard~A.,
+  and Green; Rebecca~J.
+\newblock {The adsorbed conformation of globular proteins at the air/water
+  interface}.
+\newblock \emph{Physical Chemistry Chemical Physics}, 8\penalty0 (18):\penalty0
+  2179--2186, \textbf{2006}.
+
+\bibitem[Lagarrigue et~al.(2016)Lagarrigue, Kim, and Ginsberg]{Lagarrigue2016}
+Lagarrigue; Frederic, Kim; Chungho, and Ginsberg; Mark~H.
+\newblock {The Rap1-RIAM-talin axis of integrin activation and blood cell
+  function}.
+\newblock \emph{Blood}, 128\penalty0 (4):\penalty0 479--487, \textbf{2016}.
+
+\bibitem[Langmuir(1917)]{Langmuir1917}
+Langmuir; Irving.
+\newblock {The constitution and fundamental properties of solids and liquids.
+  II. Liquids}.
+\newblock \emph{Journal of the American Chemical Society}, 39\penalty0
+  (9):\penalty0 1848--1906, \textbf{1917}.
+
+\bibitem[Lau et~al.(2008{\natexlab{a}})Lau, Dua, and Ulmer]{Lau2008}
+Lau; Tong~Lay, Dua; Varun, and Ulmer; Tobias~S.
+\newblock {Structure of the integrin $\alpha$IIb transmembrane segment}.
+\newblock \emph{Journal of Biological Chemistry}, 283\penalty0 (23):\penalty0
+  16162--16168, \textbf{2008{\natexlab{a}}}.
+
+\bibitem[Lau et~al.(2008{\natexlab{b}})Lau, Partridge, Ginsberg, and
+  Ulmer]{Lau2008a}
+Lau; Tong~Lay, Partridge; Anthony~W., Ginsberg; Mark~H., and Ulmer; Tobias~S.
+\newblock {Structure of the integrin $\beta$3 transmembrane segment in
+  phospholipid bicelles and detergent micelles}.
+\newblock \emph{Biochemistry}, 47\penalty0 (13):\penalty0 4008--4016,
+  \textbf{2008{\natexlab{b}}}.
+
+\bibitem[Lau et~al.(2009)Lau, Kim, Ginsberg, and Ulmer]{Lau2009}
+Lau; Tong~Lay, Kim; Chungho, Ginsberg; Mark~H., and Ulmer; Tobias~S.
+\newblock {The structure of the integrin $\alpha$iIbΒ3 transmembrane complex
+  explains integrin transmembrane signalling}.
+\newblock \emph{EMBO Journal}, 28\penalty0 (9):\penalty0 1351--1361,
+  \textbf{2009}.
+
+\bibitem[Lee(2003)]{Lee2003}
+Lee; A.~G.
+\newblock \emph{{Lipid-protein interactions in biological membranes: A
+  structural perspective}}, volume 1612.
+\newblock \textbf{2003}.
+
+\bibitem[Lee(2011)]{Lee2011}
+Lee; Anthony~G.
+\newblock {Lipid-protein interactions}.
+\newblock \emph{Biochemical Society Transactions}, 39\penalty0 (3):\penalty0
+  761--766, \textbf{2011}.
+
+\bibitem[Leekumjorn and Sum(2007)]{Leekumjorn2007}
+Leekumjorn; Sukit and Sum; Amadeu~K.
+\newblock {Molecular studies of the gel to liquid-crystalline phase transition
+  for fully hydrated DPPC and DPPE bilayers}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1768\penalty0
+  (2):\penalty0 354--365, \textbf{2007}.
+
+\bibitem[Lefkowitz(2007)]{Lefkowitz2007}
+Lefkowitz; Robert~J.
+\newblock {Seven transmembrane receptors-A brief personal retrospective}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1768\penalty0
+  (4):\penalty0 748--755, \textbf{2007}.
+
+\bibitem[Leung-Hagesteijn et~al.(1994)Leung-Hagesteijn, Milankov, Michalak,
+  Wilkins, and Dedhar]{Leung-Hagesteijn1994}
+Leung-Hagesteijn; Chung~Yee, Milankov; Kosta, Michalak; Marek, Wilkins; John,
+  and Dedhar; Shoukat.
+\newblock {Cell attachment to extracellular matrix substrates is inhibited upon
+  downregulation of expression of calreticulin, an intracellular integrin
+  $\alpha$-subunit-binding protein}.
+\newblock \emph{Journal of Cell Science}, 107\penalty0 (3):\penalty0 589--600,
+  \textbf{1994}.
+
+\bibitem[Li and Hristova(2006)]{Li2006}
+Li; Edwin and Hristova; Kalina.
+\newblock {Role of receptor tyrosine kinase transmembrane domains in cell
+  signaling and human pathologies}.
+\newblock \emph{Biochemistry}, 45\penalty0 (20):\penalty0 6241--6251,
+  \textbf{2006}.
+
+\bibitem[Li and Springer(2018)]{Li2018}
+Li; Jing and Springer; Timothy~A.
+\newblock {Energy landscape differences among integrins establish the framework
+  for understanding activation}.
+\newblock \emph{Journal of Cell Biology}, 217\penalty0 (1):\penalty0 397--412,
+  \textbf{2018}.
+
+\bibitem[Li et~al.(2017)Li, Su, Xia, Qin, Humphries, Vestweber, Caba{\~{n}}as,
+  Lu, and Springer]{Li2017}
+Li; Jing, Su; Yang, Xia; Wei, Qin; Yan, Humphries; Martin~J, Vestweber;
+  Dietmar, Caba{\~{n}}as; Carlos, Lu; Chafen, and Springer; Timothy~A.
+\newblock {Conformational equilibria and intrinsic affinities define integrin
+  activation}.
+\newblock \emph{The EMBO Journal}, 36\penalty0 (5):\penalty0 629--645,
+  \textbf{2017}.
+
+\bibitem[Li et~al.(2001)Li, Babu, Lear, Wand, Bennett, and DeGrado]{Li2001}
+Li; Renhao, Babu; Charles~R., Lear; James~D., Wand; A.~Joshua, Bennett;
+  Joel~S., and DeGrado; William~F.
+\newblock {Oligomerization of the integrin $\alpha$IIb$\beta$3: Roles of the
+  transmembrane and cytoplasmic domains}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 98\penalty0 (22):\penalty0 12462--12467, \textbf{2001}.
+
+\bibitem[Li et~al.(2003)Li, Mitra, Gratkowski, Vilaire, Litvinov, Nagasami,
+  Weisel, Lear, DeGrado, and Bennett]{Li2003}
+Li; Renhao, Mitra; Neal, Gratkowski; Holly, Vilaire; Gaston, Litvinov; Rustem,
+  Nagasami; Chandrasekaran, Weisel; John~W., Lear; James~D., DeGrado;
+  William~F., and Bennett; Joel~S.
+\newblock {Activation of integrin $\alpha$IIb$\beta$3 by modulation of
+  transmembrane helix associations}.
+\newblock \emph{Science}, 300\penalty0 (5620):\penalty0 795--798,
+  \textbf{2003}.
+
+\bibitem[Li et~al.(2005)Li, Metcalf, Gorelik, Li, Mitra, Nanda, Law, Lear,
+  DeGrado, and Bennett]{Li2005}
+Li; Wei, Metcalf; Douglas~G., Gorelik; Roman, Li; Renhao, Mitra; Neal, Nanda;
+  Vikas, Law; Peter~B., Lear; James~D., DeGrado; William~F., and Bennett;
+  Joel~S.
+\newblock {A push-pull mechanism for regulating integrin function}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 102\penalty0 (5):\penalty0 1424--1429, \textbf{2005}.
+
+\bibitem[Lindahl et~al.(2019)Lindahl, Abraham, Hess, and van~der
+  Spoel]{Lindahl2019}
+Lindahl; Erik, Abraham; Mark~J., Hess; Berk, and van~der Spoel; David.
+\newblock {GROMACS Documentation - Release 2019.2}.
+\newblock \emph{GROMACS Documentation - Release 2019.2}, pages 2--607,
+  \textbf{2019}.
+
+\bibitem[Litvinov et~al.(2004)Litvinov, Nagaswami, Vilaire, Shuman, Bennett,
+  and Weisel]{Litvinov2004}
+Litvinov; Rustem~I., Nagaswami; Chandrasekaran, Vilaire; Gaston, Shuman; Henry,
+  Bennett; Joel~S., and Weisel; John~W.
+\newblock {Functional and structural correlations of individual
+  $\alpha$IIb$\beta$3 molecules}.
+\newblock \emph{Blood}, 104\penalty0 (13):\penalty0 3979--3985, \textbf{2004}.
+
+\bibitem[Litvinov et~al.(2019)Litvinov, Mravic, Zhu, Weisel, DeGrado, and
+  Bennett]{Litvinov2019}
+Litvinov; Rustem~I., Mravic; Marco, Zhu; Hua, Weisel; John~W., DeGrado;
+  William~F., and Bennett; Joel~S.
+\newblock {Unique transmembrane domain interactions differentially modulate
+  integrin $\alpha$v$\beta$3 and $\alpha$IIb$\beta$3 function}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 116\penalty0 (25):\penalty0 12295--12300, \textbf{2019}.
+
+\bibitem[Lu et~al.(2022)Lu, Zhu, Bromberger, Yang, Yang, Liu, Plow, Moser, and
+  Qin]{Lu2022}
+Lu; Fan, Zhu; Liang, Bromberger; Thomas, Yang; Jun, Yang; Qiannan, Liu;
+  Jianmin, Plow; Edward~F., Moser; Markus, and Qin; Jun.
+\newblock {Mechanism of integrin activation by talin and its cooperation with
+  kindlin}.
+\newblock \emph{Nature Communications}, 13\penalty0 (1), \textbf{2022}.
+
+\bibitem[Luo et~al.(2003)Luo, Springer, and Takagi]{Luo2003}
+Luo; Bing~Hao, Springer; Timothy~A., and Takagi; Junichi.
+\newblock {Stabilizing the open conformation of the integrin headpiece with a
+  glycan wedge increases affinity for ligand}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 100\penalty0 (5):\penalty0 2403--2408, \textbf{2003}.
+
+\bibitem[Luo et~al.(2005)Luo, Carman, Takagi, and Springer]{Luo2005}
+Luo; Bing~Hao, Carman; Christopher~V., Takagi; Junichi, and Springer;
+  Timothy~A.
+\newblock {Disrupting integrin transmembrane domain heterodimerization
+  increases ligand binding affinity, not valency or clustering}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 102\penalty0 (10):\penalty0 3679--3684, \textbf{2005}.
+
+\bibitem[Ma et~al.(2013)Ma, Varela, Magoch, Silva, Ros{\'{a}}rio, Brito,
+  Oliveira, Nogly, Pessanha, Stelter, Kletzin, Henderson, and Archer]{Ma2013}
+Ma; Pikyee, Varela; Filipa, Magoch; Malgorzata, Silva; Ana~Rita, Ros{\'{a}}rio;
+  Ana~L{\'{u}}cia, Brito; Jos{\'{e}}, Oliveira; T{\^{a}}nia~Filipa, Nogly;
+  Przemyslaw, Pessanha; Miguel, Stelter; Meike, Kletzin; Arnulf, Henderson;
+  Peter~J.F., and Archer; Margarida.
+\newblock {An Efficient Strategy for Small-Scale Screening and Production of
+  Archaeal Membrane Transport Proteins in Escherichia coli}.
+\newblock \emph{PLoS ONE}, 8\penalty0 (10):\penalty0 1--14, \textbf{2013}.
+
+\bibitem[Ma et~al.(2006)Ma, Yang, Pesho, Vinogradova, Qin, and Plow]{Ma2006}
+Ma; Yan~Qing, Yang; Jun, Pesho; Michelle~M., Vinogradova; Olga, Qin; Jun, and
+  Plow; Edward~F.
+\newblock {Regulation of integrin $\alpha$IIb$\beta$3 activation by distinct
+  regions of its cytoplasmic tails}.
+\newblock \emph{Biochemistry}, 45\penalty0 (21):\penalty0 6656--6662,
+  \textbf{2006}.
+
+\bibitem[Macritchie(1981)]{Macritchie1981}
+Macritchie; F.
+\newblock {Equilibria between adsorbed and displaced segments of protein
+  monolayers}.
+\newblock \emph{Journal of Colloid And Interface Science}, 79\penalty0
+  (2):\penalty0 461--464, \textbf{1981}.
+
+\bibitem[MacRitchie(1991)]{macritchie1991}
+MacRitchie; F.
+\newblock {Air / water interface studies of proteins}.
+\newblock \emph{Analytica Chimica Acta}, 249:\penalty0 241--245, \textbf{1991}.
+
+\bibitem[Maget-Dana(1999)]{Maget-Dana1999}
+Maget-Dana; R{\'{e}}gine.
+\newblock \emph{{The monolayer technique: A potent tool for studying the
+  interfacial properties of antimicrobial and membrane-lytic peptides and their
+  interactions with lipid membranes}}, volume 1462.
+\newblock \textbf{1999}.
+
+\bibitem[Marrink and Tieleman(2013)]{Marrink2013}
+Marrink; Siewert~J. and Tieleman; D.~Peter.
+\newblock {Perspective on the martini model}.
+\newblock \emph{Chemical Society Reviews}, 42\penalty0 (16):\penalty0
+  6801--6822, \textbf{2013}.
+
+\bibitem[Marrink et~al.(2004)Marrink, {De Vries}, and Mark]{Marrink2004}
+Marrink; Siewert~J., {De Vries}; Alex~H., and Mark; Alan~E.
+\newblock {Coarse Grained Model for Semiquantitative Lipid Simulations}.
+\newblock \emph{Journal of Physical Chemistry B}, 108\penalty0 (2):\penalty0
+  750--760, \textbf{2004}.
+
+\bibitem[Marrink et~al.(2007)Marrink, Risselada, Yefimov, Tieleman, and {De
+  Vries}]{Marrink2007}
+Marrink; Siewert~J., Risselada; H.~Jelger, Yefimov; Serge, Tieleman; D.~Peter,
+  and {De Vries}; Alex~H.
+\newblock {The MARTINI force field: Coarse grained model for biomolecular
+  simulations}.
+\newblock \emph{Journal of Physical Chemistry B}, 111\penalty0 (27):\penalty0
+  7812--7824, \textbf{2007}.
+
+\bibitem[Marsh(1996)]{Marsh1996}
+Marsh; Derek.
+\newblock {Lateral pressure in membranes}.
+\newblock \emph{Biochimica et Biophysica Acta - Reviews on Biomembranes},
+  1286\penalty0 (3):\penalty0 183--223, \textbf{1996}.
+
+\bibitem[Mathieu et~al.(2019)Mathieu, Javed, Vallet, Lesterlin, Candusso, Ding,
+  Xu, Ebel, Jault, and Orelle]{Mathieu2019}
+Mathieu; Khadija, Javed; Waqas, Vallet; Sylvain, Lesterlin; Christian,
+  Candusso; Marie~Pierre, Ding; Feng, Xu; Xiaohong~Nancy, Ebel; Christine,
+  Jault; Jean~Michel, and Orelle; C{\'{e}}dric.
+\newblock {Functionality of membrane proteins overexpressed and purified from
+  E. coli is highly dependent upon the strain}.
+\newblock \emph{Scientific Reports}, 9\penalty0 (1):\penalty0 1--15,
+  \textbf{2019}.
+
+\bibitem[McCammon et~al.(1977)McCammon, Gelin, and Karplus]{McCammon1977}
+McCammon; J.~Andrew, Gelin; Bruce~R., and Karplus; Martin.
+\newblock {Dynamics of folded proteins}.
+\newblock \emph{Nature}, 267\penalty0 (5612):\penalty0 585--590, \textbf{1977}.
+
+\bibitem[McKinney(2010)]{McKinney2010}
+McKinney; Wes.
+\newblock {Data Structures for Statistical Computing in Python}.
+\newblock \emph{Proceedings of the 9th Python in Science Conference},
+  1\penalty0 (Scipy):\penalty0 56--61, \textbf{2010}.
+
+\bibitem[Mehrbod et~al.(2013)Mehrbod, Trisno, and Mofrad]{Mehrbod2013}
+Mehrbod; Mehrdad, Trisno; Stephen, and Mofrad; Mohammad~R.K.
+\newblock {On the activation of integrin $\alpha$iIb$\beta$3: Outside-in and
+  inside-out pathways}.
+\newblock \emph{Biophysical Journal}, 105\penalty0 (6):\penalty0 1304--1315,
+  \textbf{2013}.
+
+\bibitem[Mehta et~al.(1998)Mehta, Diefenbach, Brown, Cullen, Jonczyk, Gu,
+  Luckenbach, Goodman, London, Centre, Lane, Hill, Nw, Kgaa, and
+  Oncology]{Mehta1998}
+Mehta; Raj~J, Diefenbach; Beate, Brown; Alex, Cullen; Eilish, Jonczyk; Alfred,
+  Gu; Detlef, Luckenbach; G~Albrecht, Goodman; Simon~L, London; Merck, Centre;
+  M R C~Collaborative, Lane; Burtonhole, Hill; Mill, Nw; London, Kgaa; Merck,
+  and Oncology; Immunology.
+\newblock {Binding : Evidence for an ‘ Inside-Out ' Suppressor ?}
+\newblock \emph{October}, 869:\penalty0 861--869, \textbf{1998}.
+
+\bibitem[Merzlyakov et~al.(2006)Merzlyakov, You, Li, and
+  Hristova]{Merzlyakov2006}
+Merzlyakov; Mikhail, You; Min, Li; Edwin, and Hristova; Kalina.
+\newblock {Transmembrane helix heterodimerization in lipid bilayers: Probing
+  the energetics behind autosomal dominant growth disorders}.
+\newblock \emph{Journal of Molecular Biology}, 358\penalty0 (1):\penalty0 1--7,
+  \textbf{2006}.
+
+\bibitem[Mineev et~al.(2014)Mineev, Lesovoy, Usmanova, Goncharuk, Shulepko,
+  Lyukmanova, Kirpichnikov, Bocharov, and Arseniev]{Mineev2014}
+Mineev; Konstantin~S., Lesovoy; Dmitry~M., Usmanova; Dinara~R., Goncharuk;
+  Sergey~A., Shulepko; Mikhail~A., Lyukmanova; Ekaterina~N., Kirpichnikov;
+  Mikhail~P., Bocharov; Eduard~V., and Arseniev; Alexander~S.
+\newblock {NMR-based approach to measure the free energy of transmembrane
+  helix-helix interactions}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1838\penalty0 (1
+  PARTB):\penalty0 164--172, \textbf{2014}.
+
+\bibitem[Mitropoulos et~al.(2014)Mitropoulos, M{\"{u}}tze, and
+  Fischer]{Mitropoulos2014}
+Mitropoulos; Varvara, M{\"{u}}tze; Annekathrin, and Fischer; Peter.
+\newblock {Mechanical properties of protein adsorption layers at the air/water
+  and oil/water interface: A comparison in light of the thermodynamical
+  stability of proteins}.
+\newblock \emph{Advances in Colloid and Interface Science}, 206:\penalty0
+  195--206, \textbf{2014}.
+
+\bibitem[Moore et~al.(2008)Moore, Berger, and DeGrado]{Moore2008}
+Moore; David~T., Berger; Bryan~W., and DeGrado; William~F.
+\newblock {Protein-Protein Interactions in the Membrane: Sequence, Structural,
+  and Biological Motifs}.
+\newblock \emph{Structure}, 16\penalty0 (7):\penalty0 991--1001, \textbf{2008}.
+
+\bibitem[Moser et~al.(2008)Moser, Nieswandt, Ussar, Pozgajova, and
+  F{\"{a}}ssler]{Moser2008}
+Moser; Markus, Nieswandt; Bernhard, Ussar; Siegfried, Pozgajova; Miroslava, and
+  F{\"{a}}ssler; Reinhard.
+\newblock {Kindlin-3 is essential for integrin activation and platelet
+  aggregation}.
+\newblock \emph{Nature Medicine}, 14\penalty0 (3):\penalty0 325--330,
+  \textbf{2008}.
+
+\bibitem[Mosesson(2005)]{Mosesson2005}
+Mosesson; M.~W.
+\newblock {Fibrinogen and fibrin structure and functions}.
+\newblock \emph{Journal of Thrombosis and Haemostasis}, 3\penalty0
+  (8):\penalty0 1894--1904, \textbf{2005}.
+
+\bibitem[Mousa(2000)]{Mousa2000}
+Mousa; Shaker~A.
+\newblock {Integrins as novel drug discovery targets: Potential therapeutic and
+  diagnostic implications}.
+\newblock \emph{Expert Opinion on Therapeutic Targets}, 4\penalty0
+  (2):\penalty0 143--153, \textbf{2000}.
+
+\bibitem[Mura et~al.(2013)Mura, Dennison, Zvelindovsky, and Phoenix]{Mura2013}
+Mura; Manuela, Dennison; Sarah~R., Zvelindovsky; Andrei~V., and Phoenix;
+  David~A.
+\newblock {Aurein 2.3 functionality is supported by oblique orientated
+  $\alpha$-helical formation}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1828\penalty0
+  (2):\penalty0 586--594, \textbf{2013}.
+
+\bibitem[Muruganandam et~al.(2013)Muruganandam, B{\"{u}}rck, Ulrich, Kursula,
+  and Kursula]{Muruganandam2013}
+Muruganandam; Gopinath, B{\"{u}}rck; Jochen, Ulrich; Anne~S, Kursula; Inari,
+  and Kursula; Petri.
+\newblock {Lipid membrane association of myelin proteins and peptide segments
+  studied by oriented and synchrotron radiation circular dichroism
+  spectroscopy}.
+\newblock \emph{Journal of Physical Chemistry B}, 117\penalty0 (48):\penalty0
+  14983--14993, \textbf{2013}.
+
+\bibitem[Nagle(1986)]{Nagle1986}
+Nagle; John~F.
+\newblock {Theory of lipid monolayer and bilayer chain-melting phase
+  transitions}.
+\newblock \emph{Faraday Discussions of the Chemical Society}, 81:\penalty0
+  151--162, \textbf{1986}.
+
+\bibitem[Nakahara et~al.(2005)Nakahara, Nakamura, Lee, Sugihara, and
+  Shibata]{Nakahara2005}
+Nakahara; Hiromichi, Nakamura; Shohei, Lee; Sannamu, Sugihara; Gohsuke, and
+  Shibata; Osamu.
+\newblock {Influence of a new amphiphilic peptide with phospholipid monolayers
+  at the air-water interface}.
+\newblock \emph{Colloids and Surfaces A: Physicochemical and Engineering
+  Aspects}, 270-271\penalty0 (1-3):\penalty0 52--60, \textbf{2005}.
+
+\bibitem[Nakahara et~al.(2011)Nakahara, Lee, Shoyama, and
+  Shibata]{Nakahara2011}
+Nakahara; Hiromichi, Lee; Sannamu, Shoyama; Yukihiro, and Shibata; Osamu.
+\newblock {The role of palmitic acid in pulmonary surfactant systems by
+  Langmuir monolayer study: Lipid-peptide interactions}.
+\newblock \emph{Soft Matter}, 7\penalty0 (24):\penalty0 11351--11359,
+  \textbf{2011}.
+
+\bibitem[Nguyen et~al.(2018)Nguyen, Case, and Rose]{Nguyen2018}
+Nguyen; Hai, Case; David~A., and Rose; Alexander~S.
+\newblock {NGLview-interactive molecular graphics for Jupyter notebooks}.
+\newblock \emph{Bioinformatics}, 34\penalty0 (7):\penalty0 1241--1242,
+  \textbf{2018}.
+
+\bibitem[Nguyen et~al.(2010)Nguyen, Ardana, {Ten Brinke}, and
+  Schouten]{Nguyen2010}
+Nguyen; Le Thu~T., Ardana; Aditya, {Ten Brinke}; Gerrit, and Schouten; Arend~J.
+\newblock {Surface potentials in Langmuir monolayers of unidirectionally
+  oriented $\alpha$-helical diblock copolypeptides}.
+\newblock \emph{Langmuir}, 26\penalty0 (9):\penalty0 6515--6521, \textbf{2010}.
+
+\bibitem[Nogales et~al.(2010)Nogales, Garc{\'{i}}a, P{\'{e}}rez, Callow,
+  Ezquerra, and Gonz{\'{a}}lez-Rodr{\'{i}}guez]{Nogales2010}
+Nogales; Aurora, Garc{\'{i}}a; Carolina, P{\'{e}}rez; Javier, Callow; Phil,
+  Ezquerra; Tiberio~A., and Gonz{\'{a}}lez-Rodr{\'{i}}guez; Jos{\'{e}}.
+\newblock {Three-dimensional model of human platelet Integrin
+  $\alpha$IIb$\beta$3 in solution obtained by small angle neutron scattering}.
+\newblock \emph{Journal of Biological Chemistry}, 285\penalty0 (2):\penalty0
+  1023--1031, \textbf{2010}.
+
+\bibitem[Norde(1986)]{Norde1986}
+Norde; Willem.
+\newblock {Adsortion of proteins from solution at the solid-liquid interface}.
+\newblock \emph{Advances in Colloid and Interface Science}, 25:\penalty0
+  267--340, \textbf{1986}.
+
+\bibitem[Or{\l}owski et~al.(2015)Or{\l}owski, Kukkurainen, P{\"{o}}yry,
+  Rissanen, Vattulainen, Hyt{\"{o}}nen, and R{\'{o}}g]{Orowski2015}
+Or{\l}owski; Adam, Kukkurainen; Sampo, P{\"{o}}yry; Annika, Rissanen; Sami,
+  Vattulainen; Ilpo, Hyt{\"{o}}nen; Vesa~P., and R{\'{o}}g; Tomasz.
+\newblock {PIP2 and Talin Join Forces to Activate Integrin}.
+\newblock \emph{Journal of Physical Chemistry B}, 119\penalty0 (38):\penalty0
+  12381--12389, \textbf{2015}.
+
+\bibitem[O'Toole et~al.(1994)O'Toole, Katagiri, Faull, Peter, Tamura, Quaranta,
+  Loftus, Shattil, and Ginsberg]{OToole1994}
+O'Toole; Timothy~E., Katagiri; Yasuhiro, Faull; Randall~J., Peter; Karlheinz,
+  Tamura; Richard, Quaranta; Vito, Loftus; Joseph~C., Shattil; Sanford~J., and
+  Ginsberg; Mark~H.
+\newblock {Integrin cytoplasmic domains mediate inside-out signal
+  transduction}.
+\newblock \emph{Journal of Cell Biology}, 124\penalty0 (6):\penalty0
+  1047--1059, \textbf{1994}.
+
+\bibitem[Pabla et~al.(1999)Pabla, Weyrich, Dixon, Bray, McIntyre, Prescott, and
+  Zimmerman]{Pabla1999}
+Pabla; Ravinder, Weyrich; Andrew~S., Dixon; Dan~A., Bray; Paul~F., McIntyre;
+  Thomas~M., Prescott; Stephen~M., and Zimmerman; Guy~A.
+\newblock {Integrin-dependent control of translation: Engagement of integrin
+  $\alpha$(IIb)$\beta$3 regulates synthesis of proteins in activated human
+  platelets}.
+\newblock \emph{Journal of Cell Biology}, 144\penalty0 (1):\penalty0 175--184,
+  \textbf{1999}.
+
+\bibitem[Pagani and Gohlke(2018)]{Pagani2018}
+Pagani; Giulia and Gohlke; Holger.
+\newblock {On the contributing role of the transmembrane domain for
+  subunit-specific sensitivity of integrin activation}.
+\newblock \emph{Scientific Reports}, 8\penalty0 (1):\penalty0 1--14,
+  \textbf{2018}.
+
+\bibitem[Paramo et~al.(2013)Paramo, Garzo, Holdbrook, Khalid, and
+  Bond]{Paramo2013}
+Paramo; Teresa, Garzo; Diana, Holdbrook; Daniel~A, Khalid; Syma, and Bond;
+  Peter~J.
+\newblock {The Simulation Approach to Lipid – Protein Interactions}.
+\newblock In \emph{Lipid-Protein Interactions: Methods and Protocols}, volume
+  974, chapter~19, pages 435--455. \textbf{2013}.
+
+\bibitem[Parrinello and Rahman(1981)]{Parrinello1981}
+Parrinello; M. and Rahman; A.
+\newblock {Polymorphic transitions in single crystals: A new molecular dynamics
+  method}.
+\newblock \emph{Journal of Applied Physics}, 52\penalty0 (12):\penalty0
+  7182--7190, \textbf{1981}.
+
+\bibitem[Partridge et~al.(2005)Partridge, Liu, Kim, Bowie, and
+  Ginsberg]{Partridge2005}
+Partridge; Anthony~W, Liu; Shouchun, Kim; Sanguk, Bowie; James~U, and Ginsberg;
+  Mark~H.
+\newblock {Transmembrane domain helix packing stabilizes integrin
+  $\alpha$IIb$\beta$3 in the low affinity state}.
+\newblock \emph{Journal of Biological Chemistry}, 280\penalty0 (8):\penalty0
+  7294--7300, \textbf{2005}.
+
+\bibitem[Periole and Marrink(2013)]{Periole2013}
+Periole; Xavier and Marrink; Siewert~Jan.
+\newblock \emph{{The martini coarse-grained force field}}, volume 924.
+\newblock Springer Science+Business Media, New York, \textbf{2013}.
+
+\bibitem[Periole et~al.(2009)Periole, Cavalli, Marrink, and
+  Ceruso]{Periole2009}
+Periole; Xavier, Cavalli; Marco, Marrink; Siewert~Jan, and Ceruso; Marco~A.
+\newblock {Combining an elastic network with a coarse-grained molecular force
+  field: Structure, dynamics, and intermolecular recognition}.
+\newblock \emph{Journal of Chemical Theory and Computation}, 5\penalty0
+  (9):\penalty0 2531--2543, \textbf{2009}.
+
+\bibitem[Peterson et~al.(1998)Peterson, Visentin, Newman, and
+  Aster]{Peterson1998}
+Peterson; Julie~A., Visentin; Gian~P., Newman; Peter~J., and Aster; Richard~H.
+\newblock {A recombinant soluble form of the integrin $\alpha$(IIb)$\beta$3
+  (GPIIB-IIIa) assumes an active, ligand-binding conformation and is recognized
+  by GPIIB- IIIa-specific monoclonal, allo-, auto-, and drug-dependent platelet
+  antibodies}.
+\newblock \emph{Blood}, 92\penalty0 (6):\penalty0 2053--2063, \textbf{1998}.
+
+\bibitem[Petrache et~al.(2000)Petrache, Dodd, and Brown]{Petrache2000}
+Petrache; Horia~I., Dodd; Steven~W., and Brown; Michael~F.
+\newblock {Area per lipid and acyl length distributions in fluid
+  phosphatidylcholines determined by 2H NMR spectroscopy}.
+\newblock \emph{Biophysical Journal}, 79\penalty0 (6):\penalty0 3172--3192,
+  \textbf{2000}.
+
+\bibitem[Phillips et~al.(2009)Phillips, Ursell, Wiggins, and
+  Sens]{Phillips2009}
+Phillips; Rob, Ursell; Tristan, Wiggins; Paul, and Sens; Pierre.
+\newblock {Emerging roles for lipids in shaping membrane-protein function}.
+\newblock \emph{Nature}, 459\penalty0 (7245):\penalty0 379--385, \textbf{2009}.
+
+\bibitem[Picard(2023)]{Yeagle2016}
+Picard; Martin.
+\newblock \emph{{Membrane proteins}}, volume 205.
+\newblock Academic Press, third edit edition, \textbf{2023}.
+
+\bibitem[Plow and Byzova(1999)]{Plow1999}
+Plow; Edward~F. and Byzova; Tatiana.
+\newblock {The biology of glycoprotein IIb-IIIa}.
+\newblock \emph{Coronary Artery Disease}, 10\penalty0 (8):\penalty0 547--551,
+  \textbf{1999}.
+
+\bibitem[Prakash et~al.(2010)Prakash, Janosi, and Doxastakis]{Prakash2010}
+Prakash; Anupam, Janosi; Lorant, and Doxastakis; Manolis.
+\newblock {Self-association of models of transmembrane domains of erbb
+  receptors in a lipid bilayer}.
+\newblock \emph{Biophysical Journal}, 99\penalty0 (11):\penalty0 3657--3665,
+  \textbf{2010}.
+
+\bibitem[Puklin-Faucher et~al.(2006)Puklin-Faucher, Gao, Schulten, and
+  Vogel]{Puklin-Faucher2006}
+Puklin-Faucher; Eileen, Gao; Mu, Schulten; Klaus, and Vogel; Viola.
+\newblock {How the headpiece hinge angle is opened: New insights into the
+  dynamics of integrin activation}.
+\newblock \emph{Journal of Cell Biology}, 175\penalty0 (2):\penalty0 349--360,
+  \textbf{2006}.
+
+\bibitem[Rabe et~al.(2014)Rabe, Schwieger, Zope, Versluis, and Kros]{Rabe2014}
+Rabe; Martin, Schwieger; Christian, Zope; Harshal~R., Versluis; Frank, and
+  Kros; Alexander.
+\newblock {Membrane interactions of fusogenic coiled-coil peptides:
+  Implications for lipopeptide mediated vesicle fusion}.
+\newblock \emph{Langmuir}, 30\penalty0 (26):\penalty0 7724--7735,
+  \textbf{2014}.
+
+\bibitem[Risselada and Marrink(2009)]{Risselada2009}
+Risselada; H.~Jelger and Marrink; Siewert~J.
+\newblock {Curvature effects on lipid packing and dynamics in liposomes
+  revealed by coarse grained molecular dynamics simulations}.
+\newblock \emph{Physical Chemistry Chemical Physics}, 11:\penalty0 2056--2067,
+  \textbf{2009}.
+
+\bibitem[Rosenbaum et~al.(2009)Rosenbaum, Rasmussen, and
+  Kobilka]{Rosenbaum2009}
+Rosenbaum; Daniel~M., Rasmussen; S{\o}ren~G.F., and Kobilka; Brian~K.
+\newblock {The structure and function of G-protein-coupled receptors}.
+\newblock \emph{Nature}, 459\penalty0 (7245):\penalty0 356--363, \textbf{2009}.
+
+\bibitem[Rubenstein and Yin(2018)]{Rubenstein2018}
+Rubenstein; David~A. and Yin; Wei.
+\newblock {Platelet-activation mechanisms and vascular remodeling}.
+\newblock \emph{Comprehensive Physiology}, 8\penalty0 (3):\penalty0 1117--1156,
+  \textbf{2018}.
+
+\bibitem[R{\"{u}}egg and Mariotti(2003)]{Ruegg2003}
+R{\"{u}}egg; C. and Mariotti; A.
+\newblock {Vascular integrins: Pleiotropic adhesion and signaling molecules in
+  vascular homeostasis and angiogenesis}.
+\newblock \emph{Cellular and Molecular Life Sciences}, 60\penalty0
+  (6):\penalty0 1135--1157, \textbf{2003}.
+
+\bibitem[Saeedimasine et~al.(2019)Saeedimasine, Montanino, Kleiven, and
+  Villa]{Saeedimasine2019}
+Saeedimasine; Marzieh, Montanino; Annaclaudia, Kleiven; Svein, and Villa;
+  Alessandra.
+\newblock {Role of lipid composition on the structural and mechanical features
+  of axonal membranes: a molecular simulation study}.
+\newblock \emph{Scientific Reports}, 9\penalty0 (1):\penalty0 1--12,
+  \textbf{2019}.
+
+\bibitem[Saleem et~al.(2008)Saleem, Meyer, Breitenstein, and Galla]{Saleem2008}
+Saleem; Mohammed, Meyer; Michaela~C., Breitenstein; Daniel, and Galla;
+  Hans~Joachim.
+\newblock {The surfactant peptide KL4 in lipid monolayers: Phase behavior,
+  topography, and chemical distribution}.
+\newblock \emph{Journal of Biological Chemistry}, 283\penalty0 (8):\penalty0
+  5195--5207, \textbf{2008}.
+
+\bibitem[Scarborough and Gretler(2000)]{Scarborough2000}
+Scarborough; Robert~M and Gretler; Daniel~D.
+\newblock {Novel Parenteral and Potential Oral Antithrombotic Agents}.
+\newblock 43\penalty0 (19), \textbf{2000}.
+
+\bibitem[Schmidt and Caseli(2022)]{Schmidt2022}
+Schmidt; Tha{\'{i}}s~F. and Caseli; Luciano.
+\newblock {Molecular organization of dengue fusion peptide in phospholipid
+  monolayers revealed by tensiometry and vibrational spectroscopy}.
+\newblock \emph{Colloids and Surfaces B: Biointerfaces}, 215\penalty0
+  (March):\penalty0 112477, \textbf{2022}.
+
+\bibitem[Schmidt et~al.(2015)Schmidt, Suk, Ye, Situ, Mazumder, Ginsberg, and
+  Ulmer]{Schmidt2015}
+Schmidt; Thomas, Suk; Jae~Eun, Ye; Feng, Situ; Alan~J., Mazumder; Parichita,
+  Ginsberg; Mark~H., and Ulmer; Tobias~S.
+\newblock {Annular anionic lipids stabilize the integrin $\alpha$iIb$\beta$3
+  Transmembrane Complex}.
+\newblock \emph{Journal of Biological Chemistry}, 290\penalty0 (13):\penalty0
+  8283--8293, \textbf{2015}.
+
+\bibitem[Schnapp et~al.(1995)Schnapp, Hatch, Ramos, Klimanskaya, Sheppard, and
+  Pytela]{Schnapp1995}
+Schnapp; Lynn~M., Hatch; Nan, Ramos; Daniel~M., Klimanskaya; Irina~V.,
+  Sheppard; Dean, and Pytela; Robert.
+\newblock {The human integrin $\alpha$8$\beta$1 functions as a receptor for
+  tenascin, fibronectin, and vitronectin}.
+\newblock \emph{Journal of Biological Chemistry}, 270\penalty0 (39):\penalty0
+  23196--23202, \textbf{1995}.
+
+\bibitem[Sch{\"{u}}rpf and Springer(2011)]{Schurpf2011}
+Sch{\"{u}}rpf; Thomas and Springer; Timothy~A.
+\newblock {Regulation of integrin affinity on cell surfaces}.
+\newblock \emph{EMBO Journal}, 30\penalty0 (23):\penalty0 4712--4727,
+  \textbf{2011}.
+
+\bibitem[Scott et~al.(2008)Scott, Bond, Ivetac, Chetwynd, Khalid, and
+  Sansom]{Scott2008}
+Scott; Kathryn~A., Bond; Peter~J., Ivetac; Anthony, Chetwynd; Alan~P., Khalid;
+  Syma, and Sansom; Mark~S.P.
+\newblock {Coarse-Grained MD Simulations of Membrane Protein-Bilayer
+  Self-Assembly}.
+\newblock \emph{Structure}, 16\penalty0 (4):\penalty0 621--630, \textbf{2008}.
+
+\bibitem[Shahane et~al.(2019)Shahane, Ding, Palaiokostas, and
+  Orsi]{Shahane2019}
+Shahane; Ganesh, Ding; Wei, Palaiokostas; Michail, and Orsi; Mario.
+\newblock {Physical properties of model biological lipid bilayers: insights
+  from all-atom molecular dynamics simulations}.
+\newblock \emph{Journal of Molecular Modeling}, 25\penalty0 (3):\penalty0
+  1--13, \textbf{2019}.
+
+\bibitem[Shi et~al.(2023)Shi, Song, Wang, Chandrawati, and Lin]{Shi2023}
+Shi; Ke, Song; Chuwen, Wang; Yayi, Chandrawati; Rona, and Lin; Yiyang.
+\newblock {Engineering receptor-mediated transmembrane signaling in artificial
+  and living cells}.
+\newblock \emph{Communications Materials}, 4\penalty0 (1):\penalty0 1--11,
+  \textbf{2023}.
+
+\bibitem[Sica and Smulski(2021)]{Sica2021}
+Sica; Mauricio~P. and Smulski; Cristian~R.
+\newblock {Coarse Grained Molecular Dynamic Simulations for the Study of TNF
+  Receptor Family Members' Transmembrane Organization}.
+\newblock \emph{Frontiers in Cell and Developmental Biology}, 8\penalty0
+  (January):\penalty0 1--11, \textbf{2021}.
+
+\bibitem[Situ et~al.(2014)Situ, Schmidt, Mazumder, and Ulmer]{Situ2014}
+Situ; Alan~J., Schmidt; Thomas, Mazumder; Parichita, and Ulmer; Tobias~S.
+\newblock {Characterization of membrane protein interactions by isothermal
+  titration calorimetry}.
+\newblock \emph{Journal of Molecular Biology}, 426\penalty0 (21):\penalty0
+  3670--3680, \textbf{2014}.
+
+\bibitem[Smith and Lorenz(2021)]{Smith2021}
+Smith; Paul and Lorenz; Christian~D.
+\newblock {LiPyphilic: A Python Toolkit for the Analysis of Lipid Membrane
+  Simulations}.
+\newblock \emph{Journal of Chemical Theory and Computation}, 17\penalty0
+  (9):\penalty0 5907--5919, \textbf{2021}.
+
+\bibitem[Smyth et~al.(2001)Smyth, Reis, V{\"{a}}{\"{a}}n{\"{a}}nen, Zhang, and
+  Coller]{Smyth2001}
+Smyth; Susan~S., Reis; Ernane~D., V{\"{a}}{\"{a}}n{\"{a}}nen; Heikki, Zhang;
+  Wen, and Coller; Barry~S.
+\newblock {Variable protection of $\beta$3-integrin-deficient mice from
+  thrombosis initiated by different mechanisms}.
+\newblock \emph{Blood}, 98\penalty0 (4):\penalty0 1055--1062, \textbf{2001}.
+
+\bibitem[Socas and Ambroggio(2023)]{Socas2023}
+Socas; L.~B.P. and Ambroggio; E.~E.
+\newblock {HIV-1 Gag specificity for PIP2 is regulated by macromolecular
+  electric properties of both protein and membrane local environments}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1865\penalty0
+  (5):\penalty0 184157, \textbf{2023}.
+
+\bibitem[Socas and Ambroggio(2018)]{Socas2018}
+Socas; Luis~B.P. and Ambroggio; Ernesto~E.
+\newblock {Myristoylation and Oligonucleotide Interaction Modulate Peptide and
+  Protein Surface Properties: The Case of the HIV-1 Matrix Domain}.
+\newblock \emph{Langmuir}, 34\penalty0 (21):\penalty0 6051--6062,
+  \textbf{2018}.
+
+\bibitem[Souza et~al.(2020)Souza, Thallmair, Conflitti, Ram{\'{i}}rez-Palacios,
+  Alessandri, Raniolo, Limongelli, and Marrink]{Souza2020}
+Souza; Paulo~C.T., Thallmair; Sebastian, Conflitti; Paolo,
+  Ram{\'{i}}rez-Palacios; Carlos, Alessandri; Riccardo, Raniolo; Stefano,
+  Limongelli; Vittorio, and Marrink; Siewert~J.
+\newblock {Protein–ligand binding with the coarse-grained Martini model}.
+\newblock \emph{Nature Communications}, 11\penalty0 (1):\penalty0 1--11,
+  \textbf{2020}.
+
+\bibitem[Spector and Yorek(1985)]{Spector1985}
+Spector; A.~A. and Yorek; M.~A.
+\newblock {Membrane lipid composition and cellular function}.
+\newblock \emph{Journal of Lipid Research}, 26\penalty0 (9):\penalty0
+  1015--1035, \textbf{1985}.
+
+\bibitem[Springer and Dustin(2012)]{Springer2012}
+Springer; Timothy~A. and Dustin; Michael~L.
+\newblock {Integrin inside-out signaling and the immunological synapse}.
+\newblock \emph{Current Opinion in Cell Biology}, 24\penalty0 (1):\penalty0
+  107--115, \textbf{2012}.
+
+\bibitem[Stangl and Schneider(2015)]{Stangl2015}
+Stangl; Michael and Schneider; Dirk.
+\newblock {Functional competition within a membrane: Lipid recognition vs.
+  transmembrane helix oligomerization}.
+\newblock \emph{Biochimica et Biophysica Acta - Biomembranes}, 1848\penalty0
+  (9):\penalty0 1886--1896, \textbf{2015}.
+
+\bibitem[Stansfeld and Sansom(2011)]{Stansfeld2011}
+Stansfeld; Phillip~J. and Sansom; Mark~S.P.
+\newblock {Molecular simulation approaches to membrane proteins}.
+\newblock \emph{Structure}, 19\penalty0 (11):\penalty0 1562--1572,
+  \textbf{2011}.
+
+\bibitem[Stansfeld et~al.(2009)Stansfeld, Hopkinson, Ashcroft, and
+  Sansom]{Stansfeld2009}
+Stansfeld; Phillip~J., Hopkinson; Richard, Ashcroft; Frances~M., and Sansom;
+  Mark~S.P.
+\newblock {PIP2-binding site in Kir channels: Definition by multiscale
+  biomolecular simulations}.
+\newblock \emph{Biochemistry}, 48\penalty0 (46):\penalty0 10926--10933,
+  \textbf{2009}.
+
+\bibitem[Steglich et~al.(2015)Steglich, Vehlow, Eke, and Cordes]{Steglich2015}
+Steglich; Anne, Vehlow; Anne, Eke; Iris, and Cordes; Nils.
+\newblock {Α Integrin Targeting for Radiosensitization of Three-Dimensionally
+  Grown Human Head and Neck Squamous Cell Carcinoma Cells}.
+\newblock \emph{Cancer Letters}, 357\penalty0 (2):\penalty0 542--548,
+  \textbf{2015}.
+
+\bibitem[Su et~al.(2016)Su, Xia, Li, Walz, Humphries, Vestweber, Caba{\~{n}}as,
+  Lu, and Springer]{Su2016}
+Su; Yang, Xia; Wei, Li; Jing, Walz; Thomas, Humphries; Martin~J, Vestweber;
+  Dietmar, Caba{\~{n}}as; Carlos, Lu; Chafen, and Springer; Timothy~A.
+\newblock {Relating conformation to function in integrin $\alpha$5 $\beta$1}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 113\penalty0 (27):\penalty0 E3872----E3881,
+  \textbf{2016}.
+
+\bibitem[Takagi et~al.(2002)Takagi, Petre, Walz, and Springer]{Takagi2002}
+Takagi; Junichi, Petre; Benjamin~M., Walz; Thomas, and Springer; Timothy~A.
+\newblock {Global conformational earrangements in integrin extracellular
+  domains in outside-in and inside-out signaling}.
+\newblock \emph{Cell}, 110\penalty0 (5):\penalty0 599--611, \textbf{2002}.
+
+\bibitem[Takamoto et~al.(2001)Takamoto, Lipp, {Von Nahmen}, Lee, Waring, and
+  Zasadzinski]{Takamoto2001}
+Takamoto; D.~Y., Lipp; M.~M., {Von Nahmen}; A., Lee; Ka Yee~C., Waring; A.~J.,
+  and Zasadzinski; J.~A.
+\newblock {Interaction of lung surfactant proteins with anionic phospholipids}.
+\newblock \emph{Biophysical Journal}, 81\penalty0 (1):\penalty0 153--169,
+  \textbf{2001}.
+
+\bibitem[Tamkun et~al.(1986)Tamkun, DeSimone, Fonda, Patel, Buck, Horwitz, and
+  Hynes]{Tamkun1986}
+Tamkun; John~W., DeSimone; Douglas~W., Fonda; Deborah, Patel; Ramila~S., Buck;
+  Clayton, Horwitz; Alan~F., and Hynes; Richard~O.
+\newblock {Structure of integrin, a glycoprotein involved in the transmembrane
+  linkage between fibronectin and actin}.
+\newblock \emph{Cell}, 46\penalty0 (2):\penalty0 271--282, \textbf{1986}.
+
+\bibitem[Taylor and Bayes(1994)]{Electronics1994}
+Taylor; D.~M. and Bayes; G.~G.
+\newblock {Calculating the surface potential ofunionized monolayers}.
+\newblock \emph{Physical Review}, 49\penalty0 (2):\penalty0 1439--1449,
+  \textbf{1994}.
+
+\bibitem[Tiab and Donaldson(2012)]{Tiab2012}
+Tiab; Djebbar and Donaldson; Erle~C.
+\newblock {Wettability}.
+\newblock In \emph{Petrophysics (Third Edition)}, chapter~6, pages 371--418.
+  \textbf{2012}.
+
+\bibitem[Tieleman et~al.(2021)Tieleman, Sejdiu, Cino, Smith, Barreto-Ojeda,
+  Khan, and Corradi]{Tieleman2021}
+Tieleman; D.~P., Sejdiu; B.~I., Cino; E.~A., Smith; P., Barreto-Ojeda; E.,
+  Khan; H.~M., and Corradi; V.
+\newblock {Insights into lipid-protein interactions from computer simulations}.
+\newblock \emph{Biophysical Reviews}, 13\penalty0 (6):\penalty0 1019--1027,
+  \textbf{2021}.
+
+\bibitem[Toimil et~al.(2012)Toimil, Prieto, Jr., Trillo, and
+  Sarmiento]{Toimil2012}
+Toimil; Paula, Prieto; Gerardo, Jr.; Jos{\'{e}}~Mi{\~{n}}ones, Trillo;
+  Jos{\'{e}}~M., and Sarmiento; F{\'{e}}lix.
+\newblock {Interaction of human serum albumin with monofluorinated phospholipid
+  monolayers}.
+\newblock \emph{Journal of Colloid and Interface Science}, 388\penalty0
+  (1):\penalty0 162--169, \textbf{2012}.
+
+\bibitem[Ugarova and Yakubenko(2001)]{Ugarova2001}
+Ugarova; Tatiana~P. and Yakubenko; Valentin~P.
+\newblock {Recognition of fibrinogen by leukocyte integrins}.
+\newblock \emph{Annals of the New York Academy of Sciences}, 936:\penalty0
+  368--385, \textbf{2001}.
+
+\bibitem[Ulmer(2010)]{Ulmer2010}
+Ulmer; Tobias~S.
+\newblock {Structural basis of transmembrane domain interactions in integrin
+  signaling}.
+\newblock \emph{Cell Adhesion and Migration}, 4\penalty0 (2):\penalty0
+  243--248, \textbf{2010}.
+
+\bibitem[Velling et~al.(2002)Velling, Risteli, Wennerberg, Mosher, and
+  Johansson]{Velling2002}
+Velling; Teet, Risteli; Juha, Wennerberg; Krister, Mosher; Deane~F., and
+  Johansson; Staffan.
+\newblock {Polymerization of type I and III collagens is dependent on
+  fibronectin and enhanced by integrins $\alpha$11$\beta$1 and
+  $\alpha$2$\beta$1}.
+\newblock \emph{Journal of Biological Chemistry}, 277\penalty0 (40):\penalty0
+  37377--37381, \textbf{2002}.
+
+\bibitem[Venstrom and Reichardt(1995)]{Venstrom1995}
+Venstrom; Kristine and Reichardt; Louis.
+\newblock {$\beta$8 integrins mediate interactions of chick sensory neurons
+  with laminin-1, collagen IV, and fibronectin}.
+\newblock \emph{Molecular Biology of the Cell}, 6\penalty0 (4):\penalty0
+  419--431, \textbf{1995}.
+
+\bibitem[Vinogradova et~al.(2002)Vinogradova, Velyvis, Velyviene, Hu, Haas,
+  Plow, and Qin]{Vinogradova2002}
+Vinogradova; Olga, Velyvis; Algirdas, Velyviene; Asta, Hu; Bin, Haas;
+  Thomas~A., Plow; Edward~F., and Qin; Jun.
+\newblock {A structural mechanism of integrin $\alpha$IIb$\beta$3 "inside-out"
+  activation as regulated by its cytoplasmic face}.
+\newblock \emph{Cell}, 110\penalty0 (5):\penalty0 587--597, \textbf{2002}.
+
+\bibitem[Vinogradova et~al.(2004)Vinogradova, Vaynberg, Kong, Haas, Plow, and
+  Qin]{Vinogradova2004}
+Vinogradova; Olga, Vaynberg; Julia, Kong; Xiangming, Haas; Thomas~A., Plow;
+  Edward~F., and Qin; Jun.
+\newblock {Membrane-mediated structural transitions at the cytoplasmic face
+  during integrin activation}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 101\penalty0 (12):\penalty0 4094--4099, \textbf{2004}.
+
+\bibitem[Waskom(2021)]{Waskom2021}
+Waskom; Michael.
+\newblock {Seaborn: Statistical Data Visualization}.
+\newblock \emph{Journal of Open Source Software}, 6\penalty0 (60):\penalty0
+  3021, \textbf{2021}.
+
+\bibitem[Wassenaar et~al.(2015)Wassenaar, Ing{\'{o}}lfsson, B{\"{o}}ckmann,
+  Tieleman, and Marrink]{Wassenaar2015}
+Wassenaar; Tsjerk~A., Ing{\'{o}}lfsson; Helgi~I., B{\"{o}}ckmann; Rainer~A.,
+  Tieleman; D.~Peter, and Marrink; Siewert~J.
+\newblock {Computational lipidomics with insane: A versatile tool for
+  generating custom membranes for molecular simulations}.
+\newblock \emph{Journal of Chemical Theory and Computation}, 11\penalty0
+  (5):\penalty0 2144--2155, \textbf{2015}.
+
+\bibitem[Weder and Belitz(2003)]{Weder2003}
+Weder; J K~P and Belitz; H-D.
+\newblock {PROTEIN Contents Chemistry Food Sources Determination and
+  Characterization Requirements Functional Properties Interactions and
+  Reactions Involved in Food Processing Quality Digestion and Absorption of
+  Protein and Nitrogen Balance Synthesis and Turnover De}.
+\newblock In \emph{Chemistry}, pages 4805--4818. \textbf{2003}.
+
+\bibitem[Wnȩtrzak et~al.(2012)Wnȩtrzak, {\L}a̧tka, Marzec, and
+  Dynarowicz-{\L}a̧tka]{Wnetrzak2012}
+Wnȩtrzak; A., {\L}a̧tka; K., Marzec; M., and Dynarowicz-{\L}a̧tka; P.
+\newblock {Langmuir monolayer characteristics of erucylphosphocholine - A novel
+  anti-tumor drug}.
+\newblock \emph{Acta Physica Polonica A}, 121\penalty0 (2):\penalty0 468--473,
+  \textbf{2012}.
+
+\bibitem[Wu et~al.(2014)Wu, Cheng, Jo, Rui, Song, D{\'{a}}vila-Contreras, Qi,
+  Lee, Monje-Galvan, Venable, Klauda, and Im]{Wu2014}
+Wu; Emilia~L., Cheng; Xi, Jo; Sunhwan, Rui; Huan, Song; Kevin~C.,
+  D{\'{a}}vila-Contreras; Eder~M., Qi; Yifei, Lee; Jumin, Monje-Galvan;
+  Viviana, Venable; Richard~M., Klauda; Jeffery~B., and Im; Wonpil.
+\newblock {CHARMM-GUI membrane builder toward realistic biological membrane
+  simulations}.
+\newblock \emph{Journal of Computational Chemistry}, 35\penalty0 (27):\penalty0
+  1997--2004, \textbf{2014}.
+
+\bibitem[Xiang et~al.(2019)Xiang, Pang, Liu, Yang, Tao, Pei, and
+  Cui]{Xiang2019}
+Xiang; Qian, Pang; Xiaocong, Liu; Zhenming, Yang; Guoping, Tao; Weikang, Pei;
+  Qi, and Cui; Yimin.
+\newblock {Progress in the development of antiplatelet agents: Focus on the
+  targeted molecular pathway from bench to clinic}.
+\newblock \emph{Pharmacology and Therapeutics}, 203\penalty0 (6):\penalty0
+  107393, \textbf{2019}.
+
+\bibitem[Xie et~al.(2010)Xie, Zhu, Chen, Mi, Nishida, and Springer]{Xie2010}
+Xie; Can, Zhu; Jianghai, Chen; Xing, Mi; Lizhi, Nishida; Noritaka, and
+  Springer; Timothy~A.
+\newblock {Structure of an integrin with an $\alpha$i domain, complement
+  receptor type 4}.
+\newblock \emph{EMBO Journal}, 29\penalty0 (3):\penalty0 666--679,
+  \textbf{2010}.
+
+\bibitem[Xiong et~al.(2003)Xiong, Stehle, Goodman, and Arnaout]{Xiong2003}
+Xiong; Jian~Ping, Stehle; Thilo, Goodman; Simon~L., and Arnaout; M.~Amin.
+\newblock {New insights into the structural basis of integrin activation}.
+\newblock \emph{Blood}, 102\penalty0 (4):\penalty0 1155--1159, \textbf{2003}.
+
+\bibitem[Xiong et~al.(2004)Xiong, Stehle, Goodman, and Arnaout]{Xiong2004}
+Xiong; Jian~Ping, Stehle; Thilo, Goodman; Simon~L., and Arnaout; M.~Amin.
+\newblock {A novel adaptation of the integrin PSI domain revealed from its
+  crystal structure}.
+\newblock \emph{Journal of Biological Chemistry}, 279\penalty0 (39):\penalty0
+  40252--40254, \textbf{2004}.
+
+\bibitem[Xiong et~al.(2009)Xiong, Mahalingham, Alonso, Borrelli, Rui, Anand,
+  Hyman, Rysiok, M{\"{u}}ller-Pompalla, Goodman, and Arnaout]{Xiong2009}
+Xiong; Jian~Ping, Mahalingham; Bhuvaneshwari, Alonso; Jose~Luis, Borrelli;
+  Laura~Ann, Rui; Xianliang, Anand; Saurabh, Hyman; Bradley~T., Rysiok; Thomas,
+  M{\"{u}}ller-Pompalla; Dirk, Goodman; Simon~L., and Arnaout; M.~Amin.
+\newblock {Crystal structure of the complete integrin $\alpha$V$\beta$3
+  ectodomain plus an $\alpha$/$\beta$ transmembrane fragment}.
+\newblock \emph{Journal of Cell Biology}, 186\penalty0 (4):\penalty0 589--600,
+  \textbf{2009}.
+
+\bibitem[Yang et~al.(2009)Yang, Ma, Page, Misra, Plow, and Qin]{Yang2009}
+Yang; Jun, Ma; Yan~Qing, Page; Richard~C., Misra; Saurav, Plow; Edward~F., and
+  Qin; Jun.
+\newblock {Structure of an integrin $\alpha$IIb$\beta$3
+  transmembrane-cytoplasmic heterocomplex provides insight into integrin
+  activation}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 106\penalty0 (42):\penalty0 17729--17734, \textbf{2009}.
+
+\bibitem[Ye et~al.(2008)Ye, Liu, Winkler, and Taylor]{Ye2008}
+Ye; Feng, Liu; Jun, Winkler; Hanspeter, and Taylor; Kenneth~A.
+\newblock {Integrin $\alpha$IIb$\beta$3 in a Membrane Environment Remains the
+  Same Height after Mn2+ Activation when Observed by Cryoelectron Tomography}.
+\newblock \emph{Journal of Molecular Biology}, 378\penalty0 (5):\penalty0
+  976--986, \textbf{2008}.
+
+\bibitem[Ye et~al.(2014)Ye, Snider, and Ginsberg]{Ye2014}
+Ye; Feng, Snider; Adam~K, and Ginsberg; Mark~H.
+\newblock {Talin and kindlin: The one-two punch in integrin activation}.
+\newblock \emph{Frontiers of Medicine in China}, 8\penalty0 (1):\penalty0
+  6--16, \textbf{2014}.
+
+\bibitem[Yesylevskyy et~al.(2010)Yesylevskyy, Sch{\"{a}}fer, Sengupta, and
+  Marrink]{Yesylevskyy2010}
+Yesylevskyy; Semen~O., Sch{\"{a}}fer; Lars~V., Sengupta; Durba, and Marrink;
+  Siewert~J.
+\newblock {Polarizable water model for the coarse-grained MARTINI force field}.
+\newblock \emph{PLoS Computational Biology}, 6\penalty0 (6):\penalty0 1--17,
+  \textbf{2010}.
+
+\bibitem[Yin et~al.(2009)Yin, Arkhipov, and Schulten]{Yin2009}
+Yin; Ying, Arkhipov; Anton, and Schulten; Klaus.
+\newblock {Simulations of Membrane Tubulation by Lattices of Amphiphysin N-BAR
+  Domains}.
+\newblock \emph{Structure}, 17\penalty0 (6):\penalty0 882--892, \textbf{2009}.
+
+\bibitem[Zhang et~al.(2019)Zhang, Shan, Meng, Gu, Lu, Zhang, Chen, Jiang, and
+  Ning]{Zhang2019}
+Zhang; Lei, Shan; Xue, Meng; Xia, Gu; Tingting, Lu; Qiangbing, Zhang; Jikang,
+  Chen; Jiao, Jiang; Qing, and Ning; Xinghai.
+\newblock {The first integrins $\beta$3-mediated cellular and nuclear targeting
+  therapeutics for prostate cancer}.
+\newblock \emph{Biomaterials}, 223\penalty0 (May):\penalty0 119471,
+  \textbf{2019}.
+
+\bibitem[Zhang et~al.(2017)Zhang, Zhang, Jasa, Li, Cleveland, Negahban, and
+  J{\'{e}}rusalem]{Zhang2017}
+Zhang; Lili, Zhang; Zesheng, Jasa; John, Li; Dongli, Cleveland; Robin~O.,
+  Negahban; Mehrdad, and J{\'{e}}rusalem; Antoine.
+\newblock {Molecular dynamics simulations of heterogeneous cell membranes in
+  response to uniaxial membrane stretches at high loading rates}.
+\newblock \emph{Scientific Reports}, 7\penalty0 (1):\penalty0 1--12,
+  \textbf{2017}.
+
+\bibitem[Zhekova et~al.(2023)Zhekova, Ramirez-Echemend{\'{i}}a, Sejdiu,
+  Pushkin, Tieleman, and Kurtz]{Zhekova2023}
+Zhekova; Hristina~R., Ramirez-Echemend{\'{i}}a; Daniel~P., Sejdiu; Besian~I.,
+  Pushkin; Alexander, Tieleman; D.~Peter, and Kurtz; Ira.
+\newblock {Coarse-grained molecular dynamics simulations of lipid-protein
+  interactions in SLC4 proteins}.
+\newblock \emph{bioRxiv}, page 2023.06.26.546592, \textbf{2023}.
+
+\bibitem[Zhou(2014)]{Zhou2014}
+Zhou; Huan~Xiang.
+\newblock {Theoretical frameworks for multiscale modeling and simulation}.
+\newblock \emph{Current Opinion in Structural Biology}, 25\penalty0
+  (1):\penalty0 67--76, \textbf{2014}.
+
+\bibitem[Zhu et~al.(2008)Zhu, Luo, Xiao, Zhang, Nishida, and Springer]{Zhu2008}
+Zhu; Jianghai, Luo; Bing~Hao, Xiao; Tsan, Zhang; Chengzhong, Nishida; Noritaka,
+  and Springer; Timothy~A.
+\newblock {Structure of a Complete Integrin Ectodomain in a Physiologic Resting
+  State and Activation and Deactivation by Applied Forces}.
+\newblock \emph{Molecular Cell}, 32\penalty0 (6):\penalty0 849--861,
+  \textbf{2008}.
+
+\bibitem[Zhu et~al.(2009)Zhu, Luo, Barth, Schonbrun, Baker, and
+  Springer]{Zhu2009}
+Zhu; Jieqing, Luo; Bing~Hao, Barth; Patrick, Schonbrun; Jack, Baker; David, and
+  Springer; Timothy~A.
+\newblock {The Structure of a Receptor with Two Associating Transmembrane
+  Domains on the Cell Surface: Integrin $\alpha$IIb$\beta$3}.
+\newblock \emph{Molecular Cell}, 34\penalty0 (2):\penalty0 234--249,
+  \textbf{2009}.
+
+\end{thebibliography}

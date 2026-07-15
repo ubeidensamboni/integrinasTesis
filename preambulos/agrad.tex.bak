@@ -1,0 +1,46 @@
+%\frontmatter
+\thispagestyle{empty}
+%\chapter*{Agradecimientos}
+{\LARGE \textcolor{myblue}{Agradecimientos}}\\
+
+\begingroup
+\setlength{\parindent}{0pt} % Disable indentation within this group
+% Cómo iniciar esta sección. Son muchas las dudas acerca de cuál es la mejor forma de dar las gracias 
+
+Mi más sincero agradecimiento,\\\vspace{-0.5cm}
+
+A la casa, la que llamamos  \textit{Alma Mater} la Universidad Nacional de Córdoba, particularmente a la Facultad de Ciencias Químicas. Así como también al Centro de Investigaciones en Química Biológica de Córdoba (CIQUIBIC) y el Departamento de Química Biológica Ranwel Caputto (DQBRC) por el lugar de trabajo, los recursos y la formación académica y profesional durante toda mi formación como estudiante de doctorado.\\\vspace{-0.5cm}
+
+Al Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET) y al Fondo para la Investigación Científica y Tecnológica (FONCyT) por el financiamiento como becario doctoral y los espacios de participación científico-académicas. Así como también al Ministerio de Ciencia, Tecnología e Innovación de Colombia por apoyo económico.\\\vspace{-0.5cm}
+
+A los integrantes de la comisión asesora: Dra. Virginia Miguel, Dr. Ernesto Esteban Ambroggio y Dr. Maximiliano Burgos Paci por las sugerencias y acompañamiento durante todos estos años y por sus aportes en el proceso de escritura de esta tesis. También al \hl{evaluador externo Dr. XXXX} quien amablemente aceptó la tarea de leer y evaluar esta tesis.\\\vspace{-0.5cm}
+
+A todo el grupo del Dr. Barra (Marilla, Tatiana, Javier y Agustina) donde llegué sin tener la menor idea de cómo hacer un cultivo en placa, me enseñaron las bases de expresión y purificación de proteínas (la primera vez que largué cultivo la mano me temblaba exageradamente pero Agustina siempre me tuvo paciencia, creo). También agradezco a la Dra. Maria Elena Carrizo quién desde mis primeros pasos en el mundo de las proteínas me tuvo paciencia y compartió su conocimiento y asesoró en cada momento que acudí a ella.\\\vspace{-0.5cm}
+
+A Daniela y Vanina de FACEMES por los galones (no litros) de medio cultivo que me preparaban para mis purificaciones. Y cómo no agradecer a esas personas que me solucionaron los trámites administrativos Inés, Alejandra, Magali y Maria Julia. No menos importante, al personal de limpieza y mantenimiento del DQBRC.\\\vspace{-0.5cm}
+
+A la Dra. Vanessa Galassi por la orientación en los primeros pasos en el camino hacia las simulaciones de dinámica molecular durante mi vista en Mendoza, pero sobre todo por llevarme a escalar. A su linda familia Gastón, Iñaki y ``la Ile''. También agradecer a todos los miembros del grupo del Mario G. Del Pópolo del ICB-UNCUYO, por compartir las charlas en el almuerzo.\\\vspace{-0.5cm}
+
+A los doctores Martin Ulmschneider y Chris Lorenz por la gran oportunidad para visitar sus grupos de investigación en el King's College London. Aquí aprovecho para agredecer a Raquel, brillante joven científica siempre predispuesta a ayudar. Así que gracias por los momentos compartidos y por aventurarse a visitarnos en Argentina. Usted e Iván ahora son unos amigos ``al otro lado del charco''.\\\vspace{-0.5cm}
+
+A las chicas súper poderosas: Laura, Jesica y Anabela quienes terminaron primero que yo pero la amistad que generamos aún perdura. También agradezco al ahora Dr. Christian que ya hacía parte del selecto grupo junto de las poderosas. Gracias por charlar deprimentes (``...y sí'' dicen ustedes), motivadoras y académicas durante los almuerzos y por esas caminatas saludables.\\\vspace{-0.5cm}
+
+Continuando con las charlas en los almuerzos un agradecimiento a: el grupo de la reina  Yohana y sus súbditos (Genero, Pedro y Franco). También a Luz, Verónica (la más ruidosa de toooodo el CIQUI, alias ``10 L''), Ana, Agustina, Rocio, Flor Y Maxi (``el capo de los dibujos''). Y si hablamos de comida, gracias a Manuel, Alain, Ricardo y Román por esas juntadas prepandémicas.\\\vspace{-0.5cm}
+
+A la Sociedad Argentina de Biofísica y en especial a la comunidad de los Jóvenes Biofísicos - YIB por los espacios de discusión científico-académica y por la red de contactos con personas maravillosas de diversas provincias del país y de otros países de Latino América.\\\vspace{-0.5cm}
+
+A las investigadoras e investigadores del área de Biofísica: las  doctoras Laura, Natalia y Soledad, y los doctores Gerardo, Rafael y Ernesto por su gentileza para compartir todo lo de su laboratorio. Por supuesto gracias a los compañeros de biofísica por las comidas en los seminarios y charlas de pasillo: Beny, Nahuel, Ignacio, Ezequiel, Leandro, Cande, Dr. Matías, Iván, Juan (``el putas de aguadas''), Jessica, Nocelli, Dario y Nacho (``la comunidad del anillo''). Hablando de charlas, le agradezco al Dr. Ariel por esas charlas tan ilustrativas de historia de Latino América y por las sugerencias de películas colombianas para este colombiano. Un especial agradecimiento a Maca y al Dr. Agustín por la amistad, mi admiración para ustedes dos. Gracias al doctor Guillermo, mi director por darme la oportunidad de ser su becario doctoral, por siempre mantener la calma y serenidad. Gracias doctor por compartir su conocimiento sobre proteínas y en lo no académico por ofrecer su ayuda cada vez que estuve enfermo y cuando necesitaba algpo legal-administrativo.\\\vspace{-0.5cm}
+
+A Carla y su familia ``el Ale'', Franca y Salvador por permitirme llegar a su casa y prácticamente ser un miembro más de la familia. Y hablando de familia, Maia, Xul, Sole y Mauri mi familia argentina, en especial Sole por siempre estar ahí para escuchar, abrazar, sonreír y hablar (\textexclamdown sobre todo!). Eres ``amor puro'' y fui afortunado de conocerte, muchas gracias Sole.\\\vspace{-0.5cm}
+
+A las amistades colombianas, Lucía \& Fabián, Eliana \& Didier, Melina \& Felipe, Einy y Maria José gracias por compartir fechas de navidad, cumpleaños y asados. Gracias a mi primer mentor, el profe Alberto quien es el gran medida responsable de mi decisión para a realizar un doctorado. Como no agradecer a mi entrenador de alto rendimiento, el profe Ruben Dario gracias por la formación deportiva y sobre todo por sus enseñanzas humanas. Un especial agradecimiento a Stefanía por su amistad tan hermosa y por siempre brindar una sonrisa a cambio de un cafecito.\\\vspace{-0.5cm}
+
+A las personas más importantes en mi vida, \textbf{mi familia}, en especial a mis padres Lucy y Laurentino con quienes estaré eternamente agradecido por toda la educación familiar, el cuidado y el amor que me dan. También a mi hermano Fabián y hermana Ligia. Por otra parte, más que un agradecimiento una dedicatoria a mi familia biológica, mi madre Marina, hermanos y hermanas. Y como no agracedecer a mi \textit{fiancé} Amoy, gracias a tí la pandemia fue más llevadera, gracias por siempre estar al otro lado de la pantalla dispuesta a escucharme y por el amarme incondicionalmente, (también por la paciencia \textexclamdown claro!).\\\vspace{-0.5cm}
+
+Por último, agradecer al pueblo argentino. Por financiar a través de sus impuestos mi educación de posgrado.\\\vspace{2cm}
+
+\begin{flushright}
+Ubeiden Cifuentes Samboni
+\end{flushright}
+
+\endgroup

@@ -1,0 +1,39 @@
+\thispagestyle{empty}
+%%%%%%%%%%% Figura %%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=0.725\textheight, height=\textheight, keepaspectratio]{fig/00_logo/logos.pdf} 
+    \label{fig:family_receptors}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%% 
+
+{\LARGE \textcolor{myblue}{Declaración}}
+\vspace{0.7cm}
+
+“Ésta Tesis se presenta como parte de los requisitos para optar al grado académico de Doctor en Ciencias Químicas, de la Universidad Nacional de Córdoba y no ha sido presentada previamente para la obtención de otro título en esta Universidad u otra. La misma contiene los resultados obtenidos en investigaciones llevadas a cabo en el grupo de Biofísica del Centro de Investigaciones en Química Biológica de Córdoba (CIQUIBIC), dependiente del CONICET, y el Departamento de Química Biológica Ranwel Caputto (DQBRC) de la Facultad de Ciencias Químicas. Trabajo realizado con la dirección del Dr. Guillermo Gabriel Montich durante el período comprendido entre septiembre de 2018 y \hl{junio de 2024}.''\\[1.0cm]
+
+
+La Comisión Evaluadora de Tesis fue integrada por:
+
+\begin{itemize}
+\item{Dra. Virginia Miguel}
+\item{Dr. Ernesto Esteban Ambroggio}
+\item{Dr. Maximiliano Burgos Paci}
+%\item{Dr. \hl{Por definir (evaluador externo)}}
+\item{Dr. Mario Gabriel Del Pópolo (evaluador externo)}
+\end{itemize}
+
+\vspace{2cm}
+
+
+\begin{table}[H]
+%\centering
+\begin{tabular}{ccccccccccccccccc}
+\monthyeardate\today & \multirow{2}{*} & & & & & & & & &&&&&&& {Ubeiden Cifuentes Samboni} \\
+Córdoba - Argentina   &                                           
+\end{tabular}
+\end{table}
+
+
+
+

@@ -1,0 +1,62 @@
+\input{preambulos/config}
+
+\begin{document}
+
+\renewcommand{\contentsname}{Contenido}
+\renewcommand{\tablename}{\textbf{Tabla}}
+\renewcommand{\figurename}{\textbf{Figura}}
+\renewcommand{\listtablename}{Lista de tablas}
+\renewcommand{\listfigurename}{Lista de figuras}
+
+\includepdf[scale=1.03, page=-]{porta_cover/front.pdf}
+\include{porta_cover/cover}
+\include{porta_cover/portada}
+
+\setcounter{page}{1}
+\pagenumbering{Roman}
+\include{porta_cover/portada2}
+\include{preambulos/agrad}
+\tableofcontents
+
+
+\frontmatter
+\newpage
+\include{preambulos/resum}
+\addcontentsline{toc}{chapter}{Resumen} 
+\clearpage
+
+\newpage
+\include{preambulos/abreviaturas}
+\addcontentsline{toc}{chapter}{Lista de abreviaturas} 
+\clearpage
+
+\listoffigures
+\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de 
+\clearpage
+\listoftables
+\addcontentsline{toc}{chapter}{Lista de tablas} % para que aparezca en el indice de contenidos
+\clearpage
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\mainmatter
+\include{chap/cap1}
+\include{chap/cap2}
+\include{chap/cap3}
+\include{chap/cap4}
+\include{chap/cap5}
+\include{chap/cap6}
+\include{chap/cap7}
+%%
+\include{Anexos/apendixB}
+
+\def\bibfont{\scriptsize} %%%reducir fontsize biblio
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliographystyle{biblioStyle} %%%plainnat without doi, url, issn
+\setlength{\parindent}{0pt} % Disable indentation within this group
+\bibliography{biblio}
+
+
+\includepdf[scale=1.03, page=-]{porta_cover/back.pdf}
+\end{document}

@@ -1,0 +1,302 @@
+%\newcommand{\DoNotLoadEpstopdf}{}
+\documentclass[a4paper,12pt,spanish,twoside,openany]{book}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel} %escribir con acentos sin necesidad de comandos
+\usepackage{fancyhdr}
+
+\usepackage[scaled]{uarial} %%%Tipo de letra a usar en el documento
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc} %%%Tipo de letra a usar en el documento
+
+\usepackage{pdfpages}
+
+\usepackage{threeparttable}
+\usepackage{amscd}
+\usepackage{textgreek}
+\usepackage{relsize}
+\usepackage{here}
+\usepackage{graphicx}
+
+\usepackage{caption}
+
+\expandafter\def\csname ver@subfig.sty\endcsname{}
+\usepackage{lipsum}
+\usepackage{lscape} %%%Hoja horizontal
+\usepackage{pdflscape}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{ltablex}
+
+\usepackage{xcolor, color, soul}
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{glossaries}
+\usepackage{makeidx}
+\usepackage{acronym}
+\usepackage{thumbpdf}
+\usepackage[hidelinks,colorlinks=false,linkcolor=black,citecolor=blue]{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl} %%%break in extra-large url
+
+
+\usepackage{transparent} % for transparency
+\usepackage{setspace} 
+
+\usepackage{wrapfig,booktabs} %%Para tablas flotantes
+\usepackage{nicematrix}
+\setcounter{MaxMatrixCols}{30}
+\usepackage{fontawesome, xcolor}
+
+\usepackage{stix} %%%Para figuras geométricas, como pentagono
+\usepackage{nicematrix} %%%%Para las matrices
+\usepackage{colortbl}
+\usepackage{tikzsymbols}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric} % Load the library for geometric shapes
+%%%%%Fin
+
+
+\geometry{a4paper, top=20mm, left=30mm, right=10mm, bottom=20mm,
+headsep=10mm, footskip=12mm}
+
+\definecolor{mygreen}{RGB}{0,100,0}  %%%Se usa más adelante para la tabla
+\definecolor{myblue}{RGB}{0,55,100}
+
+%%%Los uso en los gráficos de densidad en simulaciones
+\definecolor{babyblueeyes}{rgb}{0.63, 0.79, 0.95}
+\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
+
+%%%%%reduce space table-text
+\setlength{\textfloatsep}{1.8 pt }
+\setlength{\abovecaptionskip}{3.8pt} 
+\setlength{\belowcaptionskip}{3.8pt}
+
+
+\makeglossaries
+\makeindex
+
+\usepackage{rotating} %Para rotar texto, objetos y tablas seite. No se ve en DVI solo en PS. Seite 328 Hundebuch
+                        %se usa junto con \rotate, \sidewidestable ....
+
+%%%Para fecha en la portada
+\usepackage{datetime} %%%data time
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+
+% Redefine \monthname to capitalize the first letter
+\renewcommand{\monthname}[1][\month]{%
+    \ifcase#1\or Enero\or Febrero\or Marzo\or Abril\or Mayo\or Junio\or
+    Julio\or Agosto\or Septiembre\or Octubre\or Noviembre\or Diciembre\fi
+}
+%%%%%%Fin%%%%%
+
+%%%%%%%%%Formaro títulos y subtítulos%%%%%%%%%%%%%%%%
+\usepackage{lmodern}  %*****Para Número GRANDE fancy en cada caítulo*****
+\usepackage{microtype}
+\usepackage{titlesec}
+%\usepackage{graphicx}
+\usepackage{sectsty}
+\chapterfont{\color{myblue}}  % sets colour of chapters
+\sectionfont{\color{myblue}}  % sets colour of sections
+\subsectionfont{\color{myblue}}  % sets colour of subsections
+\subsubsectionfont{\color{myblue}}  % sets colour of subsections
+
+%%%Para cuadro con número en cada capítulo
+\titleformat{\chapter}[block]
+{\color{myblue}\normalfont\bfseries\onehalfspacing}
+   {\rlap{\makebox[\linewidth][r]{%
+      \rotatebox[origin=c]{90}{% %%Ángulo CAPÍTULO
+      \normalfont\color{myblue}\large%
+      \textls[90]{\textsc{\chaptertitlename}}%
+   }\hspace{10pt}% %%%Espacio entre "CAPÍTULO y el cuadro
+   {\setlength\fboxsep{0pt}%
+      \colorbox{myblue}{\parbox[c][3.0cm][c]{2.5cm}{% %%Tamaño de cuadro
+      \centering\color{white}\fontsize{80}{90}\selectfont\thechapter}%
+   }}}%
+   }}
+   {0pt}
+   {
+   \huge\parbox{\dimexpr\linewidth-3.7cm}}[{\medskip\color{myblue}\titlerule[2.5pt]}\color{myblue}\vskip2pt\titlerule]
+%   \titlespacing*{\chapter}{0pt}{-25pt}{1pt}
+\usepackage{lipsum}
+
+\titlespacing{\chapter}{0pt}{1pt}{30pt}  % Adjust the top margin space (before spacing)
+%\titlespacing{\chapter}{\SingleSpacing} 
+
+%%%linewidth-3.5cm} espacio entre título de cápituloo y cuadro con el número
+%%%vskip2pt espacio entre la linea pequeña y la grande
+
+%%%%{\color{myblue}\normalfont\bfseries} color título
+%*****FIN Para Número GRANDE fancy en cada caítulo*****
+
+%%%%%%%%%FIN Formaro títulos y subtítulos%%%%%%%%%%%%%%%%
+
+%%%******Formato para tablas*******
+\usepackage{pgfplotstable, booktabs}
+\pgfplotsset{compat=1.8}
+\usepackage{longtable}
+\usepackage{array}
+
+
+%%%****************Formato título figuras************
+% Define a new caption style
+\DeclareCaptionFormat{bold}{\textbf{#1#2}\textbf{#3}}
+\captionsetup[figure]{format=bold, labelfont=bf}
+
+\DeclareCaptionFormat{colored}{\color{myblue}\textbf{#1#2}\textbf{#3}}
+\captionsetup[figure]{format=colored, labelfont=bf}
+
+%%%%%%Labels top para las subfiguras
+\captionsetup{font={bf,small},skip=0.25\baselineskip}
+\captionsetup[subfigure]{font={bf,small}, skip=1pt, singlelinecheck=false}
+%%%****************FIN Formato título figuras************
+
+%%%%%%% Para Lista de figuras
+\DeclareCaptionFormat{bold}{\textbf{#1#2}\textbf{#3}}
+\captionsetup[table]{format=bold, labelfont=bf}
+\DeclareCaptionFormat{colored}{\color{myblue}\textbf{#1#2}\textbf{#3}}
+\captionsetup[table]{format=colored, labelfont=bf}
+
+% Change figure and table numbering format
+\renewcommand{\theequation}{\thechapter.\arabic{equation}}
+\renewcommand{\thefigure}{\textbf{\thechapter.\arabic{figure}}}
+\renewcommand{\thetable}{\textbf{\thechapter.\arabic{table}}}
+
+
+\pagestyle{fancyplain}%\addtolength{\headwidth}{\marginparwidth}
+\textheight22.5cm \topmargin0cm \textwidth16.5cm
+\oddsidemargin0.5cm \evensidemargin-0.5cm%
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter\; #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\; #1}}
+\lhead[\fancyplain{}{\thepage}]{\fancyplain{}{\rightmark}}
+\rhead[\fancyplain{}{\leftmark}]{\fancyplain{}{\thepage}}
+\fancyfoot{}
+\thispagestyle{fancy}%
+
+
+
+%Para tablas,  redefine el backschlash en tablas donde se define la posici\'{o}n del texto en las
+%casillas (con \centering \raggedright o \raggedleft)
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\let\PBS=\PreserveBackslash
+
+%Espacio entre lineas o interlineado del documento
+\renewcommand{\baselinestretch}{1.5}
+
+%Neuer Befehl f\"{u}r die Tabelle Eigenschaften der Aktivkohlen
+\newcommand{\arr}[1]{\raisebox{1.5ex}[0cm][0cm]{#1}}
+
+%Neue Kommandos
+\usepackage{Befehle}
+%Inicio del documento. Tener en cuenta que hay archivos auxiliares
+
+%%%Para los marcadores más adelante de las gráficas
+\definecolor{falured}{rgb}{0.5, 0.09, 0.09} %%2.0%
+\definecolor{emerald}{rgb}{0.31, 0.78, 0.47} %%%3.5%
+\definecolor{goldenpoppy}{rgb}{0.99, 0.76, 0.0} %%5.0
+\definecolor{deepmagenta}{rgb}{0.8, 0.0, 0.8}  %%7.0%
+
+\definecolor{deeppink}{rgb}{1.0, 0.08, 0.58}
+\definecolor{falured}{rgb}{0.5, 0.09, 0.09}
+
+\definecolor{popc}{rgb}{0.6.,0.8.,0.2}
+\definecolor{pcpg}{rgb}{0.58,0.34,0.92}
+\definecolor{popg}{rgb}{0.35,0.31,0.81}
+\definecolor{dppc}{rgb}{0.98, 0.2, 0.0}
+%%%%%Fin colores%%%%%%%%%%%%%%
+
+%%%%%%%Para hacer tabla Pad tipo usado en el Factor Lambda Chap 3
+\usepackage{environ}
+\newcommand{\TablePad}{\vspace{-0.2cm}}
+\NewEnviron{EntriesTableDuration}{
+\TablePad
+\begin{tabularx}{\textwidth}{@{}p{0.10\textwidth}@{\hspace{0.02\textwidth}}p{0.88\textwidth}@{}}
+  \BODY
+\end{tabularx}
+\TablePad
+}
+\NewEnviron{EntriesTableYear}{
+\TablePad
+\begin{tabularx}{\textwidth}{@{}p{0.05\textwidth}@{\hspace{0.01\textwidth}}p{0.94\textwidth}@{}}
+  \BODY
+\end{tabularx}
+\TablePad
+}
+%%%%Fin formato%%%
+
+%%%%Para símbolo de aprox igual
+\DeclareFontFamily{U} {cmsy}{}
+\DeclareFontShape{U}{cmsy}{m}{n}{
+  <-6> cmsy5
+  <6-7> cmsy6
+  <7-8> cmsy7
+  <8-9> cmsy8
+  <9-10> cmsy9
+  <10-12> cmsy10
+  <12-> cmsy12}{}
+\DeclareSymbolFont{Xcmsy} {U} {cmsy}{m}{n}
+\DeclareMathSymbol{\Xapprox}{\mathrel}{Xcmsy}{25}
+%%%Fin
+
+%%%encabezado en minúscula
+\fancyhead[LO]{\itshape\nouppercase{\rightmark}}
+\fancyhead[RE]{\itshape\nouppercase{\leftmark}}
+
+
+%%%$Formato biobliografia
+\usepackage[square, authoryear, sort,compress]{natbib}
+
+\makeatletter
+%\renewcommand{\@biblabel}[1]{\makebox[1em][l]{#1.}} Solo el número
+\renewcommand{\@biblabel}[1]{[#1].}
+
+
+%%%%Símbolo derivda parcial para monocapas
+\DeclareMathSymbol{\partial}{\mathord}{letters}{"40}
+
+
+%%%Para evitar espacios blancos cuando la página no esta full text
+\raggedbottom
+\setlength\@fptop{0\p@}% float at the top
+
+%%%%%%%%%%%%%Para imprimir código Python%%%%%%%%%%%%%%%
+\usepackage{listings} %%Para imprimir codigo pyhton en anexos
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+%    basicstyle=\ttfamily\footnotesize,
+    basicstyle=\ttfamily\scriptsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    caption={\textcolor{myblue}{\lstname}},
+    lineskip=-0.5ex
+}
+
+\lstset{style=mystyle}
+
+% Setting font color of the caption to myblue
+\captionsetup[lstlisting]{font={color=myblue, bf}}
+
+
+% Redefining the caption name
+\renewcommand\lstlistingname{Código}
+
+%%%%%%%%%%%%%FIN %%%%%%%%%%%%%%%
