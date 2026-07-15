@@ -1,0 +1,12 @@
+0.	https://extensions.openoffice.org/en/search?f%5B0%5D=field_project_tags%3A157
+
+
+1.	Get the dictionary file en_US.oxt from Open Office link
+
+2.	rename the file to en_US.zip.
+
+3.	Unzip it.
+
+3.	Copy both en_US.aff and en_US.dic to your default or preferred dictionary location.
+
+4.	Use Texmaker >Options > Configure Texmaker > Editor > Spelling dictionary to select en_US.dic as your preferred spelling dictionary

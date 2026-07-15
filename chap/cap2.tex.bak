@@ -1,0 +1,104 @@
+\chapter{Metodología}\label{chap:metod}
+
+\section{Metodología experimental}
+
+\subsection{Plásmidos, reactivos, equipos y materiales}
+La secuencia de los segmentos \ac{tm}-\ac{ic} de los péptidos $\alpha$IIb y $\beta$3 fueron donados por el laborario del Dr. Jun Qin \citep{Yang2009}. Cada plásmido fue clonado en la cepa de bacteria \ac{ecoli} DH5$\alpha$. Los plásmidos clonados fueron purificados usando un kit de purificación de ADN ``Wizard Plus SV Miniprep'' (Promega, Madison, WI, USA). El \ac{iptg} fue adquirido en Gentbiotech. Las  columnas  de Sefarosa Ni HisTrap HP  5 mL y de desalado PD-10 fueron adquiridas en GE Healthcare (Cat. 71-5027-68 Cat. 17085101, respectivamente). Para el \ac{hplc} se usó en equipo Agilent Technologies 1260 Infinity con detector de arreglo de diodos y longitud de onda múltiple (DAD VL), equipado con software ChemStation/Open LAB; columna Ultisil XB-C4, 5 $\mu$m, 300 Å, 4.6x250 mm, cat.00216-33043 (Welch SKU. H00216-33043, USA). Las membranas de celulosa (Dialysis Tubing, Benzoylated, poro de 2000 MWCO) fueron adquiridas en SIGMA. La concentración de proteína fue determina en espectrofotómetro Varian 2300, (Palo Alto, CA, USA). Las \ac{sds} y disoluciones amortiguadoras fueron preparadas usando agua grado Milli-Q tipo 1. Los análisis de \ac{em} se realizaron en un espectrómetro de masas ESI-Qq-TOF (Bruker). 
+Los lípidos \ac{popc}, \ac{popg}, \ac{dppc}, fueron adquiridos en Avanti Polar, USA; el  \ac{chcl3}, \ac{acn} y \ac{meoh} grado \ac{hplc} en la firma Merck, Alemania.
+
+\subsection{Extracción y clonación de plásmidos}
+%%Para redactar ver parte se soporte del paper Qin & Jun
+%%%https://www.sciencedirect.com/science/article/pii/S0168165622003042?via%3Dihub
+%%% diagrama del plasmido https://sci-hub.se/10.1080/10409230490514008
+Ambos plásmidos pMAL-c2 (New England Biolabs, Inc., Beverly, MA) fueron replicados por separado en la cepa \emph{E. coli} DH5$\alpha$ (ver \textbf{protocolo} \ref{Protocolo Plasmido}). Este vector contenía la secuencia que codifica cada péptido y la \ac{mbp} para facilitar un primer paso de purificación que llamaremos ``proteína fusión''. Entre el N-terminal de la \ac{mbp} y el C-terminal de cada péptido hay una secuencia de hexahistidina o His$_{6}$-\emph{tag} y sitio de corte para la proteasa del \ac{tev} que permiten separar cada secuencia de interés en dos pasos de purificación (\textbf{figura} \ref{fig:plasmido}). Además, posee la secuencia \emph{amp$^r$} que permite seleccionar bacterias que incorporen el plásmido con ampicilina. Todos los medios y material utilizado, así como el agua Milli-Q fueron esterilizados en autoclave por 30 minutos a 1.2 atm de presión y 120\textdegree C.
+
+%%%%%%%%%%%%%%%%%%%%% Fig plasmido %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h] % supposedly places it here ...
+    \centering
+	\includegraphics[width=0.69\linewidth]{fig/01_expe/pmal_c2.pdf}
+	\caption[Esquema del plásmido pMAL-c2 - $\alpha$IIb/$\beta$3]{Esquema plásmido pMAL-c2 - $\alpha$IIb/$\beta$3. Figura adaptada de Vector Database por \href{https://www.addgene.org/}{addgene.org} (2023). Extraído de \href{https://www.addgene.org/vector-database/3506/}{https://www.addgene.org/vector-database/3506/}.
+        \index{plasmido}}
+    \label{fig:plasmido}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Expresión y purificación de la proteína fusión}\label{sec:expre_akta}
+
+Una vez propagado el plásmido de cada péptido en bacterias \emph{E. coli} DH5-$\alpha$ se expresó la proteína fusión en una cepa de bacterias \emph{E. coli} BL21(DE3), ver \textbf{protocolo} \ref{Protocolo_Fusion}. Posteriormente se lisaron las bacterias y se purificó la proteína por afinidad a níquel en \ac{fplc}.
+Se cuantificó cada proteína fusión por espectrofotometría \ac{uv} teniendo en cuenta los coeficientes de absortividad molar, {\Large{$\varepsilon$}} a 280 nm: {\Large{$\varepsilon$}}$_{\alpha \text{IIb}}$ = 85830 M$^{\text{--1}}$ cm$^{\text{--1}}$, {\Large{$\varepsilon$}}$_{\beta\text{3}}$ = 83310 M$^{\text{--1}}$ cm$^{\text{--1}}$; valores obtenidos de \url{https://web.expasy.org/protparam/}. El rendimiento de cada \textbf{proteína fusión} fue de 10 y 15 mg/L cultivo para $\alpha$IIb y $\beta$3,  respectivamente.
+
+Por otra parte, también se expresó y purificó la proteasa \ac{tev} en nuestro laboratorio. El plásmido de la proteasa TEV (donado por el laboratorio del Dr. Ernesto Ambroggio) se inoculó en la cepa \emph{E. coli} BL21(DE3) y se purificó por afinidad a níquel.
+
+\subsection{Clivaje y diálisis}
+
+La proteína fusión fue incubada con la proteasa \ac{tev} y se dejó a 30\textdegree C por $\Xapprox$ 48 horas. Se centrifugó y  se recuperó el sobrenadante y se dializó en membranas de celulosa contra agua con agitación constante a 4\textdegree C. El contenido de las membranas se centrifugó en tubos eppendorf a 13000 \ac{rpm} por 10 minutos, \textbf{precipitando el péptido transmembrana} (en el sobrenadante se separó \ac{mbp}, \ac{tev} y proteína fusión sin cortar). El pellet se resuspendió en \ac{acn}:H$_{2}$O 40\%:60\% (vol/vol) con \ac{tfa}, consultar \hyperref[Protocolo_TEV]{\textbf{protocolo} \ref*{Protocolo_TEV}} para más detalle.
+
+\subsection{Repurificación por \ac{hplc}}
+
+%%%%%%%%%%%%%%%%%%%%% Tabla pequeña %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{wraptable}{r}{3.5cm}
+\vspace{-0.63cm} %%%Posiciona a una altura en la hoja
+\centering
+    \caption{\\Gradiente HPLC.}\label{tab:hplc_gradiente}
+    \begin{tabular}[t]{ccc}%%%
+     \toprule  % <-- Toprule here
+      {Min}  & {A\%} & {B\%}\\
+      \hline
+        0       &  60    & 40  \\
+        7       &  58    & 42 \\
+        8       &  54    & 46  \\
+        10      &  48    & 52 \\
+        15      &  44    & 56  \\
+        20      &  40    & 60 \\
+        25      &  36    & 64  \\
+        30      &  32    & 68 \\
+        35      &  28    & 72  \\
+    \textbf{40} & \textbf{24}    & \textbf{76} \\
+        45      &  15    & 85  \\
+        50      &  5     & 95 \\
+        55      &  0     & 100  \\
+      \bottomrule % <-- Bottomrule here
+    \end{tabular}
+    \vspace{-6cm} %%%Posiciona texto debajo tabla
+    \end{wraptable} 
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+Se realizaron múltiples cromatografías inyectando 1.0 mL de muestra bajo las siguientes condiciones cromatográficas:
+
+\begin{tabularx}{\textwidth}{@{}p{0.20\textwidth} p{0.85\textwidth}@{}}
+Fase móvil A: & 40\% H$_{2}$O(+0.1\% \ac{tfa}) \\
+Flujo:              & 1.0 mL/min        \\ 
+Temperatura:        & 40\textdegree C              \\
+Presión máxima:     & 210 bar           \\
+Detector UV:        & 280 nm            \\
+Inyección:          & 1.0 mL (manual)     \\
+Fase móvil B:   & 100\% \ac{acn}(+0.1\% \ac{tfa}) \\
+\end{tabularx}
+
+
+Se colectaron todas fracciones de la cromatografía según el gradiente de la \textbf{tabla} \ref{tab:hplc_gradiente} y se verificó la pureza por geles \ac{sds} y por \ac{em}.  Los péptidos purificados fueron solubilizados en \ac{acn}:H$_2$O 67\%/33\% (vol/vol); la concentración se determinó por absorbancia \ac{uv} teniendo en cuenta los {\Large{$\varepsilon$}} a 280 nm para cada péptido: {\Large{$\varepsilon$}}$_{\alpha \text{IIb}}$ = 16500 M$^{\text{--1}}$cm$^{\text{--1}}$, {\Large{$\varepsilon$}}$_{\beta \text{3}}$ = 13980 M$^{\text{--1}}$cm$^{\text{--1}}$. La remoción de \ac{tfa} y verificación de estructura secundaria de los péptidos se realizó por espectroscopía \ac{ftir}-\ac{atr}. El rendimiento final fue de 400 $\mu$g/L cultivo para $\alpha$IIb y 600 $\mu$g/L para $\beta$3. Se fraccionaron y almacenaron a -20\textdegree C para su posterior uso (ver \hyperref[Protocolo_HPLC]{\textbf{protocolo} \ref*{Protocolo_HPLC}}).
+
+\subsection{Electroforesis en gel y \ac{em}}
+
+%%https://core.ac.uk/download/pdf/71054185.pdf
+La pureza de ambos péptidos fue confirmada por geles SDS-PAGE y \ac{em}. Al tratarse de péptidos altamente hidrofóbicos se prepararon geles de poliacrilamida al 18\% en condiciones desnaturalizantes con \ac{sds}, junto con las muestras se sembró un marcador de peso molecular como referencia. La electroforesis se corrieron a 125 V y 4\textdegree C.
+
+Se preparó una solución 100 $\mu$M de péptido en \ac{acn}:H$_2$O 67\%/33\% (vol/vol) + 0.1\% ácido fórmico y se inyectó en el espectrómetro de masas. El espectro fue adquirido en modo ion positivo desde 250 a 30000 m/z, con flujo de inyección de $\mu$L/min. El procesamiento de los datos se realizó en el software Data Analysis de Bruker. Se promediaron dos cromatogramas, se procesó por deconvolución de la carga después de haber sustraído la línea base y se realizó un suavizado para obtener un cromatograma de alta resolución relación masa-carga m/z. Alternativamente los datos fueron post-procesados usando el Algoritmo de Máxima Entropía para obtener un espectro de masa neutra. Para ambos péptidos se obtuvo la masa esperada para los monómeros.
+
+\subsection{Experimentos de monocapas de Langmuir}
+
+Los experimentos de monocapas de Langmuir fueron realizados a temperatura ambiente (20\textdegree C). Todos los stock de soluciones de lípidos fueron preparadas en \ac{chcl3}:\ac{meoh} 2:1 (vol/vol). Las monocapas se realizaron en una unidad de control de Monofilmeter (con Film Lift, Mayer Feintechnique, Alemania). La presión superficial ($\pi$) se midió usando el método de Wilhelmy con una placa Platinized-Pt y el potencial superficial ($\Delta$V) se detectó mediante el uso de una placa ionizante de americio ($^{241}$Am) y un electrodo de calomelanos conectados a un voltímetro. Los datos fueron registrados de forma continua y simultánea con un registrador X-YY de doble canal. El área superficial total de la cuba de Teflón fue de 80 cm$^2$ con capacidad de $\Xapprox$ 75 mL para la subfase (PBS 20 mM, NaCl 100 mM a pH 7.4). Para los péptidos puros se evaporó el solvente ACN:H$_2$O con flujo de nitrógeno (N$_{2 \text{(g)}}$) y se realizaron al menos 3 lavados con CHCl$_3$:MeOH 2:1 (vol/vol). La monocapa se formó sembrando 0.5 nmoles de péptido en solución de CHCl$_3$:MeOH  en la subfase usando una jeringa Hamilton. Tanto para la isoterma del lípido puro como para las mezclas con péptidos se procedió de forma similar y se esperó por 8 minutos antes de empezar la compresión para dar tiempo a la evaporación del solvente y posteriormente se empezó a comprimir a razón fija de $\Xapprox$ 5.3 \AA $^{\text{2}}$ molécula$^{\text{--1}}$ s$^{\text{--1}}$. Antes de sembrar las muestras se realizaron los respectivos controles, para la superficie limpia y los disolventes de las muestras, en donde no se observó actividad superficial de los disolventes. Cada experimento se realizó por triplicado de forma independiente y se prepararon soluciones frescas de cada lípido cerca al momento de utilizarse.
+
+Se realizaron ciclos de compresión-expansión, inicialmente las barreras se fijaron en 60 cm$^2$, se inició la compresión hasta llegar a los $\Xapprox$ 13 cm$^2$ y se expandió hasta los $\Xapprox$ 60 cm$^2$ y así se repitió tres veces para cada muestra.
+
+\section{Metodología computacional}
+
+\subsection{Preparación de los sistemas}
+
+Las simulaciones grano grueso se realizaron usando el campo de fuerza Martini 2 \citep{DeJong2013}, las coordenadas los dominios transmembrana-citoplasmático de la integrina $\alpha$IIb$\beta$3,  fueron tomadas de la base de datos proteínas ``\textit{Protein Data Bank}'' identificados con el código PDB 2KNC \citep{Yang2009}. Se usó el servidor CHARMM-GUI \citep{Wu2014} para insertar el heterodímero $\alpha$IIb$\beta$3 en una bicapa, el cual implementa los programas martinize.py \citep{DeJong2013} e INSANE (\textit{INSert membrANE}) para producir la estructura Martini de los lípidos y proteína, respectivamente \citep{Wassenaar2015}. Además, se hidrató el sistema con agua tipo PW \citep{Yesylevskyy2010}, finalmente se agregaron partículas sodio y cloro hasta una concentración 0.15 M de NaCl. Se aplicó una red elástica aplicada (ElNeDyn) \citep{Periole2009} sobre las partículas C$_\alpha$ de cada péptido usando un radio de corte de 7 \AA con una constante de 10 kJ mol$^{\text{--1}}$ \AA $^{2}$, el heterodímero $\alpha$IIb$\beta$3  fue insertado en 4 membranas de diferente composición cada una compuesta de 250 lípidos por hemicapa (POPC, POPG, POPC:POPG 70:30 (PCPG), DPPC). El sistema se minimizó por 1000 pasos usando el método \textit{steepest descent} \citep{Haug1976}, posteriormente se equilibró en condiciones \textit{NVT}: número de partículas (N), volumen (V) y temperatura (T) constantes  por 5 ns aplicando posiciones de restricción para los $C_\alpha$ en las regiones con $\alpha$ hélice. Finalmente, las simulaciones  se realizaron con el software de libre distribución GROMACS (\textit{GROningen MAchine for Chemical Simulations}) \citep{Lindahl2019}. Se usó el termostato de Berendsen \citep{Berendsen1984} y el barostato Parrinello-Rahman \citep{Parrinello1981} para mantener la temperatura a 320 K (excepto el sistema con DPPC que se simuló a 340 K) y la presión a 1 atmósfera con acoplamiento semi-isotrópico con una compresibilidad de 4.5 x 10$^{\text{--5}}$ bar$^{\text{--1}}$. Las interacciones eletrostáticas de largo alcance fueron incorporadas a través del método de partículas de  Ewald con un radio de corte de 1 nm. El mismo radio de corte se aplicó para las interacciones Lennard-Jones.
+Los dinámicas se produjeron con los recursos de cómputo del \ac{sncad} usando los clúster Mendieta, Serafín (CCAD-UNC, \href{http://ccad.unc.edu.ar}{http://ccad.unc.edu.ar}) y el clúster Create del King’s College London (\href{https://docs.er.kcl.ac.uk/CREATE/access/}{https://docs.er.kcl.ac.uk/CREATE/access/}). 
+
+\subsubsection{Análisis de datos}
+
+El procesamiento de los datos experimentales y de la dinámicas se realizaron con código Python haciendo uso de las librerías  Numpy, Pandas \citep{Harris2020, McKinney2010}. Todos los gráficos fueron generados con las librería Matplotlib y Seaborn \citep{Hunter2007, Waskom2021}. El análisis de trayectorias se realizó con el paquete GROMACS y la librería MDAnalisys \citep{Jo2011}. La visualización de las trayectorias se realizó con el software NGLView \citep{Nguyen2018}.

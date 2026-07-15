@@ -1,0 +1,9 @@
+PWD /home/quimico/Documentos/tesis_main/unc_tesis/chap
+INPUT /home/quimico/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
+INPUT cap2.tex
+OUTPUT cap2.log
+INPUT /home/quimico/.miktex/texmfs/install/fonts/tfm/public/cm/cmti10.tfm
+INPUT /home/quimico/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /home/quimico/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm
+OUTPUT cap2.pdf
+INPUT /home/quimico/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map

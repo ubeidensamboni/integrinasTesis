@@ -1,0 +1,32 @@
+\chapter{Perspectivas}
+
+Experimentalmente sería conveniente realizar una optimización a la metodología de expresión y repurificación por HPCL. Para la expresión se puede aumentar la cantidad en masa de proteína fusión realizando cultivos en un bioreactor. Cambiar el medio de cultivo por ejemplo, un LB fortificado con nutrientes. La repurificación por HPLC se podría escalar a una columna semi-preparativa, de esta forma cargar mayor cantidad de péptido previo a la elución evitando la sobresaturación de la columna como sucede al usar una columna analítica.
+
+Contando con una cantidad considerable de los péptidos entre 5 a 10 mg son varios los análisis biofísicos que se pueden realizar. Realizar experimentos de monocapas en el \ac{bam} para analizar la partición de los péptidos a determinadas fase lipídicas. Con espectroscopia de absorción por reflexión infrarroja (IRRAS) se puede conocer en detalle la orientación de los péptidos en las monocapas \citep{Rabe2014}. La espectroscopia de dicroísmo circular de radiación orientada es otra técnica que se puede emplear para saber la orientación y conformación de los péptidos en \acf{mlvs} \citep{Muruganandam2013}.
+
+Al inicio del desarrollo de esta tesis estuvimos realizando experimentos de micro calorimetría de barrido diferencial de los péptidos puros y mezcla lípido-péptido en \acf{mlvs} , sin embargo, por la limitada disposición de péptido puro no se continuaron. La finalidad de estas mediciones apuntaban a responder la pregunta cuál es la preferencia de partición de los péptidos en la fase gel o líquido cristalino de una membrana. También se realizaron mediciones preliminares por FTIR de los péptidos en MLV's enfocados a conocer el efecto de los lípidos sobre estructura secundaria.
+
+Realizar simulaciones multiescala grueso y átomo integrado para obtener los perfiles de energía libre de las interacciones lípido-péptido \citep{Corey2019, Domanski2017, Hedger2016}. En primera instancia se realizarían simulaciones CG que permiten obtener una adecuada exploración de la interacción lípido-proteína e identificar los sitios de contacto, posteriormente convertir a modelo atomístico y correr simulaciones de átomo integrado para cuantificar las interacciones. Además, en el análisis de contactos lípido-péptido considerar diferentes partículas del lípido, es decir, incluir las colas hidrocarbonadas que también podrían interaccionar con los péptidos.
+
+En humanos la membrana plasmática de eritrocitos tiene la composición lipídica en peso que se muestra  abajo \citep{Hildebrand1975, Bruce2002}. Realizar simulaciones de DM en un sistema más realístico en composición de la membrana podría aportar información más acertada sobre el efecto de la membrana en la conformación y orientación de la integrina.
+
+%%%Thomas E. Andreoli et al., Membrane Physiology (1987), Table 1, Chapeter 27
+\begin{table}[H]
+\centering
+%\caption{}
+%\label{tab:my-table}
+\begin{tabular}{ll}
+\rowcolor[HTML]{EFEFEF}
+\hline
+Lípido                & \%   \\ \hline
+colesterol            & 26.0 \\
+fosfatidilcolina      & 17.5 \\
+esfingomielina        & 16.0 \\
+fosfatidiletanolamina & 16.6 \\
+fosfatidilserina      & 7.9  \\
+fosfatidilinositol    & 1.2  \\
+otros                 & 12.5 \\ \hline
+\end{tabular}
+\end{table}
+
+En el presente estudio se trabajó solo con los segmentos TM-IC, dado que ya se dispone de la estructura completa integrina $\alpha$IIb$\beta$3 \citep{Adair2023}. A nivel experimental también se podría contactar a los autores si acceden a compartir el plásmido de la estructura y abordar estudios biofísicos experimentales y por simulaciones de DM para responder la pregunta del efecto del ambiente lipídico en la conformación de la integrina completa.

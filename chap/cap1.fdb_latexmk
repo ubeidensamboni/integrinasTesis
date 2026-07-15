@@ -1,0 +1,13 @@
+# Fdb version 4
+["pdflatex"] 1710186376 "cap1.tex" "cap1.pdf" "cap1" 1710186379 2
+  "/home/quimico/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1702947461 253908 89fb097b3cf5501d552ad63eaaeb6191 ""
+  "/home/quimico/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1695248391 20963286 cf277af914799e0648eff8e7331c5d7f ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm" 1694616633 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/cm/cmti10.tfm" 1694616633 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "cap1.aux" 1710186040 8885 0ccb262692b97d1ed1133645f0e7f93f "pdflatex"
+  "cap1.tex" 1710186376 32628 4084d8c215774224aa8f488d39021de4 ""
+  (generated)
+  "cap1.aux"
+  "cap1.log"
+  "cap1.pdf"
+  (rewritten before read)

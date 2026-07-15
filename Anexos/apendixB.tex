@@ -1,0 +1,289 @@
+\begin{appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Estructura y nomenclatura de aminoácidos. Histéresis en monocapas. Función de distribución radial}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%% Figura %%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=1\linewidth, height=0.6\textheight, keepaspectratio]{fig/04_anexos/aminioA_CG.png} 
+\caption[Estructura y nomenclatura de aminoácidos]{Estructura y nomenclatura de aminoácidos. Representación en modelo Martini CG. Figura adaptada de CC BY-SA 3.0 \url{https://commons.wikimedia.org/wiki/File:Amino_Acids.svg}.}
+        \index{tabla_aa}
+    \label{tab:tabla_aa}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%% 
+
+ %%%%%%%Hoja horizontal %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{landscape}
+%%%%%%%%%%% Figura %%%%%%%%%%%%
+\begin{figure}[h]
+ \centering
+	\includegraphics[width=1\linewidth, height=1.2\textheight, keepaspectratio]{fig/04_anexos/histeresisAll.png}
+	\caption[Histéresis de los péptidos puros y mezclas lípido-péptido]{Histéresis de los péptidos puros y mezclas lípido-péptido.}
+        \index{histeresisAll}
+    	\label{fig:histeresisAll}
+\end{figure}
+\end{landscape}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%% Figura %%%%%%%%%%%%
+\begin{figure}[h]
+ \centering
+	\includegraphics[width=1\linewidth, height=1.2\textheight, keepaspectratio]{fig/04_anexos/rdf_allConverg.png}
+	\caption[Convergencia de la función de distribución radial \textit{g(r)}]{Convergencia de la función de distribución radial \textit{g(r)}.}
+        \index{rdf_allConverg}
+    	\label{fig:rdf_allConverg}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Protocolo de expresión y purificación de péptidos $\alpha$IIb y $\beta$3}\label{Protocolo Plasmido}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{ghostwhite}{rgb}{0.97, 0.97, 1.0}
+
+\begin{center} % Center the TikZ picture
+\begin{tikzpicture}
+
+% Define box and box title style
+\tikzstyle{mybox} = [draw=myblue, fill=ghostwhite, very thick,
+    rectangle, rounded corners, inner sep=8pt, inner ysep=15pt]
+\tikzstyle{fancytitle} =[fill=myblue!80, text=white]
+\node [mybox] (box){%  
+    \begin{minipage}{0.99\textwidth}
+Las membranas biológicas son un ensamble complejo de una gran variedad de lípidos y proteínas que conjuntamente realizar procesos biológicos importantes a nivel celular. Con la finalidad de entender la funcionalidad de la membrana, resulta conveniente estudiar las proteínas que son intrínsecamente de membrana. La purificación de proteínas de membrana es un área considerablemente desafiante en la biología molecular \citep{Ma2013, Mathieu2019, Jeffery2016}. Un criterio esencial en la purificación de proteínas integrales de membrana es que la proteína debe ser removida cuidadosamente de su ambiente nativo (altamente hidrofóbico) y aislada individualmente en solución. Esto solo es posible realizando una secuencia de pasos específicos desde el momento de expresión o síntesis química, de tal forma que en cada paso se recupere la mayor cantidad de la proteína de interés hasta la solubilización con solventes. Si bien en la literatura se encuantran las intrucciones para la purificación de éstos péptidos \citep{Yang2009}, no fue sencillo replicar los resultados. En determinado momento después de varios meses de trabajo decidimos enviar la secuencia de los péptidos a una empresa extranjera para su producción por síntesis química y el resultado fue negativo luego de dos intentos, ambos péptidos precipitan en agregados insolubles. Por lo tanto, parte de esta tesis consistió en encontrar la condiciones de expresión y purificación que permitieran obtener una cantidad considerable (en masa) de cada péptido con alta pureza para realizar los experimentos. También hemos producido por expresión recombinante la proteasa \ac{tev} que normalmente se obtiene comercialmente a un alto costo. Particularmente en el grupo de investigación del Dr. Guillermo Montich fue la primera vez que se trabajó con proteínas transmembrana. De esta forma hemos dejado un protocolo detallado para la obtención de los segmentos \ac{tm}-\ac{ic} de $\alpha$IIb y $\beta$3, además, podría emplease para péptidos similares. \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {\Large{Purificación de proteínas transmembrana}};
+\node[fancytitle, rounded corners] at (box.east) {\faComment };
+\end{tikzpicture}%
+\end{center}
+
+
+\begin{table}[H]
+  \begin{center}
+  \centering
+  \captionsetup{justification=centering}  % Center the caption
+    \caption{Datos de proteína fusión, segmentos transmembrana, MBP y TEV.}
+    \label{tab:dat_proteina}
+    \begin{tabular}{l l| l l }
+      \toprule % <-- Toprule here
+
+		$\alpha$IIb-Fusión & 49.41 kDa 	& $\alpha$IIb 	& 6.05 kDa \\ 
+		{\Large{$\varepsilon$}}$_{\alpha \text{IIb-Fusión}}$ & 85830 M$^{\text{-1}}$cm$^{\text{-1}}$ & {\Large{$\varepsilon$}}$_{\alpha \text{IIb}}$ & 16500 M$^{\text{-1}}$cm$^{\text{-1}}$ \\
+		$\beta$3-Fusión 	& 52.11 kDa 	& $\beta$3 	& 8.76 kDa \\
+		{\Large{$\varepsilon$}}$_{\beta \text{3-Fusión}}$ & 83310 M$^{\text{-1}}$cm$^{\text{-1}}$ & {\Large{$\varepsilon$}}$_{\beta \text{3}}$ & 13980 M$^{\text{-1}}$cm$^{\text{-1}}$ \\
+      \midrule % <-- Midrule here
+      MPB & 42.49 kDa 	& TEV 	& 28.62 kDa \\ 
+      \bottomrule % <-- Bottomrule here
+    \end{tabular}
+  \end{center}
+\end{table}
+
+Los plásmidos pMAL-C2 que contienen la secuencia de los péptidos $\alpha$IIb y $\beta$3 fueron gentilmente donados por el Dr. Qin \citep{Yang2009}. 
+
+
+\section{Transformación de bacterias \emph{E. coli} DH5$\alpha$}
+      \begin{itemize}
+      \item{Agregar 1-2 $\mu$L del plásmido a un eppendorf. Si se encuentra depositado en gota sobre papel, recortar una pequeña parte y cortar en pedazos pequeños}
+        \item{Agregar 50 $\mu$L de buffer Tris 50 mM pH 8. Evitar diluir mucho}
+        \item{Dejar 30 minutos en suspensión}
+        \item{Rotular dos viales eppendorf según corresponda $\alpha$IIb ó $\beta$3 y conservar en frío.}
+        \item{Agregar a cada vial 100 $\mu$L de la cepa \emph{E. coli} DH5$\alpha$}
+        \item{Tomar 10 $\mu$L del plásmido resuspendido y transferirlos al vial que contiene la bacteria \emph{E. coli} DH5$\alpha$}
+        \item{Tapar y dejar durante 30 minutos en frío. calentar baño termostático a 42\textdegree C}
+        \item{Colocar los viales en el baño caliente durante 1 minuto y 30 segundos.}
+        \item{Colocar en hielo por 5 minutos}
+        \item{Agregar 900 $\mu$L de LB a los eppendorf anteriores ($\alpha$IIb y $\beta$3)}
+        \item{Calentar a 37\textdegree C por 1 hora}
+    \end{itemize}
+        
+\subsubsection{Cultivo en caja de Petri}
+
+\begin{itemize}
+\item{Utilizar 4 tubos, dos para $\alpha$IIb y dos para $\beta$3, en donde tendremos una siembra diluida y una concentrada, es decir, de los tubos eppendorf anteriores (900 $\mu$L de LB, 100 $\mu$L de la cepa E. coli DH5$\alpha$ y los 10 $\mu$L de la suspensión de cada plásmido = “células diluidas”). 
+Centrifugar a 4000 rpm/5 min y descartar todo el sobrenadante ($\Xapprox$ 800 $\mu$L), a esto los llamaremos  = “células concentradas”. Resuspender en los $\Xapprox$ 200 $\mu$L que sobraron pipeteando lentamente y esa serán las “células concentradas”.}
+
+\item{Rotular 4 cajas de Petri con medio LB (diluida y concentrada tanto para $\alpha$IIb como $\beta$3). Dispersar homogéneamente mediante a agitación con núcleos de ebullición de las células en el cultivo.} 
+
+\item{Pipetear 100 $\mu$L de “células” y depositarlos sobre las perlitas, luego tapar la caja y agitar con la finalidad que se “depositen” células por todo el medio y obtener diferentes colonias de bacterias que se puedan aislar fácilmente}
+\end{itemize}
+
+
+\subsubsection{Aislamiento de colonias}
+\begin{itemize}
+\item{Identificar y aislar una colonia (usando un palillo) y sembrarla en una caja de Petri con el mismo medio (LB \textbf{con ampicilina 100 $\mu$g/mL}; previamente secar)}
+
+\item{Además, los palillos que se usan en $\alpha$IIb$_{1,2}$ y $\beta$3$_{1,2}$ se introducen en los medios líquidos de LB en tubos de ensayo (2.5 mL LB con ampicilina \textbf{[100 $\mu$g/mL]}). La caja de Petri se incuba a 37 \textdegree C por más de 12 horas y los tubos de ensayo, con sus respectivas tapas se llevan a shaker a 37\textdegree C por más de 12 horas}
+
+ \item{Guardar células en glicerol al 15\% a -80\textdegree C}
+ 
+ \item{Para verificar la pureza y el masa molecular de cada plásmido realizar una extracción con kit comercial que disponga el laboratorio y seguir la indicaciones del proveedor.}
+
+\end{itemize}
+
+\textbf{Notas}:
+\begin{itemize}
+    \item{La idea de sembrar nuevamente en LB sólido es porque se obtienen colonias aisladas y una vez han crecido son las que se utilizan para extraer los plásmidos y sembrar nuevamente, pero en la cepa de expresión}
+    
+    \item{Los cultivos líquidos se hacen con la idea de que una vez se obtengan las células, se dejan en una solución de glicerol al 15\% a -80\textdegree C, y se usan como “solución stock” cuando se necesite obtener células con el plásmido para expresar}
+
+    \item{Las cajas de los primeros 4 cultivos se guardan temporalmente en una nevera para tenerlas como respaldo}
+    
+   
+    De cada tubo de ensayo de cultivo líquido de LB, se extraen 500 $\mu$L en un tubo eppendorf, previamente rotulado y agregar 500 $\mu$L de glicerol al 30\%, es decir se obtiene 1 mL de \textbf{solución stock de células} al 15\% de glicerol. Guardar cada tubo por duplicado a -80\textdegree C.
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Expresión, lisis y purificación de proteína fusión}\label{Protocolo_Fusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+El siguiente protocolo se realizó para expresar 4 L de cultivo de \textbf{proteína fusión} a partir del \textbf{stock de células} de cada péptido.
+
+\subsection{Expresión}
+
+\subsubsection{Preinóculo en cepa \ac{ecoli} BL21(DE3)}
+    \begin{itemize}
+        \item{Agregar 100 $\mu$L de ampicilina stock [100 mg/mL] a un frasco de agar LB de 100 mL}
+        \item{Agregar bacterias \emph{E. coli} DH5$\alpha$ transformadas. Usar punta amarilla}
+        \item{Dejar overnight a 37\textdegree C con agitación constante}
+\end{itemize}
+
+\subsubsection{Crecer células e inducir con IPTG}
+
+Para crecer las células se usar Erlenmeyers de capacidad y agregar 1 L de LB en cada uno suplementado con 1.0 mL de ampicilina [100 mg/mL].
+    \begin{itemize}
+        \item{Tomar 25 mL del precultivo y agregarlo a cada Erlenmeyer}
+        \item{Crecer a 37\textdegree C con agitación constante hasta obtener una \ac{do} entre 0.7-0.8 ($\Xapprox$ 7 horas)}
+        \item{Agregar 1.0 mL de IPTG 1 M [1.0 mM]$_{final}$ a cada Erlenmeyer}
+        \item{Agregar de nuevo ampicilina, 500 $\mu$L a cada cultivo}
+        \item{Dejar nuevamente a 37\textdegree C con agitación por 5 horas}
+    \end{itemize}
+
+\subsubsection{Centrifugar medios}
+    \begin{itemize}
+        \item{Trasvasar el cultivo a los frasco de polipropileno Nalgene (capacidad de 500 mL)}
+        \item{Colectar células por centrifugación a 4\textdegree C, 4500 \ac{rpm} durante 30 minutos}
+        \item{Descartar el sobrenadante}
+    \end{itemize}
+
+Después de obtener un \textbf{pellet} (precipitado) en cada frasco, juntar en 2 falcón de 50 mL y guardar a -20\textdegree C o a -80\textdegree C congelando previamente con nitrógeno líquido.
+
+\subsection{Lisis de células}
+Por geles \ac{sds} se vio que parte de la proteína fusión fue a cuerpos de inclusión, por lo tanto, para obtener la mayor cantidad de proteína se realizar la ruptura de las células por tres métodos de lisis: ciclos frío-calor, incubación con Lisozima-ADNasa, (Freeze/Thaw) y alta presión (homogeneizador Emulsiflex).
+
+\subsubsection{Ciclos frío-calor}
+     \begin{itemize}
+         \item{Resuspender cada pellet en 25 mL buffer de lisis \ac{pbs} 20 mM, 300 mM NaCl y 20 mM imidazol} + Triton X-100 [0.25\%]$_{final}$ (v/v)
+        \item{Congelar muestras con nitrógeno líquido y dejar a -80\textdegree C por 2 horas}
+        \item{Descongelar en un baño de agua a temperatura ambiente}
+        \item{Repetir proceso al menos 3 veces}
+    \end{itemize}
+
+\subsubsection{Incubación con Lisozima-ADNasa}
+     \begin{itemize}
+        \item{Agregar inhibidor de proteasa \ac{pmsf} a concentración [1 mM]$_{final}$}
+        \item{Agregar lisozima bovina [5 mg/L cultivo]$_{final}$}
+        \item{Agregar DNAsa [0.5 mg/L cultivo]$_{final}$}
+        \item{Agregar EDTA [1.0 mM]$_{final}$}
+        \item{Dejar a 4\textdegree C con agitación en rotor overnight}
+    \end{itemize}
+
+\subsubsection{Homogenizador Emulsiflex}
+     \begin{itemize}
+        \item{Pasar cada muestra al menos 4 veces por el Emulsiflex}
+        \item{Fijarse visualmente en la densidad y flujo al salir del Emulsiflex}
+        \item{Después de los 4 ciclos, la muestra debe ser casi un líquido fluido}
+    \end{itemize}
+
+Finalmente las muestras fueron centrifugadas a 9500 \ac{rpm} por 30 minutos a 4\textdegree C (Eppendorf Centrifuge 5804R), conservando el \textbf{sobrenadante}. 
+
+
+\subsection{Purificación por \"{A}KTA}
+
+\begin{itemize}
+    \item{Elución}
+     \begin{itemize}
+        \item{Equilibrar la columna con buffer A (el mismo de lisis)}
+        \item{Cargar el contenido de 2L de cultivo; si carga más podría sobre saturar la columna. Usar bomba peristáltica}
+        \item{Lavar con 10 \ac{cv} pasando buffer A. NO DESCARTAR ya que por geles \ac{sds} se observó que había proteína fusión, por lo tanto, se pasó después nuevamente por la columna}
+        \item{Llevar columna al \"{A}KTA y pasar otros 10-20 mL de buffer A para obtener una buena base de linea en el cromatograma}
+        \item{Eluir con buffer B, gradiente de imidazol de 20 a 400 mM (\ac{pbs} 20 mM, NaCl 300 mM, 400 mM imizadol)}
+        \item{Colectar fracciones}
+    \end{itemize}
+\end{itemize}
+
+\subsection{Cambio de buffer de la proteína fusión}
+Antes de cuantificar la concentración de cada proteína fusión, se procedió a concentrar todo el contenido de las fracciones colectadas en centricones Amicon Ultra-15 Centrifugal con 30 kDa de radio de corte y cambiar de buffer en columnas PD-10 Desalting (GE Healthcare).
+
+     \begin{itemize}
+        \item{Lavar centricones de \textit{cuttoff} 30 kDa con agua Milli-Q}
+        \item{Juntar todas las fracciones colectadas}
+        \item{Centrifugar a 4500 \ac{rpm} a 4\textdegree C por $\Xapprox$ 20 minutos. Conservar el contenido retenido}
+        \item{Equilibrar columna con buffer C (\ac{pbs} 20 mM, NaCl 150 mM y 7.5\% glicerol (vol/vol) pH 7.4)}
+        \item{Cargar muestra y eluir hasta casi sequedad}
+        \item{Agregar buffer C, eluir}
+        \item{Repetir hasta pasar toda la muestra previamente concentrada}
+    		\item{Cuantificar por espectrofotometría \ac{uv}. Fraccionar \textit{cutoff} y guardar a -20\textdegree C/-80\textdegree C}
+    		\item{}
+    \end{itemize}
+    
+Detalles técnicos columnas PD-10 Desalting \url{https://www.scientificlabs.co.uk/handlers/libraryFiles.ashx?filename=Manuals_1_17085101_A.pdf}
+
+
+\section{Clivar y dializar}\label{Protocolo_TEV}
+
+Tener en cuenta que la relación \ac{tev}:proteína es 1:30 mol a mol, por lo tanto, calcular bien la cantidad proteasa a usar según las concentraciones de TEV--proteína.
+
+    \begin{itemize}
+        \item{Descongelar las muestras de proteína y agregar \ac{dtt} [1.0 mM]$_{final}$}
+        \item{Agregar \textit{XX} $\mu$L de TEV a cada vial. Tapar y agitar suave}
+        \item{Dejar a 30\textdegree C por al menos 48 horas}
+        \item{Centrifugar todos los viales a 13 mil \ac{rpm} por 10 minutos a temperatura ambiente}
+        \item{Recuperar el \textbf{sobrenadante}. Concentrar en Amicón Ultra-15 Centrifugal con 3 kDa de radio de corte a 4500 \ac{rpm} a 4\textdegree C por $\Xapprox$ 40 minutos }
+
+        \item{Lavar las membranas con EDTA y bicarbonato de sodio a 60\textdegree C por 5 minutos. Pasar flujo de agua Milli-Q por la membrana o dejar en remojo con agitación suave por 2 horas}
+        \item{Cerrar/sellar uno de los extremos de la membrana, verificar que este bien sellado}
+        \item{Agregar la muestra evitando dejar aire pero lo suficiente para sellar el otro extremo. Colocar membranas en beaker de al menos 1 L con agua Milli-Q}
+        \item{Dejar 4\textdegree C con agitación. Realizar dos cambios de agua al menos dos veces cada 8 horas}
+        \item{Remover toda la muestra incluyendo el precipitado y pasarlo a un eppendorf. Centrifugar todos los viales a 13 mil \ac{rpm} por 10 minutos a temperatura ambiente}
+        \item{Separar el \textbf{pellet}. Juntar los pellets en falcón de 50 mL y resuspender en buffer (fase móvil A (H$_{2}$O:\ac{acn} 60\%/\%40, vol/vol, \ac{tfa} 0.01\% vol/vol)}
+        \item{Calentar a baño María $\Xapprox$ 40\textdegree C para facilitar la solubilización}
+        \item{Fraccionar en eppendorf y centrifugar todos los viales a 13 mil \ac{rpm} por 20 minutos a temperatura ambiente}
+        \item{Tomar sobrenadante, juntar nuevamente y filtrar con membranas PVDF 0.45 $\mu$m (Durapore Merck). Esto para proteger al máximo la columna del \ac{hplc}}   
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Repurificación de péptidos por HPLC}\label{Protocolo_HPLC}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Tenga presente que los solventes deben ser grado \ac{hplc}, el agua Milli-Q se debe filtrar con membranas PVDF 0.22 $\mu$m y desgasar. Se recomienda seguir los cuidados de la columna según el manual del usuario disponible en: \url{https://vneshbiotorg.ru/upload/welch/use-and-maintainance-of-hplc-column-welch%20materials.pdf}.
+
+\subsection{Purgar equipo y equilibrar columna}
+     \begin{itemize}
+        \item{Lavar y purgar bombas y loop del \ac{hplc} con agua y luego con la fase móvil A}
+        \item{Equilibrar columna. Fijarse si está en \ac{meoh} debe hacer el cambio con los cuidados necesarios de gradiente y flujo}
+        \item{Correr al menos 10 \ac{cv} de fase móvil A a 1.0 mL/min a 40\textdegree C}
+        \item{Verificar que la presión no sobrepase los 210 bar. Si los supera bajar el flujo}
+    \end{itemize}
+
+\subsection{Inyectar y correr muestra}
+     \begin{itemize}
+        \item{Cargar 1 mL en el loop de la muestra previamente solubilizada y filtrada}
+        \item{Iniciar cromatografía con el gradiente especificado en la metodología}
+        \item{Colectar todas las fracciones con señal en el \ac{uv} a 280 nm distinguiendo en los diferente picos cromatográficos, es decir, que se resuelvan bien en el tiempo. El pico de los péptidos corresponde al \ac{tr} de 40--45 minutos}
+        \item{Equilibrar de nuevo y repetir proceso hasta pasar toda la muestra}
+        \item{Lavar bien la columna y el equipo \ac{hplc}}
+    \end{itemize}
+
+\subsection{Liofilizar y remover TFA}
+    Anteriormente se mencionó colectar las fracciones correspondientes a los picos del cromatograma que se resuelven bien entre ellos, esto para hacer seguimiento por geles \ac{sds}. El pico correspondiente a los péptidos puros sale a los 40 minutos.
+     \begin{itemize}
+        \item{Juntar todas las fracciones del minuto 40 en un balón de destilación y llevar a un rotaevaporador hasta sequedad}
+        \item{Pasar balón a una línea de Schlenk o rampa de vacío con doble trampa de nitrógeno líquido
+        \item{Realizar entre 3--4 lavados con \ac{acn}:H$_{2}$O:A. acético} al 60\%:20\%:20\% (vol/vol) para remover el \ac{tfa}}
+        \item{Resuspender en \ac{acn}:H$_{2}$O 67\%:33\% (vol/vol) y verificar la presencia del \ac{tfa} a los 1671 cm$^{\text{--1}}$ por FTIR}
+    \end{itemize}
+
+\end{appendix}

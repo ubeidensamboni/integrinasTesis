@@ -1,0 +1,23 @@
+# Fdb version 4
+["pdflatex"] 1710515071 "cap4.tex" "cap4.pdf" "cap4" 1710515074 2
+  "/home/quimico/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1710243587 253908 89fb097b3cf5501d552ad63eaaeb6191 ""
+  "/home/quimico/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1710340881 20963286 a234fdaafbff695abc2ad67274cc70d6 ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1694616692 1436 c7f957a372ef2fbe93c0982f96625e12 ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1694616770 1120 1e8878807317373affa7f7bba4cf2f6a ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1694616770 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm" 1694616770 1496 c79f6914c6d39ffb3759967363d1be79 ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmmib7.tfm" 1694616770 1508 6e807ff901c35a5f1fde0ca275533df8 ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/cm/cmbsy10.tfm" 1694616633 1116 4e6ba9d7914baa6482fd69f67d126380 ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm" 1694616633 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx5.tfm" 1694616633 1332 f817c21a1ba54560425663374f1b651a ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx7.tfm" 1694616633 1336 3125ccb448c1a09074e3aa4a9832f130 ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/cm/cmmib10.tfm" 1694616633 1524 554068197b70979a55370e6c6495f441 ""
+  "/home/quimico/.miktex/texmfs/install/fonts/tfm/public/cm/cmti10.tfm" 1694616633 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/home/quimico/.miktex/texmfs/install/tex/latex/base/omlcmr.fd" 1694616629 2470 6599b13c7da0906c887a7e3cfca75f4e ""
+  "cap4.aux" 1710513854 10513 16766cbda58d3abb7b711d620026a294 "pdflatex"
+  "cap4.tex" 1710515071 49334 c341c50f8158c22b3bec75b40ad9fdc5 ""
+  (generated)
+  "cap4.aux"
+  "cap4.log"
+  "cap4.pdf"
+  (rewritten before read)

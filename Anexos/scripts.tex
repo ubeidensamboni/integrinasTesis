@@ -1,0 +1,643 @@
+
+\chapter{Algunos scripts para el análisis de las trayectorias}
+
+
+\begin{lstlisting}[language=Python, caption={Scripts de gromacs para remover condiciones periódicas, área por lípido, RMSD, perfil de densidad y radio de giro.}]
+#!/bin/bash
+mpi=/usr/bin/mpiexec
+source /usr/local/gromacs/bin/GMXRC
+
+# Set the number of MPI processes
+export nprocs=6
+
+#####Remover PBC del xtc
+file=dopc_final
+
+echo -e "ri 1-54\n ri 11-38 & a BB\n ri 65-110 & a BB | ri 117-120 & a BB\n 17 | 18\nq" | gmx_mpi make_ndx -f ${file}.tpr -o ${file}_rmsd.ndx
+##Centrar todo en la caja
+printf "System\nq"  |   gmx_mpi trjconv -f ${file}.xtc -s ${file}.tpr -n ${file}_rmsd.ndx -o ${file}_whole.xtc -pbc whole -tu ns
+
+##Centrar la proteína usando uno de los péptidos
+printf "r_1-54\nSystem\nq"  |   gmx_mpi trjconv -f ${file}_whole.xtc -s ${file}.tpr -n ${file}_rmsd.ndx -o ${file}_whole_centerResA.xtc -center -tu ns
+
+###Centrar todo nuevamente (creo)
+printf "System\nq"  |   gmx_mpi trjconv -f ${file}_whole_centerResA.xtc -s ${file}.tpr -n ${file}_rmsd.ndx -o ${file}_whole_centerResA_mol_noPBC.xtc -pbc mol -tu ns -ur compact
+
+rm ${file}_whole.xtc ${file}_whole_centerResA.xtc
+mkdir -p "./results/rmsd/" && mv ${file}_rmsd* "./results/rmsd/" 
+
+####RMSD #Protein BB
+printf "19\n19\nq" |   gmx_mpi rms -s ${file}.tpr -f ${file}_whole_centerResA_mol_noPBC.xtc -o ${file}_rmsdProtein.xvg -n  ./results/rmsd/${file}_rmsd.ndx -tu ns
+
+#Alfa BB
+printf "17\n17\nq" |   gmx_mpi rms -s ${file}.tpr -f ${file}_whole_centerResA_mol_noPBC.xtc -o ${file}_rmsdProA.xvg -n  ./results/rmsd/${file}_rmsd.ndx -tu ns
+
+#Beta BB
+printf "18\n18\nq" |   gmx_mpi rms -s ${file}.tpr -f ${file}_whole_centerResA_mol_noPBC.xtc -o ${file}_rmsdProB.xvg -n  ./results/rmsd/${file}_rmsd.ndx -tu ns
+
+mv ${file}_rmsd* './results/rmsd/'
+
+###edr para APL
+  gmx_mpi eneconv -f dopc.edr dopc_ext1.edr dopc_ext2.edr dopc_ext3.edr dopc_ext4.edr dopc_ext5.edr -o ${file}.edr
+
+printf "Box-X\nBox-Y\nSystem\n" |   gmx_mpi energy -f ${file}.edr -o ${file}_ApL.xvg
+
+mkdir -p "./results/ApL_Density/" &&
+mv ${file}_ApL.xvg "./results/ApL_Density/"
+
+####Density profile
+echo -e "a PO4 a NC3\n a GL1 a GL2\n13 & ! 16 & ! 17 & ! a NC3 \nq" |   gmx_mpi make_ndx -f ${file}.tpr -o ${file}_density_groups.ndx
+
+## -center usar "0" (System) como refencia
+printf "13\n16\n" |   gmx_mpi density -s ${file}.tpr -f ${file}_whole_centerResA_mol_noPBC.xtc -n ${file}_density_groups.ndx -o ${file}_den_headgroups.xvg -d Z -center -sl 100
+printf "13\n17\n" |   gmx_mpi density -s ${file}.tpr -f ${file}_whole_centerResA_mol_noPBC.xtc -n ${file}_density_groups.ndx -o ${file}_den_glycerol_ester.xvg -d Z -center -sl 100
+printf "13\n18\n" |   gmx_mpi density -s ${file}.tpr -f ${file}_whole_centerResA_mol_noPBC.xtc -n ${file}_density_groups.ndx -o ${file}_den_acylChain.xvg -d Z -center -sl 100
+printf "13\n14\n" |   gmx_mpi density -s ${file}.tpr -f ${file}_whole_centerResA_mol_noPBC.xtc -n ${file}_density_groups.ndx -o ${file}_den_water.xvg -d Z -center -sl 100
+
+###Crear carpeta y mover todos los files recién creados
+mkdir -p "./results/ApL_Density"
+mv ${file}_den* "./results/ApL_Density"
+
+###Rgiro
+printf "Protein\nSystem\n" |   gmx_mpi gyrate -s ${file}.tpr -f ${file}_whole_centerResA_mol_noPBC.xtc -o ${file}_radius_g.xvg
+
+mkdir -p "./results/radius_g"
+mv ${file}_radius* "./results/radius_g"
+\end{lstlisting}
+
+
+
+\begin{lstlisting}[language=Python, caption=Script para calcular mapa de contactos péptido-péptido.]
+#!/usr/bin/env python3
+import MDAnalysis as mda
+import numpy as np
+import MDAnalysis.analysis.distances
+from tqdm.auto import tqdm
+from pathlib import Path
+from mpi4py import MPI
+
+# Initialize MPI
+comm = MPI.COMM_WORLD
+rank = comm.Get_rank()
+size = comm.Get_size()
+
+XTC = 'dppc_noPBC.xtc'  # xtc periodic conditions removed
+TPR = 'dppc.pdb'
+u = mda.Universe(TPR, XTC)
+
+def contact_matrix(protein_1, protein_2, start_time, end_time):
+    contacts = np.zeros((len(np.unique(protein_1.resids)), len(np.unique(protein_2.resids))))
+
+    # Determine frame indices corresponding to start and end times
+    total_frames = len(u.trajectory)
+    start_frame = int(start_time / 4.5 * total_frames)
+    end_frame = int(end_time / 4.5 * total_frames)
+
+    # Get sub_1 and sub_2
+    sub_1 = min(np.unique(protein_1.resids))
+    sub_2 = min(np.unique(protein_2.resids))
+
+    # Iterate over trajectory frames within the specified range
+    for ts in tqdm(u.trajectory[start_frame:end_frame]):
+        if ts.frame % size == rank:
+            for i in np.unique(protein_1.resids):
+                a = protein_1.select_atoms('resid '+str(i))
+                for k in np.unique(protein_2.resids):
+                    b = protein_2.select_atoms('resid '+str(k))
+                    if MDAnalysis.analysis.distances.distance_array(a.center_of_mass(), b.center_of_mass(), box=[u.dimensions[0], u.dimensions[1], u.dimensions[2], u.dimensions[3], u.dimensions[4], u.dimensions[5]]) < 7.0:
+                        contacts[i-sub_1, k-sub_2] += 1
+
+    return contacts
+
+# Select sequence/proteins
+protein_1 = u.select_atoms('index 0-135')
+protein_2 = u.select_atoms('index 136-350')
+
+# Define time intervals
+time_intervals = [
+    (0, 0.5),
+    (0.5, 1.5),
+    (1.5, 2.5),
+    (2.5, 3.5),
+    (3.5, 4.5)
+]
+
+# Run function for each time interval
+for idx, (start_time, end_time) in enumerate(time_intervals):
+    if rank == 0:
+        print(f"Processing time interval {idx+1}: start_time={start_time}, end_time={end_time}")
+    contact_matrix_result = contact_matrix(protein_1, protein_2, start_time, end_time)
+
+    # Gather results from all processes
+    all_contact_matrices = comm.gather(contact_matrix_result, root=0)
+
+    # Save results on root process
+    if rank == 0:
+        results_directory = Path("results/contacts")
+        results_directory.resolve().mkdir(exist_ok=True, parents=True)
+        np.save(results_directory / f'dppc_{start_time}_{end_time}us.npy', np.sum(all_contact_matrices, axis=0))
+
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Python, caption=Script para graficar mapa de contactos péptido-péptido.]
+#!/usr/bin/env python3
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+from matplotlib.ticker import MultipleLocator  # Import MultipleLocator
+from matplotlib.ticker import AutoMinorLocator
+import matplotlib.ticker as ticker
+import MDAnalysis as mda
+
+
+##Load here the trajectory and pdb files
+XTC = 'dppc_noPBC.xtc'  # xtc periodic conditions removed
+TPR = 'dppc.pdb'
+u = mda.Universe(TPR, XTC)
+
+###Function to plot
+def set_plot_style():
+    plt.rcParams["figure.figsize"] = (6, 4)
+    plt.rcParams['font.family'] = 'serif'
+    plt.rcParams['font.sans-serif'] = ['Arial']
+    plt.rcParams.update({'font.size': 24})
+    plt.rc('font', weight='bold')
+    plt.rcParams['figure.autolayout'] = True
+    plt.rcParams['image.interpolation'] = 'nearest'
+    plt.rcParams['axes.unicode_minus'] = False
+    plt.rcParams['figure.dpi'] = 600
+    plt.rcParams["ytick.labelsize"] = 15
+    plt.rcParams["xtick.labelsize"] = 15
+    plt.rcParams["axes.linewidth"] = 2.0     # grosor del frame box
+    plt.rcParams['xtick.major.width'] = 2.0  # grosor de indicar número en x
+    plt.rcParams['ytick.major.width'] = 2.0  # grosor de indicar número en y
+    plt.rcParams['ytick.minor.visible'] = True
+    plt.rcParams['ytick.minor.width'] = 2.0
+    plt.rcParams['xtick.minor.width'] = 2.0
+    plt.rcParams['xtick.minor.visible'] = True
+    plt.rc('xtick.minor', size=3, pad=1)
+    plt.rc('ytick.minor', size=3, pad=1)
+    plt.rcParams["axes.labelsize"] = 18
+    plt.rcParams["axes.labelcolor"] = 'black'
+    plt.rcParams["axes.labelweight"] = 'bold'
+    plt.rcParams["axes.titlesize"] = 10
+    plt.rcParams["axes.titleweight"] = 'bold'
+    plt.rcParams['savefig.dpi'] = 600
+    plt.rcParams['savefig.bbox'] = 'tight'
+    plt.rcParams['savefig.pad_inches'] = 0.05
+    plt.rcParams["legend.fontsize"] = 18
+#     matplotlib.rcParams['axes.linewidth'] = 3
+
+
+# Load labels
+y_label_beta = np.load('results/contacts/y_label_beta.npy', allow_pickle=True)
+x_label_alfa = np.load('results/contacts/x_label_alfa.npy', allow_pickle=True)
+
+# Loop over each file. This for rename xlabel in all matrix with residues Leter+Number
+for file_name in [file+'_0_0.5us.npy', file+'_0.5_1.5us.npy', file+'_1.5_2.5us.npy', 
+                  file+'_2.5_3.5us.npy', file+'_3.5_4.5us.npy']:
+    # Load contacts matrix
+    contacts_mat = np.load(f'results/contacts/{file_name}') / len(u.trajectory)
+    
+    # Normalize contacts matrix
+    contacts_norma = (contacts_mat - contacts_mat.min()) / (contacts_mat.max() - contacts_mat.min())
+    
+    # Create DataFrame
+    df = pd.DataFrame(contacts_norma, columns=[y_label_beta])
+    df.index = [x_label_alfa]
+    
+    # Save DataFrame to CSV
+    csv_file_name = file_name.replace('.npy', '.csv')
+    df.to_csv(f'results/contacts/contactMap_{csv_file_name}')
+
+
+# Load labels
+y_label_beta = np.load('results/contacts/y_label_beta.npy', allow_pickle=True)
+x_label_alfa = np.load('results/contacts/x_label_alfa.npy', allow_pickle=True)
+
+###Lineas para mostrar contactos        
+contact_points = [
+    ("G972", 16.5, 17.5),
+    ("G976", 20.5, 21.5),
+    ("L979", 24.5, 24.5),
+    ("R995", 39.5, 40.5)]
+
+contact_points2 = [("M987", 35.5, 32.5)]
+contact_points3 = [("R995", 39.5, 40.5)]
+
+# Define file names
+files = [
+    'contactMap_'+file+'_0_0.5us.csv',
+    'contactMap_'+file+'_0.5_1.5us.csv',
+    'contactMap_'+file+'_1.5_2.5us.csv',
+    'contactMap_'+file+'_2.5_3.5us.csv',
+    'contactMap_'+file+'_3.5_4.5us.csv'
+]
+
+set_plot_style()
+
+# Calculate number of rows and columns based on the number of files
+num_files = len(files)
+num_cols = 2
+num_rows = (num_files + num_cols - 1) // num_cols  # Ceiling division
+
+# Create subplots
+fig, axes = plt.subplots(figsize=(25,8 * num_rows), nrows=num_rows, ncols=num_cols, sharex=False, sharey=False, 
+                         gridspec_kw={'wspace': 0.15, 'hspace': 0.35})
+
+# Loop over each file and plot the heatmap
+for i, file_name in enumerate(files):
+    df = pd.read_csv(f'results/contacts/{file_name}', header=0, index_col=0)
+    row = i // num_cols
+    col = i % num_cols
+    sns.heatmap(df, cmap="Greys", ax=axes[row, col], cbar_kws={'shrink': 0.99, "pad": 0.15, "label": 'Frecuencia normalizada'})
+
+    # Customize axes
+    axes[row, col].set_xlabel(r"$\beta$3", fontsize=30, color='blue')
+    axes[row, col].set_ylabel(r"$\alpha$IIb", fontsize=30, color='red')
+    axes[row, col].xaxis.set_minor_locator(plt.NullLocator())
+    axes[row, col].yaxis.set_minor_locator(plt.NullLocator())
+    
+    axes[row, col].spines['top'].set_visible(True)
+    axes[row, col].spines['right'].set_visible(True)
+    axes[row, col].spines['bottom'].set_visible(True)
+    axes[row, col].spines['left'].set_visible(True)
+    
+    # Set x-ticks every 5 labels
+    n = 5
+    xticks = range(0, len(df.columns), n)
+    xticklabels = df.columns[::n]
+    axes[row, col].set_xticks(xticks)
+    axes[row, col].set_xticklabels(xticklabels, fontsize=20)
+    
+    # Set y-ticks every 5 labels
+    yticks = range(0, len(df.index), n)
+    yticklabels = df.index[::n]
+    axes[row, col].set_yticks(yticks)
+    axes[row, col].set_yticklabels(yticklabels, fontsize=20)   
+
+    # Set the x and y limits
+    axes[row, col].set_xlim(10, 45)  # Beta
+    axes[row, col].set_ylim(10, 45)  # Alfa
+    
+    axes[row, col].invert_yaxis()
+    
+    # Add text
+    if i == 0:
+        axes[row, col].text(0.5, 0.95, r'0.5 $\mu$s', horizontalalignment='center', verticalalignment='top', 
+                            transform=axes[row, col].transAxes, fontsize=30)
+    elif i == 1:
+        axes[row, col].text(0.5, 0.95, r'1.5 $\mu$s', horizontalalignment='center', verticalalignment='top', 
+                            transform=axes[row, col].transAxes, fontsize=30)
+    elif i == 2:
+        axes[row, col].text(0.5, 0.95, r'2.5 $\mu$s', horizontalalignment='center', verticalalignment='top', 
+                            transform=axes[row, col].transAxes, fontsize=30)
+    elif i == 3:
+        axes[row, col].text(0.5, 0.95, r'3.5 $\mu$s', horizontalalignment='center', verticalalignment='top', 
+                            transform=axes[row, col].transAxes, fontsize=30)
+    elif i == 4:
+        axes[row, col].text(0.5, 0.95, r'4.5 $\mu$s', horizontalalignment='center', verticalalignment='top', 
+                            transform=axes[row, col].transAxes, fontsize=30)
+     
+    # Add contact lines
+    for contact, x1, y1 in contact_points:
+        axes[row, col].plot([x1, 79], [y1, y1], color='m', ls=':', lw=3.0)  # Horizontal line
+        axes[row, col].plot([x1, x1], [y1, 79], color='m', ls=':', lw=3.0)  # Vertical line
+    
+    for contact, x1, y1 in contact_points2:
+        axes[row, col].plot([x1, 79], [y1, y1], color='#FE5100', ls=':', lw=3.0)  # Horizontal line
+        axes[row, col].plot([x1, x1], [y1, 79], color='#FE5100', ls=':', lw=3.0)  # Vertical line  
+    
+    for contact, x1, y1 in contact_points3:
+        axes[row, col].plot([x1, 79], [y1, y1], color='blue', ls=':', lw=3.0)  # Horizontal line
+        axes[row, col].plot([x1, x1], [y1, 79], color='blue', ls=':', lw=3.0)  # Vertical line
+
+    # Add additional text for contacts
+    axes[row, col].text(45.5, 18, 'G972', fontsize=20, color='m')
+    axes[row, col].text(15.9, 50.9, 'V700', fontsize=20, color='m', rotation=90)
+    
+    axes[row, col].text(45.5, 22.5, 'G976', fontsize=20, color='m')
+    axes[row, col].text(19.24, 50.50, 'I704', fontsize=20, color='m', rotation=90)
+    
+    axes[row, col].text(45.5, 24.5, 'L979', fontsize=20, color='m')
+    axes[row, col].text(22.5, 51.3, 'G708', fontsize=20, color='m', rotation=90)
+    
+    axes[row, col].text(45.5, 33.3, 'M987', fontsize=20, color='#FE5100')
+    axes[row, col].text(34.25, 50.498, 'I719', fontsize=20, color='#FE5100', rotation=90)
+    
+    axes[row, col].text(45.62, 40.7, 'R995', fontsize=20, color='b')
+    axes[row, col].text(38, 51.3, 'D723', fontsize=20, color='b', rotation=90)
+    
+
+# Turn off minor ticks in the colorbar
+for ax in fig.get_axes():
+    if isinstance(ax, plt.Axes):
+        ax.xaxis.set_minor_locator(plt.NullLocator())
+        ax.yaxis.set_minor_locator(plt.NullLocator())
+
+# Remove empty subplot if present
+if num_files % num_cols != 0:
+    fig.delaxes(axes[num_files // num_cols, num_cols - 1])
+
+# Colocar segundo Yaxis a la derecha
+for ax_row in axes:
+    for ax in ax_row:
+        ax.tick_params(axis='y', right=True, labelright=True, which='both', rotation=0)
+        
+        
+fig.text(0.7, 0.2, "DPPC", ha='center', va='center',fontsize=80)
+
+plt.savefig('results/contacts/contactMap_'+file+'.pdf')
+plt.savefig('results/contacts/contactMap_'+file+'.svg')
+
+plt.show()
+\end{lstlisting}
+
+
+
+\begin{lstlisting}[language=Python,caption={Script para calcular ángulo de inclinación}]
+#!/bin/bash
+source /usr/local/gromacs/bin/GMXRC
+# Define the time intervals
+time_intervals=(
+    "0 500000"
+    "500000 1500000"
+    "1500000 2500000"
+    "2500000 3500000"
+    "3500000 4500000"
+)
+
+file=dppc
+# Create an index for alfa and beta
+echo -e "ri 12-39 & a BB\ndel 0-15\nq" | gmx make_ndx -f ${file}.tpr -o ${file}_index_tilt_alfa.ndx
+echo -e "ri 65-92 & a BB\ndel 0-15\nq" | gmx make_ndx -f ${file}.tpr -o ${file}_index_tilt_beta.ndx
+
+# Loop over each time interval and run gmx principal
+for interval in "${time_intervals[@]}"; do
+    start=$(echo "$interval" | cut -d' ' -f1)
+    end=$(echo "$interval" | cut -d' ' -f2)
+
+    echo "Processing time interval: ${start}-${end}"
+    
+    printf "${start}\n${end}\nq" | gmx principal -f ${file}_noPBC.xtc -s ${file}.tpr -n ${file}_index_tilt_alfa.ndx -a1 paxis1_alfa_${start}_${end}.xvg -a2 paxis2_alfa_${start}_${end}.xvg -a3 paxis3_alfa_${start}_${end}.xvg -om omi_alfa_${start}_${end}.xvg -b ${start} -e ${end}
+    printf "${start}\n${end}\nq" | gmx principal -f ${file}_noPBC.xtc -s ${file}.tpr -n ${file}_index_tilt_beta.ndx -a1 paxis1_beta_${start}_${end}.xvg -a2 paxis2_beta_${start}_${end}.xvg -a3 paxis3_beta_${start}_${end}.xvg -om omi_beta_${start}_${end}.xvg -b ${start} -e ${end}
+
+    echo "Completed processing for interval: ${start}-${end}"
+done
+
+# Move all created files to the "./results/tilt_angle" directory
+mkdir -p "./results/tilt_angle" && mv ${file}_index_tilt* paxis* omi* "./results/tilt_angle"
+\end{lstlisting}
+
+%\newpage
+
+\begin{lstlisting}[language=Python, caption=Script para graficar ángulos de inclinación.]
+#!/usr/bin/env python3
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+from matplotlib.ticker import MultipleLocator  # Import MultipleLocator
+from matplotlib.ticker import AutoMinorLocator
+import matplotlib.ticker as ticker
+import warnings
+
+# Define the time intervals 
+time_intervals = [
+    (0, 500000),
+    (500000, 1500000),
+    (1500000, 2500000),
+    (2500000, 3500000),
+    (3500000, 4500000)]
+
+set_plot_style() ###should be defined before
+# Calculate number of rows and columns based on the number of files
+num_files = 5
+num_cols = 2
+num_rows = (num_files + num_cols - 1) // num_cols  # Ceiling division
+
+fig, axes = plt.subplots(figsize=(14,5 * num_rows), nrows=num_rows, ncols=num_cols, 
+                         gridspec_kw={'wspace': 0.25, 'hspace': 0.3})
+
+for idx, (start, end) in enumerate(time_intervals):
+    file_path = f'results/tilt_angle/'
+
+    # Load data with warning suppression
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")  # Suppress conversion warnings
+        data1 = np.genfromtxt([i for i in open(f'{file_path}paxis1_alfa_{start}_{end}.xvg').read().splitlines() 
+                               if not i.startswith(('#','@'))]) 
+        data2 = np.genfromtxt([i for i in open(f'{file_path}paxis1_beta_{start}_{end}.xvg').read().splitlines() 
+                               if not i.startswith(('#','@'))])
+
+        # Check if there are any errors in loading the data
+        if np.isnan(data1).any() or np.isnan(data2).any():
+            print(f"There were errors loading data for interval {start}-{end}.")
+        else:
+
+            # Calculate tilt angles
+            df_alfa = pd.DataFrame(data1, columns=['Time_ps', 'x_component', 'y_component', 'z_component'])
+            df_alfa['magnitude'] = np.sqrt(df_alfa['x_component']**2 + df_alfa['y_component']**2 + df_alfa['z_component']**2)
+            df_alfa['tilt_ang'] = (np.arccos(df_alfa['z_component']) / df_alfa['magnitude']) * 180 / np.pi
+
+            df_beta = pd.DataFrame(data2, columns=['Time_ps', 'x_component', 'y_component', 'z_component'])
+            df_beta['magnitude'] = np.sqrt(df_beta['x_component']**2 + df_beta['y_component']**2 + df_beta['z_component']**2)
+            df_beta['tilt_ang'] = (np.arccos(df_beta['z_component']) / df_beta['magnitude']) * 180 / np.pi
+
+            # Calculate crossing angle
+            df_alfa['cross_ang'] = np.arccos((df_alfa['x_component']*df_beta['x_component'] + df_alfa['y_component']*df_beta['y_component'] + df_alfa['z_component']*df_beta['z_component']) / (df_alfa['magnitude']*df_beta['magnitude'])) * 180 / np.pi
+
+            # Save to CSV
+            df_alfa.to_csv(f'{file_path}dppc_{start}_{end}.csv')
+            
+            row = idx // 2
+            col = idx % 2
+            ax = axes[row, col]
+            sns.distplot(df_alfa['tilt_ang'], hist=True, kde=True, bins=20, color='red', label=r'$\alpha$IIb' f"\nMean: {df_alfa['tilt_ang'].mean():.2f} ± {df_alfa['tilt_ang'].std():.2f}\textdegree ", ax=ax)
+            sns.distplot(df_beta['tilt_ang'], hist=True, kde=True, bins=60, color='blue', label=r'$\beta$3' f"\nMean: {df_beta['tilt_ang'].mean():.2f} ± {df_beta['tilt_ang'].std():.2f}\textdegree ", ax=ax)
+            sns.distplot(df_alfa['cross_ang'], hist=True, kde=True, bins=80, color='darkgreen', label=r'$\alpha$IIb$\beta$3' f"\nMean: {df_alfa['cross_ang'].mean():.2f} ± {df_alfa['cross_ang'].std():.2f}\textdegree ", ax=ax)
+
+            ax.set_xlabel('Angle (\textdegree )')  # Plot formatting
+            ax.set_ylabel('Density')
+            ax.set_xlim(0, 60)
+            ax.set_ylim(0, 0.180)
+            ax.legend(loc=2, frameon=False, fontsize=12)
+            ax.set_title([f' 0.5 $\mu$s', f' 1.5 $\mu$s', f' 2.5 $\mu$s', f' 3.5 $\mu$s', f' 4.5 $\mu$s'][idx], fontsize=18)
+
+# Remove empty subplot if present
+if len(time_intervals) % 2 != 0:
+    fig.delaxes(axes[len(time_intervals) // 2, 1])
+    
+# Turn off minor ticks in the colorbar
+for ax in fig.get_axes():
+    if isinstance(ax, plt.Axes):
+        ax.xaxis.set_minor_locator(plt.NullLocator())
+        ax.yaxis.set_minor_locator(plt.NullLocator())   
+    
+fig.text(0.7, 0.2, "DPPC", ha='center', va='center',fontsize=40)
+
+plt.savefig('results/tilt_angle/dppcAngles.pdf')
+plt.savefig('results/tilt_angle/dppcAngles.svg')
+plt.show()
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Python, caption={Script para calcular las frecuencias de interacción lípido-péptido.}]
+#!/usr/bin/env python3
+import MDAnalysis as mda
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from MDAnalysis.analysis.leaflet import LeafletFinder
+from tqdm.auto import tqdm
+
+# Load an MDAnalysis Universe
+XTC = 'dppc_noPBC.xtc' # xtc periodic conditions removed
+TPR = 'dppc.pdb'
+u = mda.Universe(TPR, XTC, topology_format='PDB')
+
+####Para asignar seg############
+# list(u.select_atoms('protein')) #del 1 al 136 es alfa y del 137 al 351 es beta
+alpha = u.add_Segment(segid='seg_0_PROA_P')
+alpha_atoms = u.select_atoms('protein and bynum 1:136')
+alpha_atoms.residues.segments = alpha
+alpha_atoms.atoms
+
+beta = u.add_Segment(segid='seg_1_PROB_P')
+beta_atoms = u.select_atoms('protein and bynum 137:351')
+beta_atoms.residues.segments = beta
+beta_atoms.atoms
+#####FIN############
+
+
+###Seleccionamos solo el TMD
+prot_A = u.select_atoms('protein and segid seg_0_PROA_P and (resid 9-40)')
+# list(prot_A)
+
+# Para normalizar respecto al n total de LIPIDS
+num_LIPIDS = len(u.select_atoms("resname DPPC"))
+
+# Define selections for protein and LIPID
+protein = prot_A
+lipid = u.select_atoms("resname DPPC and name PO4")
+
+# Create an array to store contact frequencies for each residue
+contact_frequencies = np.zeros(len(protein.resids))
+
+# Loop through all frames
+for ts in tqdm(u.trajectory[::]):  # para hacer prueba cada mil frame [::1000]
+    # Calculate distances between protein and lipid atoms
+    distances = np.linalg.norm(protein.positions[:, np.newaxis] - lipid.positions, axis=2)
+
+    # Check if any distance is below the cutoff
+    contacts_matrix = distances < 6.0
+
+    # Sum the contacts for each residue
+    contact_residues = np.unique(protein.resids[np.where(contacts_matrix.any(axis=1))[0]])
+    contact_frequencies[contact_residues - 1] += 1  # Subtract 1 to match array indices
+
+# Normalize the contact frequencies by the number of lipids
+contact_frequencies_normalized = contact_frequencies / num_LIPIDS
+
+# Create a range for residue numbers starting from 1
+residue_numbers = range(1, len(protein.resids) + 1)
+
+# Create a DataFrame to hold the data
+data = pd.DataFrame({'residue_number': residue_numbers, 'normalized_contact_frequency': contact_frequencies_normalized})
+
+###Save file
+from pathlib import Path
+results_directory = Path("results/lipid_protein_contact")
+results_directory.resolve().mkdir(exist_ok=True, parents=True)
+
+csv_file_path = results_directory / "dppc_alpha_contact_normalized.csv"
+# Save the DataFrame as a CSV file in the results directory
+data.to_csv(csv_file_path, index=False)
+
+plt.bar(residue_numbers, contact_frequencies_normalized, align='center')
+plt.xlabel(r'$\alpha$IIb Residue Number')
+plt.ylabel('Contact Frequency')
+plt.title('Contact Frequencies for Protein Residues')
+plt.xlim(0,54)
+plt.show()
+\end{lstlisting}
+
+
+
+\begin{lstlisting}[language=Python, caption={Script para calcular la ocupancia de los lípidos. Definida como porcentaje de frames en la trayectoria donde los lípidos estuvieron a una distancia <\,6.0 \AA \; respecto a algún residuo de los péptidos.}]
+import MDAnalysis as mda
+import numpy as np
+import pandas as pd
+from tqdm.auto import tqdm
+
+# Load an MDAnalysis Universe
+XTC = 'dppc_noPBC.xtc'
+TPR = 'dppc.tpr'
+u = mda.Universe(TPR, XTC)
+
+# Select Proteins
+prot_A = u.select_atoms('protein and segid seg_0_PROA_P and (resid 9-40)')
+prot_B = u.select_atoms('protein and segid seg_1_PROB_P and (resid 63-94)')
+
+# Select Lipids
+lipid = u.select_atoms("resname POPC and name PO4")
+
+# Initialize dictionaries to store contact counts for each lipid
+contact_counts_A = {lipid_index: 0 for lipid_index in range(len(lipid))}
+contact_counts_B = {lipid_index: 0 for lipid_index in range(len(lipid))}
+
+# Define a cutoff for contact (in Ångstroms)
+cutoff_distance = 6.0
+
+# Iterate through frames
+total_frames = 0
+for ts in tqdm(u.trajectory[::5]):
+    total_frames += 1
+    distances_A = np.linalg.norm(prot_A.positions[:, np.newaxis] - lipid.positions, axis=2)
+    contacts_matrix_A = distances_A < cutoff_distance
+    
+    distances_B = np.linalg.norm(prot_B.positions[:, np.newaxis] - lipid.positions, axis=2)
+    contacts_matrix_B = distances_B < cutoff_distance
+
+    # Update contact count for each lipid for prot_A and prot_B
+    for lipid_index in range(len(lipid)):
+        if any(contacts_matrix_A[:, lipid_index]):
+            contact_counts_A[lipid_index] += 1
+        if any(contacts_matrix_B[:, lipid_index]):
+            contact_counts_B[lipid_index] += 1
+
+# Calculate occupancy as a percentage
+alfa_occupancy = {lipid_index: (count / total_frames) * 100 for lipid_index, count in contact_counts_A.items()}
+beta_occupancy = {lipid_index: (count / total_frames) * 100 for lipid_index, count in contact_counts_B.items()}
+
+# Create DataFrame
+occupancy_df = pd.DataFrame({
+    'Lipid_Index': list(alfa_occupancy.keys()),
+    'Alfa_Occupancy': list(alfa_occupancy.values()),
+    'Beta_Occupancy': list(beta_occupancy.values())
+})
+
+# Print DataFrame to check
+occupancy_df.to_csv('results/lipid_protein_contact/dppc_ocupancy.csv', index=False)
+occupancy_df.head()
+
+
+###Plot
+occupancy_df = pd.read_csv('results/lipid_protein_contact/popc_occupancy.csv')
+
+# Melt the DataFrame to have a long-form DataFrame which seaborn can use to plot
+occupancy_melted_df = occupancy_df.melt(id_vars='Lipid_Index', value_vars=['Alfa_Occupancy', 'Beta_Occupancy'],
+                                        var_name='Selection', value_name='Occupancy')
+
+# Create the violin plot
+plt.figure(figsize=(10, 6))
+sns.violinplot(x='Selection', y='Occupancy', data=occupancy_melted_df)
+
+plt.title('Lipid Occupancy Near Protein Alfa and Beta Selections')
+plt.xlabel('Protein Selection')
+plt.ylabel('Occupancy (%)')
+plt.show()
+
+\end{lstlisting}

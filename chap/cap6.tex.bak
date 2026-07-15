@@ -1,0 +1,31 @@
+\chapter{Conclusiones generales}
+
+	Previo a esta tesis, los estudios de integrinas había sido enfocado principalmente al mecanismo de activación con énfasis en los aspectos estructurales de los dominios EC, TM e IC, además en la identificación de ligandos (interacción ligando-proteína) y residuos claves en el mecanismo de activación. Con esto en mente hemos abordado el estudio de los segmentos TM e IC de la integrina $\alpha$IIb$\beta$3 desde una perspectiva poco explorada. En la presente tesis se estudió la función del \textit{ambiente lipídico} en la conformación del segmentos TM-IC del heterodímero $\alpha$IIb$\beta$3. El estudio  inició con la expresión y purificación de los segmentos TM-IC de $\alpha$IIb y $\beta$3. Se realizó una caracterización de las propiedades fisicoquímicas de las secuencias para cada péptido. Posteriormente se realizaron experimentos en monocapas de Langmuir para evaluar la actividad y orientación de cada péptido en monocapas de diferente composición lipídica en donde se evaluaron los siguientes parámetros de los péptidos puros y mezclas lípido-péptido:
+
+      \begin{itemize}
+        \item{actividad superficial $\pi$-A}
+        \item{potencial de superficie}
+        \item{momento dipolar}
+        \item{módulo de compresibilidad}
+        \item{miscibilidad lípido-péptido}
+      \end{itemize}
+      
+    Por último, se realizaron simulaciones de dinámica molecular a nivel de \acf{cg}. Se construyeron sistemas de bicapas lipídicas (cuatro composiciones diferentes)  + los segmentos TM-IC del heterodímero $\alpha$IIb. Desde esta perspectiva se analizaron interacciones lípido-péptido, péptido-péptido. Además, se obtuvo información del efecto del ambiente lipídico en la conformación del heterodímero $\alpha$IIb$\beta$3.
+    
+    Los resultados de área molecular media descritos en el \textbf{capítulo} \textbf{\ref{chap:mono}} sugieren que los péptidos presentan una orientación vertical respecto al plano de las monocapas de Langmuir. Además, hemos propuesto que en ésta orientación vertical el dominio IC está en contacto con la subfase acuosa y el domino TM queda expuesto hacia el aire.\\
+  La elasticidad lateral de los lípidos se ve modificada por la presencia de los péptidos y el efecto depende de la fase de estado particular de cada lípido. Por ejemplo, ambos péptidos $\alpha$IIb y $\beta$3 disminuyen levemente el módulo de compresibilidad del POPC respecto al POPC puro. Por otra parte, el módulo de compresibilidad del DPPC es considerablemente reducido en las mezclas lípido-péptido respecto al DPPC puro. Este efecto incrementa con el aumento de la fracción de péptido. Es decir, los péptidos afectan levemente la elasticidad lateral de lípidos POPC que presentan fase LE, mientras en DPPC (fase LC), la elasticidad lateral es significativamente reducida. Esto indicaría que DPPC adquiere una fase menos ordenada que la LC debido a la presencia de los péptidos.
+  El análisis de la miscibilidad de componentes indicó que ambos péptidos presentan interacciones repulsivas con el lípido DPPC, siendo este efecto más marcado con el péptido $\beta$3. Con las otras dos interfases lipídicas POPC y PCPG se dan interacciones atractivas lípido-péptido. La mezcla PCPG es la interfase que más interactúa atractivamente con los péptidos, particularmente con  $\beta$3 y éste comportamiento se fortalece con el incremento de la fracción de péptido en la monocapa.\\
+  
+  Finalmente en el \textbf{capítulo} \textbf{\ref{chap:dm}} mencionamos sobre la preferencia por ciertos lípidos en la interacción con los péptidos, indicando que la composición lipídica puede modular las interacciones y la conformación de los segmentos TM.
+  
+  Se identifican residuos específicos en los péptidos $\alpha$IIb y $\beta$3 que son relevantes en las interacciones con los lípidos, lo que sugiere sitios clave para la regulación de la conformación y estabilidad del heterodímero.
+  
+  Se evidencia que el ambiente lipídico modula las interacciones entre los segmentos TM del heterodímero, siendo particularmente relevante en la región TM-IC. También afecta los ángulos de inclinación de los péptidos. 
+    
+   Se destaca que la membrana DPPC tiene un efecto notable en las interacciones péptido-péptido y en los ángulos de inclinación de los péptidos.
+    
+    En resumen, las dinámicas proporcionan una comprensión detallada de cómo el ambiente lipídico puede regular la conformación y estabilidad del segmento TM de $\alpha$IIb$\beta$3, así como las interacciones entre los péptidos involucrados, lo que puede tener implicaciones importantes en la función de la integrina y en procesos biológicos relacionados.
+ 
+
+
+

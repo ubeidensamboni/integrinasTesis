@@ -1,0 +1,88 @@
+\chapter{Caracterización, expresión y purificación de los segmentos TM-IC de la integrina $\alpha$IIb$\beta$3}\label{chap:pept}
+
+Como se mencionó en la introducción \hyperref[sec:integrins]{\textbf{sección \ref*{sec:integrins}}}, las integrinas de las subfamilias $\beta$1, $\beta$3 juegan un rol muy importante en muchos procesos biológicos relacionados con células epiteliales, endoteliales, leucocitos, fibroblastos y plaquetas. Por lo tanto, es relevante obtener información de su estructura y cómo esta se relaciona con su funcionalidad celular. Para eso es pertinente obtener información acerca de sus interacciones con la membrana lipídica. 
+
+\section{Segmentos TM-IC de la integrina $\alpha$IIb$\beta$3}
+
+La secuencia primaria y estructura secundaria de cada segmento TM-IC se muestra en la \hyperref[fig:tm_domain]{\textbf{figura \ref*{fig:tm_domain}}}A. Para ambos péptidos la secuencia va desde el \textit{N} (G$^{955}$ en $\alpha$IIb y G$^{684}$ en $\beta$3) al \textit{C} terminal (E$^{1008}$ en $\alpha$IIb y T$^{762}$ en $\beta$3).
+Se observa una alta cantidad de residuos como leucinas (L) y alaninas (A) con tendencia intrínseca de formar estructura secundaria hélice $\alpha$, además de otros residuos hidrofóbicos típicos en proteína transmembrana. Respecto a la estructura secundaria, $\alpha$IIb tiene una secuencia de 31 residuos (I$^{966}$ a N$^{996}$) que conforman una hélice $\alpha$. El dominio \ac{ic} (R$^{997}$ a E$^{1008}$) presenta estructura desordenada. En el péptido $\beta$3, 45 residuos (I$^{693}$ a A$^{737}$) conforman una hélice $\alpha$ que se extiende hasta el dominio \ac{ic}, posteriormente presenta estructura desordenada, excepto por una vuelta de hélice $\alpha$ (P$^{745}$ a A$^{750}$).
+
+Los códigos PDB 2K9J \citep{Lau2008} y 2KNC \citep{Yang2009} corresponden a la estructura secundaria más usada de los segmentos \ac{tm}-\ac{ic} de la integrina $\alpha$IIb$\beta$3 (\hyperref[fig:tm_domain]{\textbf{figura \ref*{fig:tm_domain}}}B). Ambas estructuras se obtuvieron por RMN en bicelas y micelas de diferente composición y se diferencian solo por el largo del dominio \ac{ic} en $\beta$3, siendo la estructura 2KNC más larga. Decidimos usar esta estructura 2KNC porque en nuestro laboratorio contábamos con los plásmidos de cada péptido  y con los que se realizaron los experimentos. La estructura publicada, corresponde a la conformación inactiva o con baja afinidad por
+
+%%%%%%%%%%% Figura %%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=0.9\linewidth, height=\textheight, keepaspectratio]{fig/03_fun/tm_domain.pdf} 
+	\caption[Secuencia primaria y estructura secundaria de los segmentos TM-IC de $\alpha$IIb y $\beta$3.]{Secuencia primaria y estructura secundaria de los segmentos TM-IC de $\alpha$IIb y $\beta$3. A) Secuencia primaria para ambos péptidos. Los colores de cada letra corresponden a las propiedades fisicoquímicas del residuo, \textcolor{mygreen}{verde: hidrofóbicos (G F I L M V W A P)}, \textcolor{blue}{azul: básicos (R K H (+))}, \textcolor{red}{rojo: ácidos (D E (-))}, \textcolor{black}{negro: otros (S T N Y)}. Datos extraídos de \url{https://www.peptide2.com/N_peptide_hydrophobicity_hydrophilicity.php}. Los colores de cada código de letras corresponden a las características fisicoquímicas reflejadas en la \hyperref[tab:percent_hidrofo]{\textbf{tabla \ref*{tab:percent_hidrofo}}}. Entre llaves ``\textbf{[ ]}'' se resaltan los residuos que son efectivamente \ac{tm} y al lado izquierdo de las llaves un pequeño \textit{loop} \ac{ec} con residuos hidrofóbicos y polares que conectan con el dominio \ac{ec} y al lado derecho el dominio \ac{ic} con residuos ácidos y básicos mayoritariamente en ambos péptidos. B) Representación en \text{cartoon} de la estructura secundaria del heterodímero $\alpha$IIb$\beta$3. C) Zoom de las regiones interfaciales a la extracelular e intracelular, además se resaltan algunos residuos de interés en la estabilidad del heterodímero.} 
+      \index{tm_domain}
+    \label{fig:tm_domain}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+\noindent ligandos según el modelo \textit{switch-blade} (\textbf{figura} \ref{fig:integrin_on_off}A). En esta conformación los dominios \ac{tm}-\ac{ic} son un heterodímero donde el ángulo de cruce entre los dos dominios \ac{tm} es $\Xapprox$  30\textdegree \, \citep{Yang2009}. Este cruce entre las dos subunidades se debe a interacciones entre las dos hélices tipo no covalente, principalmente al motivo GxxxG que es altamente conservado en heterodímeros transmembrana. Las G$^{972}$/G$^{976}$ en $\alpha$IIb y G$^{708}$ de $\beta$3 permiten hacer el cierre entre las dos hélices \ac{tm} (\textbf{figura} \ref{fig:tm_domain}C). Las G$^{972}$/G$^{976}$ en $\alpha$IIb interaccionan las cadenas laterales de la V$^{700}$, M$^{701}$, I$^{704}$ en $\beta$3. La G$^{708}$ interacciona con las cadenas laterales de L$^{979}$, L$^{980}$ en $\alpha$IIb. Estas interacciones son claves para la estabilidad del heterodímero. Otra interacción que ha sido estudiada \citep{Campbell2011, Hughes1996, Lau2008}, es el puente salino que se forma entre R$^{995}$ en $\alpha$IIb y  D$^{723}$ en $\beta$3, se ha reportado que éste juega un rol relevante en la unión de ligandos como la talina o kindilina que inducen la activación de la integrina $\alpha$IIb$\beta$3. 
+
+
+
+
+%%%%%Prefencia formar hélice alfa residuos
+%%%%%http://facultatciencies.uib.cat/prof/josefa.donoso/campus/modulos/modulo3/modulo3_5_3_1.htm
+%\begin{wraptable}{r}{7cm}
+%\vspace{-0.5cm} %%%Posiciona a una altura en la hoja
+    
+\begin{table}[H]   
+\centering 
+  \caption{Resumen de características fisicoquímicas de cada péptido.}\label{tab:percent_hidrofo}
+    \begin{tabular}{lcr}
+
+     \toprule  % <-- Toprule here
+       & $\alpha$IIb & $\beta$3\\
+     \bottomrule % <-- Bottomrule here 
+		N\textdegree \,de residuos							&54 		&79\\
+      \textcolor{black}{PM (Da)}            & 6050  & 8762\\
+      \textcolor{black}{pI}            		& 4.5  & 4.2\\
+      \textcolor{black}{Carga a pH 7.4}            & 4--  & 2+\\
+        \textcolor{mygreen}{Hidrofóbicos (\%)}   & 55.56 & 49.37\\
+        \textcolor{red}{Ácidos (\%)}            & 16.67 & 10.13\\
+        \textcolor{blue}{Básicos (\%)}            & 9.26  & 13.92\\
+        \textcolor{black}{Neutros (\%)}          & 18.52 & 26.58\\ % <-- added row here
+      \bottomrule % <-- Bottomrule here
+      \scriptsize{PM: Peso  molecular}; & \scriptsize{pI: Punto isoeléctrico}
+    \end{tabular}
+    
+    \end{table}
+%    \vspace{-0.5cm} %%%espacio entre texto y botton table
+%    \end{wraptable} 
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+La distribución de cargas netas y parciales y la hidrofobicidad de los segmentos \ac{tm} de integrinas son relevantes para definir las interacciones con la membrana lipídica y particularmente la organización en capas monomoleculares en interfase agua-aire que estudiamos en este trabajo. Se generó un mapa de hidrofobicidad de los dos péptidos como se muestra en la \textbf{figura} \ref{fig:carga_pept}. Se observa que el dominio \ac{ic} es donde se concentra la mayor densidad de carga y número de residuos polares que tendrían alta preferencia para interactuar con una fase acuosa/polar. 
+
+%%%%%%%%%%%%%%%%%%%%% Fig Tipo de estruturas de una proteina %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H] % supposedly places it here ...
+    \centering
+	\includegraphics[width=0.7\linewidth]{fig/01_expe/map_densidad.png}
+	\caption[Superficie de hidrofobicidad de los péptidos]{Superficie de hidrofobicidad de los péptidos. En hélices $\alpha$ se observan los péptidos \textcolor{red}{$\alpha$IIb} y \textcolor{blue}{$\beta$3},  rojo y azul respectivamente. La escala de color de la superficie de hidrofobicidad va desde naranja (hidrofóbica/apolar) a cian (hidrofílica/polar).}
+        \index{carga_pept}
+    \label{fig:carga_pept}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Expresión y purificación de péptidos transmembrana}
+
+La expresión de proteínas por la vía recombinante se ha expandido ampliamente en los últimos años por su versatilidad. Mayoritariamente la obtención de proteínas recombinantes se realiza en células procariotas y la más usada es la bacteria \ac{ecoli}. El proceso consiste en transformar las bacterias con el plásmido (también conocido como vector) que contiene toda la información genética para expresar la proteína de interés. En este proyecto ambos péptidos se obtuvieron por expresión recombinante empleando bacterias \ac{ecoli} de la cepa BL21(DE3), inducible por \ac{iptg}. El plásmido empleado para transformar las bacterias fue el pMAL-c2 (ver detalle en la sección \ref{sec:expre_akta}).
+Una vez purificada la proteína soluble, que llamamos anteriormente ``proteína fusión'', se clivó con la proteasa \ac{tev} obteniendo la secuencia de los péptidos de interés y posteriormente se repurificaron por \ac{hplc}. 
+
+%%%%%%%%%%%%%%%%%%%%% Fig puereza por gel y masas %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H] % supposedly places it here ...
+    \centering
+	\includegraphics[width=0.99\linewidth]{fig/01_expe/purifi/expres_hplc_masas.png}
+	\caption[Purificación de péptidos $\alpha$IIb y $\beta$3.]{Purificación de péptidos $\alpha$IIb y $\beta$3. \textbf{A)} Seguimiento de purificación de $\alpha$IIb  por geles \ac{sds}. \textbf{B)} Cromatograma por \ac{hplc} de los péptidos. \textbf{C)} Espectro FT-IR banda de proteína para los dos péptidos y \textbf{D-E)} Espectro de masas para verificación de masa molecular para $\alpha$IIb y $\beta$3 respectivamente.}
+        \index{sturcuture_prot}
+    \label{fig:expr_hplc_masas}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.5cm}
+La \textbf{figura} \ref{fig:expr_hplc_masas}A muestra el seguimiento de la purificación del péptido $\alpha$IIb por \ac{sds}. En los  carriles 1 y 2 se sembró la proteína fusión antes y después del clivaje respectivamente. La pequeña diferencia de peso molecular de $\Xapprox$ 7 kDa, es debida a la ausencia del péptido. En el carril 2 se observa además una banda extra a los $\Xapprox$ 28 kDa que se atribuye a la proteasa \ac{tev}. La banda esperada para el péptido no se observa debido a la poca masa que representa. El carril 3 corresponde al pico observado en la cromatografía por \ac{hplc} (\textbf{figura} \ref{fig:expr_hplc_masas}B) que sale en los primeros 6 minutos y se atribuyó a la \ac{mbp}. La banda de peso aparente de $\Xapprox$ 12 kDa en los carriles 4 (fracción directa el HPLC) y 6 (muestra después de retirar \ac{tfa}) corresponden al péptido $\alpha$IIb que corre como dímero debido a su alta hidrofobicidad \citep{Li2001}. Una vez retirado el \ac{tfa} de las muestras, se realizó un espectro \ac{ftir} en el sistema de \ac{atr} verificando la estructura hélice $\alpha$ mayoritariamente en ambos péptidos, \textbf{figura} \ref{fig:expr_hplc_masas}C. Finalmente la masa molecular de cada péptido fue nuevamente confirmada por espectrometría de masas, resultados que se muestran en la \textbf{figura} \ref{fig:expr_hplc_masas}D-E.

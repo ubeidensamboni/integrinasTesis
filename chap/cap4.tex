@@ -1,0 +1,363 @@
+\chapter{Interacción lípido-péptido en monocapas de Langmuir}\label{chap:mono}
+
+
+\section{Monocapas de péptidos puros}\label{mono_pept_puros}
+
+\begin{figure}[b!]
+\vspace{0.5cm} 
+    \centering
+	\includegraphics[width=0.85\linewidth]{fig/01_expe/orienta_pept2.png}
+	\caption[Esquema de posible orientación de hélice $\alpha$ en el plano de una monocapa.]{Esquema de posible orientación de hélice $\alpha$ en el plano de una monocapa. A) Orientación perpendicular-\textit{i)} o  paralela-\textit{ii)} al plano de la monocapa. B) Vista lateral y superior del segmento TM $\alpha$IIb donde se muestra la longitud y el radio. \textit{L}$_{1}$ es la distancia entre los carbonos alfa del TRP$^{967}$ y la PHE$^{993}$, \textit{L}$_{2}$ distancia entre los carbonos alfa de la GLY$^{955}$ y el GLU$^{1008}$.}
+        \index{orientacion}
+    \label{fig:orientTM}
+\end{figure} 
+
+Antes de analizar los resultados de moncapas de Langmuir de los péptidos puros, surge la pregunta \textquestiondown cuál es la posible orientación de los péptidos en la interfase agua-aire? En las proteínas nativas, ambos péptidos tienen estructura hélice $\alpha$. Si consideramos a un péptido transmembrana como un cilindro (\textbf{figura} ~\ref{fig:orientTM}B), podemos inferir acerca de su orientación a partir de las medidas de área molecular en capas monomoleculares. Un área molecular experimental similar al área de la base del cilindro indicaría un arreglo de péptidos orientados perpendicularmente a la interfase y altamente compactados como se representa en la \textbf{figura} ~\ref{fig:orientTM}A-\textit{i}. Con los datos de los estructura secundaria de los péptidos (PBD 2KNC) \citep{Yang2009} se calculó el radio de los segmentos TM de $\alpha$IIb y $\beta$3. Usando la librería MDAnalysis \citep{Jo2011} se implementó un algoritmo para determinar el eje principal de cada segmento TM. El radio se calculó como la distancia promedio entre el eje principal y el átomo  \textit{X} (\textit{X}: C, N, O, S) de cada residuo más distante al eje. Se determinó un radio promedio de 6.1 Å y 6.6 Å para $\alpha$IIb y $\beta$3 respectivamente. Con estos valores de radios se esperarían áreas moleculares de  $\Xapprox$ 117 Å\textsuperscript{2} para $\alpha$IIb y $\Xapprox$ 137 Å\textsuperscript{2} para $\beta$3. Por lo tanto, cerca de la presión de colapso ó en un punto de inflexión en la curva presión-área de los péptidos puros se esperaría observar un área molecular con éstos valores, indicando que su orientación es perpendicular al plano de la monocapa. Valores mayores del área corresponderían a otras orientaciones no perpendiculares o en estados conformacionales expandidos, desordenados y no correspondientes con hélice $\alpha$. En el caso que los péptidos se orienten horizontalmente y considerando que los segmentos TM que tienen estructura hélice $\alpha$ se conserva, las área moleculares esperadas son de 1555 Å\textsuperscript{2} para $\alpha$IIb (r=$\frac{L_1}{2}$) y 3366 Å\textsuperscript{2} para $\beta$3 (r=$\frac{65.5 \, \text{Å}}{2}$).
+
+\begin{figure}[b!] % supposedly places it here ...
+\vspace{0.5cm}
+    \centering
+	\includegraphics[width=0.5\linewidth]{fig/01_expe/mono/isoPept.png}
+	\caption[Isotermas de compresión en la interfase agua/aire de los péptidos puros.]{Isotermas de compresión en la interfase agua/aire de los péptidos puros.}
+        \index{isoPept}
+    \label{fig:isoPept}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+Ambos péptidos presentan actividad superficial en monocapas de Langmuir (\textbf{figura}~\ref{fig:isoPept}). Forman monocapas estables que pueden ser comprimidas en al menos dos ciclos de compresión-descompresión sin perder material por partición a la subfase. La siembra de 0.5 nmoles no produjo un aumento de presión significativamente diferente de cero y corresponde a un área de $\Xapprox 2500$ Å\textsuperscript{2}/molécula. Estos valores de área molecular indican que los péptidos tienden a organizarse paralelamente al plano de la monocapa cuando la compresión lateral es poca o nula. A 5 mN/m, los péptidos se han compactado y el área molecular es de  $\Xapprox 1300$ Å\textsuperscript{2} para ambos péptidos. A una presión de 35 mN/m las áreas moleculares fueron $\Xapprox 587$ \textpm \,25 Å\textsuperscript{2} y $\Xapprox 488$ \textpm \,20 Å\textsuperscript{2} para $\alpha$IIb y $\beta$3 respectivamente. Estos valores de área molecular indican que los péptidos tienen un radio aparente de 13.7 Å para $\alpha$IIb y 11.7 Å para $\beta$3. Valores que son cerca de dos veces el calculado. Por lo tanto, éstos valores de área indicarían que los péptidos tienden a orientarse verticalmente (más adelante se discute con mayor detalle). Comparando estos valores de radio experimentales con otros péptidos reportados, varios autores coinciden con un valor de de 5.0 Å para una hélice $\alpha$ \citep{Barlow1988, Kato2015,Ionov2000,Weder2003} el cual daría un área de 78.5 Å\textsuperscript{2}. Para la aurina 2.3 se reportó un radio de 10 Å, valor que correspondería un área molecular de 314.6 Å\textsuperscript{2} \citep{Mura2013}. Valor que se aproxima al observado para los péptidos $\alpha$IIb y $\beta$3.
+
+Otra pregunta que surge es, \textquestiondown el extremo \textit{N-terminal} está expuesto al aire y el extremo \textit{C-terminal} interactúa con la subfase, o es al revés? El no colapso de la monocapa estaría dado por las posibles fluctuaciones de la región que no tiene estructura secundaria definida (segmento \ac{ic}), por tanto a presiones bajas estas regiones son las que se localizan preferentemente en la subfase mientras que las  hélice $\alpha$, región hidrofóbica, se orienta hacia el aire. A medida que se comprime la monocapa, las colas forman ``loops'' que aumentan de tamaño y pueden oscilar a medida que se compacta y por lo tanto no se llega a una presión de colapso (ver \textbf{figura} \ref{fig:mono_pept}, flechas \textcolor{blue}{\faLongArrowRight}), un análisis similar fue reportado para la albumina sérica humana \citep{Toimil2012}. A una presión 35 mN/m el péptido $\alpha$IIb presentó un área molecular mayor al esperado teóricamente (117 Å\textsuperscript{2}), este valor se calculó teniendo en cuenta sólo la región con estructura secundaria hélice $\alpha$, de igual forma con $\beta$3.
+
+\begin{figure}[H] 
+    \centering
+	\includegraphics[width=0.99\linewidth]{fig/01_expe/mono_pept.png}
+	\caption{Modelo de reorganización de los péptidos en monocapas de Langmuir y fluctuación de estructura secundaria en segmento intracelular para los péptidos $\alpha$IIb y  $\beta$3.}
+        \index{mono_pept}
+    \label{fig:mono_pept}
+\end{figure}
+
+Helmholtz propone que la diferencia de potencial de superficie en una monocapa está dado por \citep{Helmholtz1902},
+
+\begin{equation}
+    \label{ecu:potencial}
+    \Delta V =  \frac{12 \Pi \mu_\perp}{A}
+\end{equation}
+
+donde $\Delta V$ es el potencial de superficie (mV) medido entre el seno de la solución acuosa y la fase gaseosa (aire), \textit{A} el área molecular (Å\textsuperscript{2}), $\Pi$ es una constante  y $\mu_\perp$ es el momento dipolar total de superficie. El $\Delta V$, medido en una monocapa tiene tres contribuciones: i) los dipolos ordenados de las moléculas adsorbidas, ii) los dipolos de las moléculas de agua ordenadas en la zona de la superficie, iii) el dipolo generado por la doble capa iónica de Gouy-Chapman en caso que las moléculas adsorbidas tengan cargas netas \citep{Brockman1994,Electronics1994}. Se observó que aún cuando la presión de superficie es indistinguible de cero, el $\Delta V$ es significativamente grande y alcanza valores de entre 200 y 150 mV para $\alpha$IIb y $\beta$3 respectivamente (\textbf{figura} \ref{fig:muDeltaV}A).
+%%%$\mu_\perp$ = $\mu_1$ + $\mu_2$ + $\mu_3$, $\mu_1$ es la contribución de las moléculas de agua orientadas al rededor de las caras hidrofílicas de la proteína, $\mu_2$ y $\mu_3$ contribuciones hidrofílica e hidrofóbica de la proteína que esta en contacto con la superficie 
+En los dos péptidos el $\mu_\perp$ inicia con valores de $\Xapprox 8.5$ D en $\alpha$IIb y $\Xapprox 12.5$ D en $\beta$3 (\textbf{figura} ~\ref{fig:muDeltaV}B) y a medida que se comprime lateralmente va disminuyendo hasta alcanzar los $\Xapprox 4.3$ D al valor mínimo de área molecular, esta tendencia abre la posibilidad a realizar el siguiente planteamiento de reorganización: inicialmente los péptidos se encuentran con una superficie de contacto mayor expuesta al agua y por lo tanto, hay alta densidad de carga que contribuye al $\mu_\perp$  (\textbf{figura} \ref{fig:mono_pept}A-B-C), sin embargo al compactarse lateralmente, los péptidos tienen a orientarse verticalmente, exponiendo menos residuos a la superficie de la monocapa, disminuyendo la densidad de carga, finalmente se llega a un estado donde están lo suficientemente  compactados de manera que todo lo que tiene estructura hélice $\alpha$ queda expuesto al aire y la única parte que contribuye al $\Delta$V y/o $\mu_\perp$ es la región que fluctúa de estructura y que tiene mayor carácter polar; un planteamiento similar realizó Maget \citep{Maget-Dana1999}.
+
+
+\begin{figure}[H] % supposedly places it here ...
+    \centering
+	\includegraphics[width=0.55\linewidth]{fig/01_expe/mono/muDeltaV.png}
+	\caption[Potencial de superficie y momento dipolar perpendicular de los péptidos puros en monocapas.]{A) Potencial de superficie y B) momento dipolar perpendicular de los péptidos puros en monocapas.}
+        \index{muDeltaV}
+    \label{fig:muDeltaV}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+Para tener una mejor idea de lo planteado anteriormente acerca de cómo se orientan los péptidos en la monocapa de Langmuir, se realizó un análisis de la hidrofobicidad promedio por residuo <H> \, del momento hidrofóbico <$\mu_H$> \,y de la carga de cada péptido (ver \textbf{tabla} ~\ref{tab:mu_hidrofo}). En los dos péptidos, el domino \ac{tm} presenta mayor <H> \, respecto a los segmentos \ac{ec} e \ac{ic}, principalmente dado por la cantidad de residuos hidrofóbicos (\textbf{figura} ~\ref{fig:mu_hidrofo}, resaltados en amarillo \begin{tikzpicture}
+  \node[draw, circle, fill=yellow, line width=0.5pt, inner sep=1pt, scale=0.6, font=\color{yellow}] {\faCircle}; \end{tikzpicture}). El <H> \, del segmento \ac{ec} es más grande (0.693\textgreater\!\textgreater -0.091) que el segmento \ac{ic} del péptido $\alpha$IIb, además, el domino \ac{ic} presenta cuatro cargas negativas comparadas a una carga positiva del segmento \ac{ec}. El péptido $\beta$3 tiene 25 residuos más que $\alpha$IIb en el segmento \ac{ic} (\textbf{figura} ~\ref{fig:mu_hidrofo}, ``55-79''), éstos últimos residuos que aportan un caracter hidrofóbico aunque sigue siendo menor comparado al segmento \ac{ec} (0.163\textless\!\textless 0.360), además, hay una carga positiva. Por tanto en los dos péptidos, es más probable que el segmento \ac{ic} interactúe con la fase acuosa, permitiendo así sugerir que los péptidos se orientan con el \textit{del N-terminal} expuesto al aire y el \textit{C-terminal} en contacto con la subfase (\textbf{figura} ~\ref{fig:orientTM}B). Los parámetros de <H> \,y <$\mu_H$> \,fueron calculados según las ecuaciones \ref{ecu:H} y \ref{ecu:muH},
+
+\begin{equation}\label{ecu:H}
+   <\!H\!> =  \frac{1}{N} \mathlarger{\Sigma}_{n=1}^NH_n
+\end{equation}
+
+donde \textit{N} es el número de residuos en la secuencia, \textit{H$_{n}$} es la hidrofobicidad del residuo \textit{n}. Los valores de hidrofobicidad para cada residuo se pueden encontrar en literatura \citep{Eisenberg1982}. El promedio del momento hidrofóbico <$\mu_H$> \, se calculó según:
+%%%ecuación esta en la pagina online https://heliquest.ipmc.cnrs.fr/HelpProcedure.htm#heading2
+\begin{equation}\label{ecu:muH}
+<\!\mu_{H}\!> =  \frac{1}{N} \left(\left(\mathlarger{\Sigma}_{n=1}^{N}H_n \sin \text{(}\delta n\text{)} \right)^{2}+\left(\mathlarger{\Sigma}_{n=1}^{N} H_n \cos\text{(}\delta n\text{)}\right)^{2}\right)^{\frac{1}{2}}
+\end{equation}
+
+%%%%Tabla resumen de H_mu%%%%
+\begin{table}[H]
+\vspace{-0.5cm} 
+\centering
+\begin{threeparttable}
+\centering
+\caption{Resumen de hidrofobicidad y carga para los segmentos \ac{ec}, \ac{tm} e \ac{ic} de péptidos $\alpha$IIb y  $\beta$3.}\label{tab:mu_hidrofo}
+\begin{tabular}{@{}llccl@{}}
+\toprule
+Péptido     & N\textdegree \,Residuo             & <H>      	& <$\mu_H$> 	& z  \\ \midrule
+$\alpha$IIb & \multirow{2}{*}{1-11 \; (EC) }  & 0.185  	& 0.025 		& 1- \\
+$\beta$3    &                        & 0.360  	& 0.031		& 0  \vspace{3mm} \\
+$\alpha$IIb & \multirow{2}{*}{12-36 \;(TM)} & 1.182  	& 0.005 		& 1+ \\
+$\beta$3    &                        & 1.183  	& 0.005 		& 1+ \vspace{3mm} \\
+$\alpha$IIb & \multirow{2}{*}{37-54 \;(IC)} & -0.091 	& 0.015 		& 4- \\
+$\beta$3    &                        & -0.091 	& 0.011 		& 0  \vspace{3mm} \\
+$\beta$3    & 55-79 \;(IC)                  & 0.163  	& 0.010 		& 1+ \\ \bottomrule
+\scriptsize{\ac{ec}: \acl{ec}} & \scriptsize{\ac{tm}: \acl{tm}} & \scriptsize{\ac{ic}: \acl{ic}}
+\end{tabular}
+\end{threeparttable}
+\end{table}
+%%%%%Fin tabla%%%%%
+
+donde $\delta$ es el ángulo de separación de las cadenas laterales a lo largo de la cadena principal, con $\delta$=100\textdegree \,para una hélice $\alpha$ \citep{Eisenberg1982a}. Un valor alto del <$\mu_H$>\,sugiere que la secuencia de proteína puede adoptar una estructura hélice $\alpha$ anfifílica perpendicular a su eje, es decir, <$\mu_H$> \, es una medida de la anfifilicidad de una hélice $\alpha$. Para comparar las magnitudes de los <$\mu_H$> fue necesario trabajar con los valores normalizados por el número de residuos, <$\mu_H$>\,= $\mu_H$/\textit{N}. La región con menor <$\mu_H$> \,es el domino \ac{tm} y la de mayor <$\mu_H$> \,el segmento \ac{ec} (ver \textbf{figura} ~\ref{fig:mu_hidrofo}).
+%%%%%%%%%%%%%%%%%%%%% Figura %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H] % supposedly places it here ...
+    \centering
+	\includegraphics[width=0.6\linewidth]{fig/01_expe/secuencias_alfa_beta.png}
+	\caption[Proyección circular de la hélice para las secuencias de los segmentos TM-IC de $\alpha$IIb y  $\beta$3.]{Proyección circular de la hélice para las secuencias de los segmentos TM-IC de $\alpha$IIb y $\beta$3. La fecha (\textrightarrow) en el centro indica la magnitud y la dirección del momento hidrofóbico <$\mu_H$>. La proyección se realizó con el software HeliQuest  (\url{https://heliquest.ipmc.cnrs.fr/cgi-bin/ComputParams.py}).}
+        \index{mu_hidrofo}
+    \label{fig:mu_hidrofo}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+Es importante destacar que la evaluación de la actividad superficial comprende la integración de múltiples factores contribuyentes, entre ellos la anfipaticidad, el tamaño molecular, la flexibilidad estructural, la carga neta y las interacciones intramoleculares. Esta complejidad inherente en la composición y el comportamiento de las moléculas subraya las dificultades en la interpretación del potencial de superficie. Además, es relevante reconocer que, dadas estas variadas influencias, los resultados experimentales relativos a esta propiedad suelen exhibir una considerable variabilidad, manifestándose en una dispersión significativa en comparación con los valores teóricos anticipados. Esta observación resalta la necesidad de un enfoque meticuloso y detallado en la interpretación de los datos experimentales, considerando la gama de variables que pueden afectar las mediciones del potencial de superficie.
+
+\section{Monocapas de Langmuir para mezclas lípido-péptido}\label{sect:mono_mezclas}
+
+Se realizaron isotermas de compresión de lípido puro (\ac{popc}, PCPG, \ac{dppc}) y mezclas lípido-péptido ($\alpha$IIb ó $\beta$3) en concentraciones crecientes de péptido desde 0.0\% a 7.0\% por mol. En la \textbf{figura} ~\ref{fig:area_pi_all}, panel superior se muestran las mezclas de lípido-$\alpha$IIb y en el inferior las mezclas lípido-$\beta$3. En todos los experimentos se realizaron 3 ciclos de compresión-expansión para evaluar la estabilidad del film lípido-péptido. Para la mezcla  \ac{popc}/$\alpha$IIb se observó que en todas las concentraciones de péptido se produjo un corrimiento a áreas mayores respecto al lípido puro, más notable con el incremento de la concentración de péptido. En PCPG/$\alpha$IIb se observó que la mezcla tiende a compactarse o por lo menos a estar más cerca de la isoterma de la mezcla pura PCPG. La isoterma de compresión de DPPC puro presentó un comportamiento típico con una pretransición de la fase \ac{le} a \ac{lc} cerca de los 6 mN/m. Se observaron dos efectos como consecuencia de la presencia de los péptidos: una expansión que es ligeramente mayor a la esperada en una mezcla ideal y la pérdida notoria de la transición LE-LC que es altamente cooperativa. Estos efectos se ha observado en otros péptidos \citep{Saleem2008, Nakahara2011}.
+Respecto a las mezclas de lípido/$\beta$3, presentaron comportamientos similares a lo observado con el péptido $\alpha$IIb. En la mezcla con PCPG/$\beta$3 el corrimiento a áreas menores es más marcado en concentraciones de 2.0\% y 3.5\% (\textcolor{falured}{\rotatebox{90}{\faPlay}}), incluso a 2.0\% casi no se diferencia de la isoterma de la mezcla PCPG pura.
+Comparando un poco más en detalle el efecto de los dos péptidos, en las monocapas de \ac{popc}, a 5.0\% (\textcolor{goldenpoppy}{\faCircle}) de $\alpha$IIb, la isoterma se desplaza a áreas menores comparado a las concentraciones más bajas que iba aumentando pero luego a 7.0\% (\textcolor{deepmagenta}{$\pentagonblack$}) se recupera dicha tendencia, mientras que en presencia de $\beta$3 sucede el mismo efecto pero a 2.0\% y luego se produce el corrimiento a áreas mayores. Para la mezcla binaria de lípidos PCPG, a bajas concentraciones de péptido (2.0\% y 3.5\%) ya se ve un efecto de compactación, siendo más notorio en presencia de $\beta$3. En las isotermas de \ac{dppc}, se observa un corrimiento a áreas mayores al incrementar la concentración de péptido, esto pasa con ambos péptidos, sin embargo, en presencia de $\beta$3 esa tendencia sigue hasta 5.0\% porque luego a 7.0\% baja a corrimientos similares al 2.0\% de $\beta$3.
+
+%%%%%%%%%%%%%%%%%%%%%Fig. Isotermas de compresión %%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t] % supposedly places it here ...
+    \centering
+	\includegraphics[width=0.99\linewidth]{fig/01_expe/mono/area_pi_allFinal.png}
+\caption[Isotermas de compresión (\boldmath{$\pi$}--A) para mezclas lípido-péptido]{Isotermas de compresión (\boldmath{$\pi$}--A) para mezclas lípido-péptido. Panel superior lípido/$\alpha$IIb y panel inferior lípido/$\beta$3. La mezcla PCPG esta compuesta por POPC:POPG 70\%:30\% en mol.}
+        \index{area_pi_all}
+    \label{fig:area_pi_all}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%% Àrea Vs %mol
+\section{Análisis de la miscibilidad  de mezclas lípido-péptido}{\label{AvsMol}}
+
+%%%%%%%%%%%%%%%%%%%%%% Fig A Vs %mol %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[b!] % supposedly places it here ...
+\vspace{0.5cm}
+    \centering
+	\includegraphics[width=0.99\linewidth]{fig/01_expe/mono/Aideales_all2.png}
+	\caption[Área molecular promedio Vs porcentaje molar (A--\%mol péptido) para los sistemas lípido-péptido.]{Área molecular promedio Vs porcentaje molar (A--\%mol péptido) para los sistemas lípido-péptido (lípidos = POPC, DPPC y y PCPG mezcla compuesto por POPC:POPG 70\%:30\%). Panel superior e inferior 2 y 30 mN/m, respectivamente. Las líneas  - - - indican la curva de idealidad para las mezclas.}
+
+     \index{Fig_AreaVsMoles}
+    \label{fig:Fig_AreaVsMoles}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+Las capas monomoleculares permiten evaluar las características de empaquetamiento molecular, además también es posible obtener una idea de cómo es el grado de miscibilidad lípido-péptido comparando el área molecular promedio de la mezcla a una dada presión superficial (propiedad aditiva). El área de una mezcla es comparada con el área media molecular de cada componente por separado a una dada presión superficial. Las áreas de las mezclas ideales $A_{ideal}$ para dos componentes fue calculada según la ecuación ~\ref{ecua:Aideal} \citep{Ali1994} a las presiones de 2 y 30 mN/m,
+
+\begin{equation}
+    \label{ecua:Aideal}
+    A_{ideal} = \left[X_{\text{L}}A_{\text{L}} + X_{\text{P}}A_{\text{P}}\right]_\pi
+\end{equation}
+
+donde $A_{L,P}$ son las áreas moleculares promedio y $X_{L,P}$ son las fracciones molares del lípido y péptido respectivamente a una determinada presión. La mezcla tendrá un área $A_{ideal}$ si los componentes no interaccionan, o lo hacen hacen idealmente, por lo tanto cualquier desviación de la idealidad es atribuida a interacciones específicas que pueden ser atractivas (el área observada es menor al $A_{ideal}$) o repulsivas (el área observada es mayores al $A_{ideal}$) entre los componentes. 
+A partir de los datos de la \textbf{figura} ~\ref{fig:area_pi_all} se calcularon las áreas $A_{ideal}$  para cada mezcla a las presiones mencionadas y se compararon  respecto a los datos experimentales.
+A una presión superficial de 2 mN/m (\textbf{figura} ~\ref{fig:Fig_AreaVsMoles}--panel superior), las áreas moleculares promedio observadas sugieren que ambos péptidos presentan interacciones atractivas lípido-péptido en los sistemas \ac{popc} y PCPG, mientras que en la mezcla \ac{dppc}-péptido el comportamiento es de caracter repulsivo a concentraciones de 2.0\% a 5.0\%.
+En el panel inferior (\textbf{figura} ~\ref{fig:Fig_AreaVsMoles}) se muestra el mismo análisis a 30 mN/m y la tendencia de los datos experimentales es similar a lo observado a 2 mN/m para todas las mezclas lípido-péptido.\\
+
+
+
+Para comprender un poco más en detalle lo que podría estar sucediendo a nivel molecular, veamos algunas características de los lípidos en particular. En la \textbf{tabla} \ref{tab:lipidos} vemos que \ac{popc} y POPG tienen mismo tipo de enlaces en la cadena hidrofóbica, mismo largo de cadena (átomos de carbono) y misma fase (\ac{le}) a temperatura ambiente, con la diferencia que POPG tiene carga neta negativa mientras que \ac{popc} es zwiteriónico, por otra parte \ac{dppc} es un lípido saturado (no posee dobles enlaces), es de 16 carbonos en ambas cadenas hidrofóbicas y tiene múltiples transiciones de fase. Con base en estas características, retomando lo observado en la \textbf{figura} ~\ref{fig:Fig_AreaVsMoles} vemos que ambos péptidos tienden a compactar los lípidos con fase LE (POPC y PCPG); en el caso de DPPC e interaccionan de forma repulsiva (expanden)  con \ac{dppc} que presenta una fase \ac{lc}, principalmente. También se vio que en la mezcla PCPG que tiene carga negativa, interacciona preferentemente con el péptido $\beta$3 que tiene carga neta 2+, comparado con $\alpha$IIb.
+
+%%%Tabla con carácterísticas de los lípidos
+\begin{table}[H]
+\centering
+\begin{threeparttable}
+\centering
+\caption[Generalidades de los lípidos]{Generalidades de los lípidos.}\label{tab:lipidos}
+%\begin{wraptable}{r}{0.52\textwidth}
+%\vspace{-0.8cm} %%%Posiciona a una altura en la hoja
+\begin{tabular}{lccc}
+\hline
+Lípido                       & \cellcolor[HTML]{EFEFEF}Enlace & \cellcolor[HTML]{EFEFEF}Fase a 25\textdegree C & \cellcolor[HTML]{EFEFEF}Carga neta \\ \hline
+\cellcolor[HTML]{CBCEFB}POPC & 16:0--18:1                      & LE                                  & 0   \\
+\cellcolor[HTML]{CBCEFB}POPG & 16:0--18:1                      & LE                                  & 1-- \\
+\cellcolor[HTML]{CBCEFB}DPPC & 16:0                           & múltiples                           & 0 \\
+\hline\\
+\end{tabular}
+    \vspace{-1 cm} %%%espacio entre texto y botton table
+%%    \end{wraptable} 
+\end{threeparttable}
+\end{table}
+%%%%%Fin tabla%%%%%
+
+Recientemente se propuso un modelo matemático para comparar isotermas de compresión en monocapas \citep{Socas2018,Socas2023}. En lugar de comparar las isotermas a presiones definidas como se realizó en la \textbf{figura} ~\ref{fig:Fig_AreaVsMoles} a 2 y 30 mN/m, el modelo compara cuantitativamente las isotermas en todo el rango de presiones. La comparativa de dos isotermas distintas, designadas respectivamente como la isoterma de interés e isoterma de referencia, implica la instauración de un parámetro denominado factor $\Lambda$ definido por dos parámetros: 
+
+\begin{equation}
+    \label{ecua:lambda}
+    \Lambda = \left(\lambda,r^2 \right)
+\end{equation}
+
+donde $\lambda$ representa un factor de \textit{distancia} entre las áreas moleculares media de las isotermas y r$^2$ el grado de “similitud” entre la forma de las curvas a lo largo de todo el rango de presiones comunes en ambas isotermas. Primero se determina el rango de valores de presión que son comunes a ambas isotermas  (de referencia y de interés) y se emplea un algoritmo de regresión no lineal para encontrar el  valor de $\lambda$ que minimice la diferencia de cuadrados entre los valores del área molecular promedio (\textbf{A}) de la isoterma de interés y los calculados para cada valor de presión según:
+
+\begin{equation}
+    \label{ecua:lambda2}
+    \textbf{A}\text{(} \pi \text{)} = \lambda \; \text{x} \; \textbf{A}_{\text{referencia}} \text{(} \pi \text{)}
+\end{equation}
+
+ Finalmente se procede a calcular el coeficiente de determinación (r$^2$), que proporciona una medida cuantitativa de la congruencia entre la isoterma resultante y la isoterma de interés. Los valores obtenidos para  r$^2$ y $\lambda$ se interpretan de la siguiente manera:
+
+%%%%%Tabla de significado lambda%%%%%%%%%%%%
+\begin{table}[H]
+%\centering
+\begin{threeparttable}
+\centering
+%\caption[Factor $\Lambda$ para comparar cuantitativamente isotermas]{Factor $\Lambda$ para comparar cuantitativamente isotermas}\label{tab:lambda}
+\begin{tabular}{lcl}
+\rowcolor[HTML]{ECF4FF}
+\multicolumn{1}{r}{\cellcolor[HTML]{ECF4FF}r$^2$ y $\lambda$ = 1} &  & Isotermas idénticas                \\
+\rowcolor[HTML]{CBCEFB} 
+\cellcolor[HTML]{CBCEFB}                            & $\lambda$ \textgreater{} 1 & Similar en forma con desplazamiento hacia áreas moleculares \textbf{mayores} \\
+\rowcolor[HTML]{CBCEFB} 
+\multirow{-2}{*}{\cellcolor[HTML]{CBCEFB}r$^2$ $\Xapprox 1$ } & $\lambda$ \textless{} 1 & Similar en forma con desplazamiento hacia áreas moleculares \textbf{menores} \\
+\rowcolor[HTML]{ECF4FF} 
+r$^2$ \(<\!\!<\) 1    &  & Las isotermas no se parecen en forma
+\end{tabular}
+\end{threeparttable}
+\end{table}
+%%%%%Fin tabla%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Tabla LAMBDA %%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%Figura lambda%%%%%%%%%%%
+\begin{figure}[b!] % supposedly places it here ...
+\vspace{0.5cm}
+    \centering
+	\includegraphics[width=0.99\linewidth]{fig/01_expe/mono/lambda_all2.png}
+	\caption[Factor $\Lambda$ para las mezclas lípido-péptido.]{Factor $\Lambda$ para las mezclas lípido-péptido. Panel inferior valores de $\lambda$ para cada péptido en diferentes interfases lipídicas y panel superior los respectivos valores de r$^2$.}
+        \index{lambda}
+    \label{fig:lambda}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+Se realizó este análisis con las isotermas de las mezclas lípido-péptido, los resultados se muestran en la \textbf{figura} \ref{fig:lambda}. En la mayoría de las muestras, r$^2$ (panel superior) es \textgreater{} 0.8, excepto para \ac{dppc} 
+(\begin{tikzpicture} \node[draw, circle, fill=dppc, line width=0.5pt, inner sep=3pt, scale=0.4, font=\color{black}] {\faCircle};
+            \end{tikzpicture}) 
+a 2.0\% y 3.5\% donde r$^2$ es levemente \textgreater{} 0.6. Si r$^2$ se aproxima a 1, indica que las diferencias entre las isotermas reales e ideales están dadas principalmente por el valor de $\lambda$ y son independientes del rango de presión. 
+Respecto al factor $\lambda$, las mezclas \ac{dppc}-$\beta$3 presentaron valores de $\lambda$ \textgreater{} 1, seguido por la mezcla \ac{dppc}-$\alpha$IIb que fueron $\Xapprox 1$. Esto sugiere que en este sistema se favorecen las interacciones repulsivas entre lípido-péptido. Los valores menores de $\lambda$ se obtuvieron en las mezclas PCPG (\begin{tikzpicture}  \node[draw, circle, fill=black, line width=0.2pt, inner sep=0.5pt, scale=0.3] {};
+  \node[circle, star point ratio=1.25, draw=black, fill=pcpg, line width=0.2pt, minimum size=0.3cm, inner sep=0pt] {};
+\end{tikzpicture})-$\beta$3, indicando la presencia de interacciones atractivas lípido-péptido y éstas se intensifican a medida que aumenta la concentración de péptido (disminuye $\lambda$); lo más probable es que el péptido $\beta$3 con carga positiva es atraído por la carga negativa del \ac{popg} en la mezcla PCPG. En cuanto a las mezcla \ac{popc}
+  (\begin{tikzpicture}  \node[draw, circle, fill=black, line width=0.2pt, inner sep=0.5pt, scale=0.4] {};
+  \node[star, star point ratio=2.25, draw=black, fill=popc, line width=0.2pt, minimum size=0.4cm, inner sep=0pt] {};
+\end{tikzpicture})-péptido se obtuvieron valores intermedios respectos a las otras dos interfases, donde tanto $\alpha$IIb como $\beta$3  presentan interacciones atractivas con la interfase neutra.
+Con este tratamiento de datos se aprecia a nivel cuantitativo el efecto que induce cada péptido independiente de la presión superficial. A concentraciones bajas de péptido se favorecen las interacciones lípido-péptido que son de carácter repulsivo y a medida que aumenta la concentración de péptido, este efecto tiende a disminuir donde posiblemente ya a 7.0\% se favorecen las interacciones péptido-péptido y lípido-lípido.
+
+\section{Potencial de superficie y momento dipolar en mezclas lípido-péptido}\label{deltaV_mezclas}
+
+%%%%%%%%%% Potencial y dipolo mezclas %%%%%%%%%%%%
+\begin{figure}[t!] % supposedly places it here ...
+    \centering
+	\includegraphics[width=0.85\linewidth]{fig/01_expe/mono/deltaV_dipolo.png}
+	\caption[Potencial de superficie y momento dipolar para las mezclas lípido-péptido]{Potencial de superficie ($\Delta$V)  y momento dipolar perpendicular ($\mu_\perp$) para las mezclas lípido-péptido en función del área molecular promedio (\textbf{A}). A) $\Delta$V (panel superior) y $\mu_\perp$ (panel inferior) para las mezclas lípido-$\alpha$IIb. B) $\Delta$V (panel superior) y $\mu_\perp$ (panel inferior) para las mezclas lípido-$\beta$3.}
+        \index{mu_dV_alfa}
+    \label{fig:mu_dV_alfa}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+Previamente se introdujo el concepto del potencial de superficie y momento dipolar. La \textbf{figura} \ref{fig:mu_dV_alfa} muestra el cambio del $\Delta$V en función del empaquetamiento molecular. Además, se estimó el momento dipolar perpendicular ($\mu_\perp$) empleando la ecuación \ref{ecu:potencial} el cual se muestra en el panel inferior de cada figura. Dado que $\Delta$V depende tanto de la densidad de empaquetamiento como de la orientación de las moléculas en la monocapa, se espera un aumento en los valores $\Delta$V durante la compresión de la fase LE como consecuencia de un progresivo  reordenamiento vertical. Este efecto se observó en las monocapas de \ac{dppc} ya que presenta diferentes estados de fase a medida que se comprime, sin embargo, en presencia $\alpha$IIb o $\beta$3 disminuye levemente el $\Delta$V respecto al lípido puro. La diferencia en valores de $\Delta$V entre las fases LE y LC ($\Delta$V$_{LC}$ -- $\Delta$V$_{LE}$) puede dar cuenta de repulsiones lípido-péptido como ya se mencionó anteriormente. Además se observó cómo la presencia de péptido cambia la forma del potencial del \ac{dppc} puro (señalados con las fechas \textcolor{black}{\faLongArrowRight}). En la interfase neutra (\ac{popc}), el cambio del $\Delta$V por la presencia de péptido ($\alpha$IIb ó  $\beta$3) es ligeramente mayor respecto al lípido puro. Con la interfase cargada negativamente (mezcla binaria PCPG) se esperaba ver alguna diferencia notable entre el péptido $\alpha$IIb y $\beta$3 dado que estos tiene carga neta diferente, pero lo observado fue un cambio muy pequeño en presencia de $\beta$3. Esta observación podría atribuirse a la complejidad inherente al control experimental de los rearreglos estructurales y moleculares, así como a la incertidumbre intrínseca en las mediciones realizadas \citep{Brockman1994}. El $\mu_\perp$ para \ac{popc} y \ac{dppc} se muestra en la \textbf{figura} \ref{fig:mu_dV_alfa}A-B (panel inferior) en ausencia y presencia de ambos péptidos, cuando el área molecular $\Xapprox 225$  Å\textsuperscript{2}, el $\mu_\perp$ inicia con  valores más altos respecto al $\mu_\perp$  los lípidos puros, y esto se debe a lo ya mencionado, donde a área grandes los péptidos tienen suficiente libertad para tender a orientarse paralelamente a la superficie y por lo tanto, habrán más aminoácidos que entran en contacto con el agua contribuyendo a incrementar el $\mu_\perp$. A medida que se comprime lateralmente, los péptidos se reorientan verticalmente, por lo tanto, se observa un decrecimiento paulatino del  $\mu_\perp$ hasta llegar a valores similares que alcanza el lípido puro cuando han colapsado. Con la interfase de PCPG sucedió lo contrario, especialmente en presencia de $\beta$3, donde a áreas mayores el $\mu_\perp$ del lípido es mayor respecto a las mezcla con $\alpha$IIb. Diferencia dada por la carga neta entre ambos péptidos, $\beta$3 tiene carga de 2+ favoreciendo interacciones electrostáticas con la carga negativa del POPG. Este misma efecto se ha observado en otras proteínas \citep{Lad2006,Alamdari2020,Schmidt2022}.
+
+
+En todas las mezclas lípido-péptido al finalizar la compactación, los valores de $\Delta$V y $\mu_\perp$  son similares a los de la interfase pura (excepto en \ac{dppc} que son ligeramente menor). Para otros péptidos se reportó algo similar, donde el $\mu_\perp$ de diferentes polipéptidos hélice $\alpha$ es significativamente suprimido en soluciones acuosas debido al efecto de la esfera de solvatación de moléculas de agua que pueden formar puentes de hidrógeno con los grupos carbonilos de los péptidos específicamente cuando se encuentran ``paralelo'' a la superficie, luego al comprimirse los $\mu_{H_{2}O}$ se orientan hacia abajo, dando como resultado la disminución del $\mu_\perp$ \citep{Nguyen2010}. Además, si consideramos que ambos péptidos tienen residuos del domino \ac{ic} en la subfase, el $\mu_{p\text{é}ptido}$ de esos residuos ya se encuentran ``apantallados'', por lo tanto no contribuyen al $\mu_\perp$.
+
+
+\section{Análisis de la elasticidad lateral}
+
+%%%%%%%%%% Figura Módulo de compresibilidad %%%%%%%%%%%%
+\begin{figure}[b!] % supposedly places it here ...
+\vspace{0.5cm}
+    \centering
+	\includegraphics[width=0.9\linewidth]{fig/01_expe/mono/cs_all.png}
+	\caption[Módulo de compresibilidad  en función de la presión superficial en la interfase aire-agua.]{Módulo de compresibilidad (C$_s^{\text{--}1}$ ) en función de la presión superficial ($\pi$) en la interfase aire-agua. Panel izquierdo mezclas lípido-$\alpha$IIb y panel derecho mezclas lípido-$\beta$3.}
+        \index{CsPi}
+    \label{fig:CsPi}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+%%https://www.cell.com/biophysj/pdf/S0006-3495(97)78226-2.pdf
+%%%Leer bien para posible análisis extra del módulo
+%%%https://hal.science/hal-04037820/document
+La membrana celular es una organización compleja y muy dinámica. Su integridad y funcionalidad dependen de la flexibilidad estructural de sus componentes. La mutua influencia entre componentes, principalmente lípidos y proteínas, puede modular la deformación, los cambios en radios, curvatura y cambios en el espesor de la membrana. Particularmente, la compresibilidad lateral de la membrana es un parámetro que describe sus propiedades mecánicas y puede ser controlada por la composición lipídica de la membrana y/o por la presencia de proteínas que inducen estos cambios \citep{Evans1976}. Para examinar la rigidez lateral de las monocapas, específicamente en las mezclas lípido-péptido, se calculó el módulo de compresibilidad (C$_s^{\text{--}1}$) usando los datos de las curvas $\pi \text{--}$\textit{A} (\textbf{figura} \ref{fig:area_pi_all})  basado en la ecuación \ref{ecu:Cs}, 
+
+\begin{equation}\label{ecu:Cs}
+    C_s^{\text{--}1} =  \text{--} A \left(\frac{d\pi}{dA} \right)  
+\end{equation}
+
+donde \textit{A} es el área por molécula a la presión superficial  $\pi$. El C$_s^{\text{--}1}$ provee información acerca del estado de fase de los lípidos y la rigidez de la monocapa. Lípidos con una fase LC presentarán valores de C$_s^{\text{--}1}$ altos, mientras que si presenta una fase LE tendrá valores bajos de C$_s^{\text{--}1}$. Valores cercanos a cero de C$_s^{\text{--}1}$ corresponden una interfase de agua pura, libre de monocapas. Si hay un incremento en su magnitud estará dada por la actividad superficial de las moléculas presentes en la interfase, cuando el valor C$_s^{\text{--}1}$ es grande, significa que la monocapa es menos compresible. La fase \ac{le} se caracteriza por presentar una C$_s^{\text{--}1}$ entre 12-50 mN/m, y valores entre 100-250 mN/m corresponden a una fase LC \citep{Davies1961}. La \textbf{figura} ~\ref{fig:CsPi} muestra los perfiles de la compresibilidad de los componentes puros y las mezclas lípido-péptido.
+
+%%2019_Agata_Ladniak.pdf 
+Respecto a los péptidos puros, ambos alcanzan valores de C$_s^{\text{--}1}$ $\Xapprox$  30 mN/m a bajos valores de $\pi$ y permanece oscilando en este valor hasta presiones altas. Además, los dos péptidos presenta una pequeña disminución de C$_s^{\text{--}1}$ alrededor de los 28 mN/m y 32 mN/m para $\alpha$IIb y $\beta$3, respectivamente. Este mínimo podría atribuirse a una reorganización estructural de los péptidos en la interfase tal como se mencionó en las \textbf{secciones \ref{sect:mono_mezclas}} y \textbf{\ref{deltaV_mezclas}}. Observando los C$_s^{\text{--}1}$ para \ac{popc} puro, este alcanza valores máximos hasta $\Xapprox$ 50 mN/m (valores característicos para una fase LE) y una vez que alcanza la presión de colapso decae. En general en presencia de péptido $\alpha$IIb  o $\beta$3 el C$_s^{\text{--}1}$ disminuye respecto al lípido puro y éste efecto es más marcado con $\beta$3. 
+Con la interfase que tiene un 30\% mol de \ac{popg}, éste disminuyó al valor de C$_s^{\text{--}1}$ de \ac{popc} puro, donde esta mezcla PCPG presentó un C$_s^{\text{--}1}$ de  $\Xapprox$ 30 mN/m, valor muy similar al de los péptidos (\textbf{figura} ~\ref{fig:CsPi} panel del medio). En presencia de péptido, estos tienden a disminuir la compresibilidad del PCPG puro sutilmente, siendo $\alpha$IIb  el péptido que induce un mayor efecto.
+Finalmente en la interfase con \ac{dppc}, para el lípido puro se observan dos estados, el primero alcanza un valor de C$_s^{\text{--}1}$  $\Xapprox$ 25 mN/m, este primer estado corresponde a la coexistencia de fase LE--LC. Posteriormente se produce un aumento pronunciado del C$_s^{\text{--}1}$ con el aumento de la $\pi$ hasta alcanzar valores de C$_s^{\text{--}1}$  mayores a 100 mN/m, el cual se atribuye un estado de fase LC. Cuando se adiciona péptido $\alpha$IIb o $\beta$3, disminuye la compresibilidad del lípido drásticamente, incluso a bajas concentraciones (2.0\% de péptido) el C$_s^{\text{--}1}$ toma valores cercanos a $\Xapprox$ 50 mN/m, donde $\beta$3 es el que más disminuye C$_s^{\text{--}1}$.
+
+La \textbf{tabla} \ref{tab:resum_mono} muestra las propiedades estudiadas en los sistemas modelos de monocapas de Langmuir, se tomó como referencia una presión de 30 mN/m.
+
+%%%%%%%%%%%%%%%%%%%Tabla resumen%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[H]
+\centering
+%\begin{adjustbox}{width=1\textwidth}
+\caption{Resumen propiedades de las monocapas a una presión de 30 mN/m.}\label{tab:resum_mono}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{@{}cclllllllllll@{}}
+
+\toprule
+\multirow{2}{*}{Péptido} & \multirow{2}{*}{\%}  & \multicolumn{3}{c}{$\mu_\perp$ (D)}  & \multicolumn{1}{p{0.01mm}}{}  & \multicolumn{3}{c}{C$_s^{\text{--}1}$ (mN/m)} & \multicolumn{1}{p{0.01mm}}{}  & \multicolumn{3}{c}{A (Å\textsuperscript{2})} \\ 
+
+\cmidrule(lr){3-5} \cmidrule(lr){7-9} \cmidrule(l){11-13}  
+                         &                      & \multicolumn{1}{c}{POPC} & \multicolumn{1}{c}{PCPG} & \multicolumn{1}{c}{DPPC} & \multicolumn{1}{p{0.01mm}}{} & \multicolumn{1}{c}{POPC} & \multicolumn{1}{c}{PCPG} & \multicolumn{1}{c}{DPPC} & \multicolumn{1}{p{0.01mm}}{} & \multicolumn{1}{c}{POPC} & \multicolumn{1}{c}{PCPG} & \multicolumn{1}{c}{DPPC} \\ 
+                                                                     
+\cmidrule(lr){1-2} \cmidrule(lr){3-5} \cmidrule(lr){7-9} \cmidrule(l){11-13}
+
+- - -     		& 0.0					& 0.62\textpm 0.01		& 2.54\textpm 0.01		& 1.26\textpm 0.00		& 	&54.96\textpm 1.42		& 36.39\textpm 0.47		& 130.80\textpm 3.47 & &	73.69\textpm 3.70 & 100.51\textpm 4.35 &  39.06\textpm 0.55 
+\vspace{3mm} \\
+
+$\alpha$IIb     & \multirow{2}{*}{2.0}   &  0.66\textpm 0.01 	& 0.99\textpm 0.00	& 0.97\textpm 0.00	& 	& 44.92\textpm 0.94		& 30.13\textpm 1.09		& 63.23\textpm 4.53 	& & 65.30\textpm 2.31 	& 75.32\textpm 2.63 & 58.36\textpm 0.06\\ 
+$\beta$3        & 						&  0.75\textpm 0.00 	& 1.20\textpm 0.12	& 1.00\textpm 0.01	& 	& 47.12\textpm 2.80		& 34.28\textpm 3.54		& 46.28\textpm 1.62 	& &	61.98\textpm 2.42 	& 72.45\textpm 5.64& 63.80\textpm 0.07                          
+\vspace{3mm}\\
+
+$\alpha$IIb     & \multirow{2}{*}{3.5} 	&  0.87\textpm 0.00	& 1.06\textpm 0.07	& 1.02\textpm 0.00	& 	& 45.45\textpm 0.93		& 27.30\textpm 1.35		& 52.51\textpm 3.01	& &	74.24\textpm 0.55	& 90.15\textpm 2.02& 60.94\textpm 0.81\\
+$\beta$3        & 						&  0.74\textpm 0.00	& 0.82\textpm 0.07	& 1.19\textpm 0.00	& 	&53.41\textpm 2.08		& 38.27\textpm 2.12		& 41.73\textpm 1.46 	& &	65.02\textpm 1.43 	&65.04\textpm 0.67& 69.83\textpm 7.57                           
+\vspace{3mm} \\
+
+$\alpha$IIb     & \multirow{2}{*}{5.0}   &  0.87\textpm 0.00	& 0.87\textpm 0.03	& 1.14\textpm 0.00	& 	&49.57\textpm 2.19		& 31.39\textpm 0.65		& 51.91\textpm 1.28	& &	71.41\textpm 6.89 	&77.62\textpm 5.07& 65.76\textpm 1.74\\
+$\beta$3        & 						&  0.76\textpm 0.00	& 0.73\textpm 0.00	& 1.28\textpm 0.01	& 	&33.06\textpm 1.76		& 32.27\textpm 2.48		& 44.45\textpm 3.02	& &	74.34\textpm 3.09 	& 59.47\textpm 1.06& 71.83\textpm 1.51                          
+\vspace{3mm} \\
+
+$\alpha$IIb    & \multirow{2}{*}{7.0}  	&  0.99\textpm 0.00	& 1.05\textpm 0.00	& 1.15\textpm 0.00	& 	&45.63\textpm 0.59		& 32.72\textpm 2.34		& 47.61\textpm 3.35	& &	81.54\textpm 0.89 	&85.71\textpm 4.51& 64.21\textpm 0.41\\
+$\beta$3       & 						&  0.91\textpm 0.00	& 0.93\textpm 0.01	& 1.02\textpm 0.00	& 	&31.09\textpm 0.94		& 31.85\textpm 1.70	& 43.02\textpm 1.25	& &	76.34\textpm 1.32 	& 59.57\textpm 13.07& 68.88\textpm 1.94  \\ 
+\bottomrule
+\end{tabular}
+}
+\end{table}                        
+%%%Fin Tabla resumen%%%
+
+\section{Discusión del capítulo}
+
+Las membranas biológicas son estructuras complejas compuestas por una mezcla de proteínas y una amplia gama de lípidos. Esta composición heterogénea dificulta el entendimiento de la dinámica estructural de su organización a nivel molecular. Por lo tanto, gran parte del conocimiento actual sobre la organización de las biomembranas se ha obtenido a través del estudio de las propiedades de sus componentes individuales o de mezclas simples en sistemas modelo, por ejemplo,  en monocapas lípido-proteína \citep{Mitropoulos2014}. Estos sistemas permiten un control adecuado de los parámetros de la superficie, facilitando así la investigación de la estructura y función de las membranas biológicas. Al comprimir una monocapa de proteínas y mantenerla a una presión superficial alta (superior a 20 mN/m), se observa una disminución del área con el tiempo \citep{macritchie1991}. Esta reducción tiene dos componentes principales: uno reversible y otro irreversible. El componente reversible se puede restaurar parcialmente al expandir la monocapa, mientras que el irreversible no permite recuperación. Se cree que el proceso reversible se debe a un reordenamiento molecular, mientras que el proceso irreversible probablemente es causado por la desorción de proteínas en la subfase \citep{Macritchie1981}. Particularmente los resultados obtenidos en monocapas no se observó histéresis significativa para ninguno de los dos péptidos puros o de las mezclas lípido-péptido (\textbf{figura} ~\ref{fig:histeresisAll}). Por lo tanto los péptidos permanecen en la interfase aire/agua y forman monocapas estables. 
+ 
+El módulo de compresibilidad permite identificar cambios de estado de fase e indirectamente cambios conformacionales en la estructura de una proteína adsorbida en la interfase \citep{Elderdfi2018}. El valor máximo del C$_s^{\text{--}1}$ corresponde al estado más compacto de la monocapa a una presión superficial $\pi$ determinada. La curva C$_s^{\text{--}1}$ de los péptidos puros presenta un mínimo cuando $\pi$ $\Xapprox$ 30 mN/m (\textbf{figura} ~\ref{fig:CsPi}A-B, \textcolor{blue}{\faLongArrowRight}). Este comportamiento es típico de un cambio conformacional de los \textit{loops} relajados que están en contacto con el agua que al reducir el área superficial adquieren una conformación más compacta \citep{Toimil2012}. Para la mezcla POPC/$\alpha$IIb, este cambio conformacional no se observó. Por el contrario en la mezcla POPC/$\beta$3 se observa un mínimo en las concentraciones de 2.0\% y 7.0\% de péptido. A temperatura ambiente (20\textdegree C) POPG presenta una fase LE. Por debajo de los 20\textdegree C\, tiene coexistencia de fases LE-LC a alta presión superficial ($\pi$ $\Xapprox$ 38 mN/m) \citep{Takamoto2001}. 
+Además, tiene carga negativa (a diferencia del POPC, que es zwitteriónico), esto puede favorecer interacciones intermoleculares como las de tipo ión-dipolo y coulómbicas \citep{Schmidt2022}. En las \textbf{figuras} ~\ref{fig:CsPi}C-D, se observa que la presencia de $\alpha$IIb ó $\beta$3 reduce la C$_s^{\text{--}1}$ de la mezcla PCPG pura, es decir, la hace más fluida. Este resultado va en el mismo sentido con lo observado en el análisis de miscibilidad (\textbf{figura} \ref{fig:lambda}) donde la mezcla PCPG presenta bajos valores de $\lambda$, específicamente cuando se trata de la mezcla PCPG/$\beta$3 sugiriendo la presencia de interacciones atractivas lípido-péptido.  
+El perfil de C$_s^{\text{--}1}$ de las mezclas DPPC-péptido cambió notablemente con respecto al lípido puro. A valores de $\pi$ $\Xapprox$ 44 mN/m DPPC alcanza el C$_s^{\text{--}1}$ máximo cuando la monocapa colapsa, valor que coincide con lo reportado en literatura \citep{DeOliveiraPedro2020}. En cambio, en la mezcla lípido-péptido el C$_s^{\text{--}1}$  no supera los 75 mN/m. En presencia de $\alpha$IIb ó $\beta$3 la pretransición a $\pi$ $\Xapprox$ 8 mN/m se ve alterara y difícilmente se alcanza a observar (\textbf{figuras} ~\ref{fig:CsPi}E-F). Para la mezcla DPPC/$\beta$3 se observa un mínimo en todas las proporciones de péptido (indicado con la fecha \textcolor{blue}{\faLongArrowDown}), este se atribuye al posible rearreglo conformacional del segmento intracelular. En general ambos péptidos inducen a la monocapa a un estado más fluido con características de LE-LC. Esto nuevamente va en la misma dirección de lo observado en las magnitudes de $\lambda$. Donde mencionamos que valores mayores a 1.0 indican repulsión molecular, y esta efecto es el responsable que la monocapa disminuya su elasticidad lateral.
+
+La estructura de los lípidos se puede dividir en dos componentes: un grupo polar (hidrofílico) y el grupo apolar (hidrofóbico) de las cadenas hidrocarbonadas. Estas dos componentes hacen que los lípidos sean moléculas anfifílicas ideales para formar monocapas ordenadas en dos dimensiones. Las moléculas son orientadas en la interfase aire/agua bajo presión lateral. La componente apolar se orienta hacia el aire y la hidrofílica estará en contacto con la fase acuosa. La formación de una monocapa puede ser medida como el cambio en la presión superficial y en el potencial. 
+
+%%%1999_Maget
+Las moléculas cercanas a la superficie de un líquido tienden a alinearse de una manera específica. En el caso del agua, el ordenamiento de los dipolos genera un campo eléctrico en la superficie. Cuando se forma una monocapa sobre la superficie de agua limpia provoca un cambio en la orientación de las moléculas en la interfaz y, como resultado, modifica la naturaleza del campo eléctrico. Esa diferencia de potencial se conoce como potencial de superficial o ``potencial Volta'' \citep{Beitinger1989}. Un cambio en el $\Delta V$ puede estar dado por: a) la reorientación de los dipolos de las moléculas de agua debido a la presencia de las moléculas que forman la monocapa, b) la contribución de las constantes dieléctricas de los grupos polar y alquilos que conforman la monocapa, c) la presencia de moléculas cargadas, como es el caso de proteínas. Además, El $\Delta V$ es proporcional al cambio interfacial en el componente normal de la densidad del momento dipolar $\mu_\perp$/A. $\mu_\perp$ es la componente normal del cambio promedio del momento dipolar en la interfaz aire-agua por moléculas tensoactivas. El $\mu_\perp$ es positivo cuando su dirección va desde el agua (\text{--}) hacia el aire (+). Los perfiles de $\mu_\perp$ para las mezclas lípido-péptido (\textbf{figura} \ref{fig:mu_dV_alfa}A-B, panel inferior) reflejaron reordenamientos moleculares en la monocapa (señalados con la fecha \textcolor{blue}{\faLongArrowRight}), en consecuencia disminuyó el momento dipolar a medida que se comprime lateralmente. La presencia del péptido $\alpha$IIb ó $\beta$3 inicialmente aumenta el $\mu_\perp$ respecto al $\mu_\perp$ de los lípidos puros POPC, DPPC y PCPG (excepto el perfil de 2.0\% de $\beta$3), al aumentar la presión esta diferencia se va haciendo más pequeña hasta alcanzar el mismo valor en el estado más compacto a altas presiones. La \textbf{figura} \ref{fig:dipolo} muestra cómo cambia el $\mu_\perp$ debido a el reordenamiento de residuos y orientación de un péptido en una monocapa. Estos perfiles del potencial y momento dipolar se asemejan a los reportados en otros sistemas lípido-péptido \citep{Nakahara2005, Britt2003, Fox1957, Wnetrzak2012, Cseh1999}. 
+
+%%%%%%%%%% Figura %%%%%%%%%%%%
+\begin{figure}[t!] % supposedly places it here ...
+    \centering
+	\includegraphics[width=0.6\linewidth]{fig/01_expe/mono/dipolo.png}
+	\caption[Esquema de orientación de péptido en el plano de la monocapa y su contribución al momento dipolar perpendicular ($\mu_\perp$) en función del área molecular (\textbf{A})]{Esquema de orientación de péptido en el plano de la monocapa y su contribución al momento dipolar perpendicular ($\mu_\perp$) función del área molecular (\textbf{A}). Figura adaptada de \cite{Maget-Dana1999}.}
+        \index{dipolo}
+    \label{fig:dipolo}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+
+Proponemos que la región que tiene estructura hélice $\alpha$ se orienta perpendicularmente al plano de la monocapa. Sin embargo, la región con estructura secundaria no definida (\textit{random coil}) está en contacto con la interfase acuosa. Esta orientación tiene una justificación teórica desde el punto vista de la termodinámica. La secuencia primaria de la región con estructura \textit{random coil}  en cada péptido indica la presencia de residuos cargados, 10 en $\alpha$IIb y  5 en $\beta$3 (\textbf{figura} \ref{fig:tm_domain}). La región con estructura hélice $\alpha$ tiene alto número de residuos hidrofóbicos, 27 y 31 para $\alpha$IIb y $\beta$3 respectivamente, y por lo tanto insolubles en agua. Esto lleva a que dichos residuos tiendan orientarse hacia el aire. Por este motivo, los tensoactivos de los lípidos pueden maximizar el número de interacciones favorables entre sus grupo polar y el agua, mientras minimizan el número de interacciones desfavorables entre los segmentos no polares y el agua \citep{Norde1986,Rabe2014}. 
+
+Los resultados observados anteriormente, se ilustran en la \textbf{figura} \ref{fig:esquema_final}. Se mencionó que la región del \textit{C-terminal} que esta en contacto con la fase acuosa, además, se presentan posibles rearreglos de estructura secundaria de tal forma que a medida que se comprime lateralmente esta región adopta una estructura helicoidal donde algunos residuos polares interaccionan con moléculas de agua y contribuyen al potencial de superficie.
+
+\begin{figure}[b!] % supposedly places it here ...
+    \centering
+	\includegraphics[width=0.8\linewidth]{fig/01_expe/esquema_final_lipido-peptido.png}
+	\caption[Esquema de la orientación del péptido $\alpha$IIb en una monocapa]{Esquema de la orientación del péptido $\alpha$IIb en una monocapa. En el panel superior orientación a valores $\pi$ menores a 5 mN/m. Panel inferior, orientación a valores de $\pi$ mayores a 30 mN/m. Al lado derecho de cada panel una vista desde arriba.}
+        \index{test}
+    \label{fig:esquema_final}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%% Fin %%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+\newpage 
