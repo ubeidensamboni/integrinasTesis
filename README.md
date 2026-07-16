@@ -1,4 +1,4 @@
-# Efecto del ambiente lipídico en la conformación y orientación de los segmentos transmembrana y citoplasmáticos de la integrina αIIbβ3 - Tesis Doctoral (LaTeX) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21385313-blue?style=for-the-badge&logo=doi)](https://doi.org/10.5281/zenodo.21385313)
+# Efecto del ambiente lipídico en la conformación y orientación de los segmentos transmembrana y citoplasmáticos de la integrina αIIbβ3 - Tesis Doctoral (LaTeX) [![](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21385313-blue?style=for-the-badge&logo=doi)](https://doi.org/10.5281/zenodo.21385313)
 
 Este repositorio contiene el proyecto maestro en **LaTeX** de mi tesis doctoral, presentada para optar al título de **Doctor en Ciencias Químicas** de la Universidad Nacional de Córdoba,, Argentina.
 
