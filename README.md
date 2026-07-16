@@ -19,6 +19,10 @@ Esto permite compartir y adaptar el material siempre que:
 - No se utilice con fines comerciales.
 - Las obras derivadas se distribuyan bajo la misma licencia.
 
+## Citación
+
+Samboni, U. C. (2026). Efecto del ambiente lipídico en la conformación y orientación de los segmentos transmembrana y citoplasmáticos de la integrina αIIbβ3 (Tesis). *Zenodo*. https://doi.org/10.5281/zenodo.21385313
+
 ## Nota sobre la calidad de las figuras
 
 Para reducir el tamaño del repositorio, el PDF y las figuras incluidas en este proyecto han sido comprimidos y su resolución ha sido reducida.
